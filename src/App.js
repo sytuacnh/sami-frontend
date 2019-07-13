@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+// import Header from './components/Header/Header';
+import SectionNavbars from './SectionNavbars'
 
 function App() {
     return (
-        <div className="App">
-            Hello React   
-        </div>
+        <Fragment>
+            <SectionNavbars />
+        </Fragment>
     );
 }
 
