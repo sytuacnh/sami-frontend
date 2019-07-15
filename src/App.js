@@ -3,7 +3,10 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 import store from './store'
 import SectionNavbars from './SectionNavbars'
-import "assets/scss/material-kit-pro-react.scss?v=1.7.0";
+// own global style
+import { Globalstyle } from './style';
+// global style of Material Kit
+import 'assets/scss/material-kit-pro-react.scss?v=1.7.0';
 
 // import { createBrowserHistory } from "history";
 // var hist = createBrowserHistory();
@@ -12,6 +15,7 @@ import "assets/scss/material-kit-pro-react.scss?v=1.7.0";
 function App() {
     return (
         <Provider store={store}>
+            <Globalstyle XXColor/>
             <BrowserRouter>
                 <Route path='/' exact component={SectionNavbars}></Route>
             </BrowserRouter>
