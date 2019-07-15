@@ -449,19 +449,6 @@ const SectionNavbars = (props) => {
     );
 }
 
-// class SectionNavbars extends React.Component {
-//     render() {
-//         const { inputValue, handleSearchInputChange } = this.props.
-
-//         return (
-//             <SectionNavbarsUI 
-//                 inputValue={inputValue}
-//                 handleSearchInputChange={handleSearchInputChange}
-//             />
-//         )
-//     }
-// }
-
 const mapStateToProps = (state) => {
     return {
         inputValue: state.inputValue
@@ -477,7 +464,6 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-// export default connect(mapStateToProps, mapDispatchToProps)(SectionNavbars);
 export default compose(
     withStyles(navbarsStyle),
     connect(mapStateToProps, mapDispatchToProps)
