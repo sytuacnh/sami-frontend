@@ -1,3 +1,3 @@
 ## San Antonio Math Include - Frontend
 
-React
+React + Redux + Material Kit
