@@ -8,6 +8,7 @@ import 'assets/scss/material-kit-pro-react.scss?v=1.7.0';
 
 import store from './store'
 import Header from './common/header/index';
+import Footer from './common/footer/index';
 import Home from './pages/home';
 
 // import { createBrowserHistory } from "history";
@@ -18,9 +19,10 @@ function App() {
     return (
         <Provider store={store}>
             <Globalstyle XXColor/>
-            <Header />
             <BrowserRouter>
+                <Header />
                 <Route path='/' exact component={Home}></Route>
+                <Footer />
             </BrowserRouter>
         </Provider>
     );

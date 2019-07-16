@@ -55,13 +55,16 @@ const hexToRgb = input => {
 const drawerWidth = 260;
 
 const primaryColor = [
-  "#9c27b0",
-  "#ab47bc",
-  "#8e24aa",
-  "#af2cc5",
-  "#e1bee7",
-  "#ba68c8"
+  "#22d0cb",
+  "#00acc1",
+  "#26c6da",
+  "#00acc1",
+  "#00d3ee",
+  "#d9edf7",
+  "#c4e3f3",
+  "#b2ebf2"
 ];
+
 const secondaryColor = ["#fafafa"];
 const warningColor = [
   "#ff9800",
@@ -94,14 +97,14 @@ const successColor = [
   "#66bb6a"
 ];
 const infoColor = [
-  "#00acc1",
-  "#26c6da",
-  "#00acc1",
-  "#00d3ee",
-  "#d9edf7",
-  "#c4e3f3",
-  "#b2ebf2",
-  "#4dd0e1"
+  "#9c27b0",
+  "#ab47bc",
+  "#8e24aa",
+  "#af2cc5",
+  "#e1bee7",
+  "#ba68c8",
+  "#e1bee7",
+  "#ba68c8"
 ];
 const roseColor = ["#e91e63", "#ec407a", "#d81b60", "#f8bbd0", "#f06292"];
 const grayColor = [

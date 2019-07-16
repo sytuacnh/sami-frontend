@@ -1,35 +1,32 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
+import MKHeader from './MKHeader'
 // import { actionCreators } from './store';
 
-import { 
-    HeaderWrapper,
-    LogoWrapper,
-    Logo
-} from './style';
+// import {
+//     HeaderWrapper
+// } from './style';
+
 
 class Header extends PureComponent {
 
     render() {
         return (
-            <HeaderWrapper>
-                <LogoWrapper>
-                    <Logo />
-                </LogoWrapper>
-            </HeaderWrapper>
+            <MKHeader />
         );
     }
 }
 
 const mapStateToProps = (state) => {
-    return { 
+    return {
 
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
+
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header)
