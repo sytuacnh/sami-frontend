@@ -1,5 +1,6 @@
 import { takeEvery, put } from 'redux-saga/effects';
-import { CHANGE_INPUT_VALUE } from './actionTypes';
+// import { CHANGE_INPUT_VALUE } from './actionTypes';
+
 // import axios from 'axios'
 // import * as actionCreators from './actionCreators';
 
@@ -19,7 +20,7 @@ function* getInputChangeAction() {
 }
 
 function* samiSaga() {
-    yield takeEvery(CHANGE_INPUT_VALUE, getInputChangeAction);
+    // yield takeEvery(CHANGE_INPUT_VALUE, getInputChangeAction);
 }
 
 export default samiSaga;
