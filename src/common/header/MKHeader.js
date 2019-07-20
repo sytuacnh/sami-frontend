@@ -1,4 +1,4 @@
-import React, { PureComponent, Fragment } from 'react';
+import React, { PureComponent } from 'react';
 // for material-kit
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -19,7 +19,7 @@ class MKHeader extends PureComponent {
                 links={<HeaderLinks dropdownHoverColor="info" />}
                 fixed
                 changeColorOnScroll={{
-                    height: 50,
+                    height: 100,
                     color: "primary"
                 }}
                 {...rest}

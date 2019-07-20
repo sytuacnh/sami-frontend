@@ -15,7 +15,7 @@
 
 */
 /* eslint-disable */
-import React from "react";
+import React, { Fragment } from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // react components for routing our app without refresh
@@ -26,6 +26,8 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Icon from "@material-ui/core/Icon";
+import Search from "@material-ui/icons/Search";
+import CustomInput from "components/CustomInput/CustomInput.jsx";
 
 // @material-ui/icons
 import Apps from "@material-ui/icons/Apps";
@@ -102,13 +104,38 @@ function HeaderLinks({ ...props }) {
 
   const { classes, dropdownHoverColor } = props;
   return (
+    <Fragment>
     <List className={classes.list + " " + classes.mlAuto}>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/"
+          className={
+            classes.navLink + " " + classes.navLinkActive
+          }
+          onClick={e => e.preventDefault()}
+          color="transparent"
+        >
+          HOME
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+          <Button
+            href="/TUTORING"
+            className={
+              classes.navLink
+            }
+            onClick={e => e.preventDefault()}
+            color="transparent"
+          >
+            TUTORING
+          </Button>
+      </ListItem>
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
-          buttonText="Components"
+          buttonText="EVENTS"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
@@ -134,11 +161,23 @@ function HeaderLinks({ ...props }) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
+          <Button
+            href="/TUTORING"
+            className={
+              classes.navLink
+            }
+            onClick={e => e.preventDefault()}
+            color="transparent"
+          >
+            GALLERY
+          </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
-          buttonText="Sections"
+          buttonText="ABOUT"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
@@ -204,12 +243,31 @@ function HeaderLinks({ ...props }) {
           ]}
         />
       </ListItem>
+    </List>
+
+    <div className={classes.mlAuto}>
+      <CustomInput
+        white
+        inputRootCustomClasses={classes.inputRootCustomClasses}
+        formControlProps={{
+          className: classes.formControl
+        }}
+        inputProps={{
+          placeholder: "Search",
+          inputProps: {
+            "aria-label": "Search",
+            className: classes.searchInput
+          }
+        }}
+      />
+    </div>
+    <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
-          buttonText="Examples"
+          buttonText="Stanley"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
@@ -266,10 +324,11 @@ function HeaderLinks({ ...props }) {
           className={classes.navButton}
           round
         >
-          <ShoppingCart className={classes.icons} /> buy now
+          Join
         </Button>
       </ListItem>
     </List>
+    </Fragment>
   );
 }
 

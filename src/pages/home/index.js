@@ -1,45 +1,55 @@
 import React, { PureComponent } from 'react';
+// import PropTypes from "prop-types";
+// nodejs library that concatenates classes
+import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-
+import {
+    HomeWrapper
+} from "./style";
+import Section from "./components/section";
 import bgImage from "../../static/geo_bg.jpg";
+// import sectionsStyle from "assets/jss/material-kit-pro-react/views/presentationSections/sectionsStyle.jsx";
+
 
 class Home extends PureComponent {
     render() {
         const { classes } = this.props;
 
         return (
-            <Parallax image={bgImage} filter="dark">
-                <div className={classes.container}>
-                    <GridContainer>
-                      <GridItem xs={12} sm={6} md={6}>
-                        <h1 className={classes.title}>Your Story Starts With Us.</h1>
-                        <h4>
-                          Every landing page needs a small description after the big
-                          bold title, that{"'"}s why we added this text here. Add here
-                          all the information that can make you or your product create
-                          the first impression.
-                        </h4>
-                        <br />
-                        <Button
-                          color="danger"
-                          size="lg"
-                          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                          target="_blank"
-                        >
-                          <i className="fas fa-play" />
-                          Watch video
-                        </Button>
-                      </GridItem>
-                    </GridContainer>
+            <HomeWrapper>
+                <Parallax image={bgImage}>
+                    <div className={classes.container}>
+                        <GridContainer>
+                          <GridItem xs={12} sm={7} md={7}>
+                            <h2 className={classes.title}>By the Students, For the Students</h2>
+                            <h4>
+                                San Antonio Math Include, SaMi, is a Texas nonprofit organization founded by a group of students passionate about math. Our mission is to INCLUDE all students from different cultures, backgrounds and experiences and to help them achieve their success and pursue their interests in Math and other related fields. 
+                            </h4>
+                            <br />
+                          </GridItem>
+                        </GridContainer>
+                    </div>
+                </Parallax>
+                <div className={classNames(classes.main, classes.mainRaised)}>
+                    <Section />
                 </div>
-            </Parallax>
+            </HomeWrapper>
         )
     }
 }
 
+// Home.propTypes = {
+//     classes: PropTypes.object
+// };
+
 export default withStyles(landingPageStyle)(Home)
+
+// export default compose(
+//     withStyles(landingPageStyle),
+//     withStyles(sectionsStyle)
+// )(Home)
