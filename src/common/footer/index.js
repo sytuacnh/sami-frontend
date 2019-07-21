@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-import MKFooter from './MKFooter'
+import MKFooter from './components/MKFooter'
 // import { actionCreators } from './store';
 
 // import {

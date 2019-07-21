@@ -1,10 +1,10 @@
 import React, { PureComponent, Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import withStyles from "@material-ui/core/styles/withStyles";
-// core components
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import Footer from "components/Footer/Footer.jsx";
-import Favorite from "@material-ui/icons/Favorite";
-import { Link } from 'react-router-dom';
+
+import { IconSpan } from '../style';
 
 class MKFooter extends PureComponent {
     render() {
@@ -15,7 +15,7 @@ class MKFooter extends PureComponent {
               content={
               <div className={classes.center}>
                 Copyright &copy; {1900 + new Date().getYear()} {" "}
-                <Favorite className={classes.icon} /> {" "}
+                <IconSpan>&#xe9ee;</IconSpan> {" "}
                 <Link to='\'>
                   San Antonio Math Include
                 </Link>

@@ -1,12 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-import MKHeader from './MKHeader'
+import MKHeader from './components/MKHeader'
 // import { actionCreators } from './store';
-
-// import {
-//     HeaderWrapper
-// } from './style';
-
 
 class Header extends PureComponent {
 

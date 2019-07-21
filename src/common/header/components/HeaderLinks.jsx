@@ -30,9 +30,9 @@ import Search from "@material-ui/icons/Search";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 
 // @material-ui/icons
-import Apps from "@material-ui/icons/Apps";
+import Event from "@material-ui/icons/Event";
 import ShoppingCart from "@material-ui/icons/ShoppingCart";
-import ViewDay from "@material-ui/icons/ViewDay";
+import SupervisedUserCircle from "@material-ui/icons/SupervisedUserCircle";
 import Dns from "@material-ui/icons/Dns";
 import Build from "@material-ui/icons/Build";
 import ListIcon from "@material-ui/icons/List";
@@ -55,12 +55,13 @@ import Layers from "@material-ui/icons/Layers";
 import ShoppingBasket from "@material-ui/icons/ShoppingBasket";
 import LineStyle from "@material-ui/icons/LineStyle";
 import Error from "@material-ui/icons/Error";
-
-// core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-
 import headerLinksStyle from "assets/jss/material-kit-pro-react/components/headerLinksStyle.jsx";
+import { 
+  IconSpan,
+  SearchWrapper
+ } from "../style";
 
 function HeaderLinks({ ...props }) {
   const easeInOutQuad = (t, b, c, d) => {
@@ -115,6 +116,7 @@ function HeaderLinks({ ...props }) {
           onClick={e => e.preventDefault()}
           color="transparent"
         >
+          <IconSpan>&#xe64b;</IconSpan>
           HOME
         </Button>
       </ListItem>
@@ -127,6 +129,7 @@ function HeaderLinks({ ...props }) {
             onClick={e => e.preventDefault()}
             color="transparent"
           >
+            <IconSpan>&#xe660;</IconSpan>
             TUTORING
           </Button>
       </ListItem>
@@ -140,7 +143,7 @@ function HeaderLinks({ ...props }) {
             className: classes.navLink,
             color: "transparent"
           }}
-          buttonIcon={Apps}
+          buttonIcon={Event}
           dropdownList={[
             <Link to="/" className={classes.dropdownLink}>
               <LineStyle className={classes.dropdownIcons} /> Presentation Page
@@ -169,6 +172,7 @@ function HeaderLinks({ ...props }) {
             onClick={e => e.preventDefault()}
             color="transparent"
           >
+            <IconSpan>&#xe70d;</IconSpan>
             GALLERY
           </Button>
       </ListItem>
@@ -182,7 +186,7 @@ function HeaderLinks({ ...props }) {
             className: classes.navLink,
             color: "transparent"
           }}
-          buttonIcon={ViewDay}
+          buttonIcon={SupervisedUserCircle}
           dropdownList={[
             <Link
               to="/sections#headers"
@@ -245,7 +249,7 @@ function HeaderLinks({ ...props }) {
       </ListItem>
     </List>
 
-    <div className={classes.mlAuto}>
+    <SearchWrapper className={classes.mlAuto}>
       <CustomInput
         white
         inputRootCustomClasses={classes.inputRootCustomClasses}
@@ -260,61 +264,21 @@ function HeaderLinks({ ...props }) {
           }
         }}
       />
-    </div>
+    </SearchWrapper>
+    
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          navDropdown
-          hoverColor={dropdownHoverColor}
-          buttonText="Stanley"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={ViewCarousel}
-          dropdownList={[
-            <Link to="/about-us" className={classes.dropdownLink}>
-              <AccountBalance className={classes.dropdownIcons} /> About Us
-            </Link>,
-            <Link to="/blog-post" className={classes.dropdownLink}>
-              <ArtTrack className={classes.dropdownIcons} /> Blog Post
-            </Link>,
-            <Link to="/blog-posts" className={classes.dropdownLink}>
-              <ViewQuilt className={classes.dropdownIcons} /> Blog Posts
-            </Link>,
-            <Link to="/contact-us" className={classes.dropdownLink}>
-              <LocationOn className={classes.dropdownIcons} /> Contact Us
-            </Link>,
-            <Link to="/landing-page" className={classes.dropdownLink}>
-              <ViewDay className={classes.dropdownIcons} /> Landing Page
-            </Link>,
-            <Link to="/login-page" className={classes.dropdownLink}>
-              <Fingerprint className={classes.dropdownIcons} /> Login Page
-            </Link>,
-            <Link to="/pricing" className={classes.dropdownLink}>
-              <AttachMoney className={classes.dropdownIcons} /> Pricing Page
-            </Link>,
-            <Link to="/shopping-cart-page" className={classes.dropdownLink}>
-              <ShoppingBasket className={classes.dropdownIcons} /> Shopping Cart
-            </Link>,
-            <Link to="/ecommerce-page" className={classes.dropdownLink}>
-              <Store className={classes.dropdownIcons} /> Ecommerce Page
-            </Link>,
-            <Link to="/product-page" className={classes.dropdownLink}>
-              <ShoppingCart className={classes.dropdownIcons} /> Product Page
-            </Link>,
-            <Link to="/profile-page" className={classes.dropdownLink}>
-              <AccountCircle className={classes.dropdownIcons} /> Profile Page
-            </Link>,
-            <Link to="/signup-page" className={classes.dropdownLink}>
-              <PersonAdd className={classes.dropdownIcons} /> Signup Page
-            </Link>,
-            <Link to="/error-page" className={classes.dropdownLink}>
-              <Error className={classes.dropdownIcons} /> Error Page
-            </Link>
-          ]}
-        />
+          <Button
+            href="/donate"
+            className={
+              classes.navLink
+            }
+            onClick={e => e.preventDefault()}
+            color="transparent"
+          >
+            <IconSpan>&#xeb16;</IconSpan>
+            DONATE
+          </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
@@ -324,6 +288,7 @@ function HeaderLinks({ ...props }) {
           className={classes.navButton}
           round
         >
+          <IconSpan className="joinicon">&#xe77c;</IconSpan>
           Join
         </Button>
       </ListItem>

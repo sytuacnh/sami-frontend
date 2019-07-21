@@ -1,20 +1,15 @@
 import React, { PureComponent } from 'react';
-
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-
 import compose from 'recompose/compose'
-
+import { Link } from 'react-router-dom';
 import withStyles from "@material-ui/core/styles/withStyles";
-
 import sectionsStyle from "assets/jss/material-kit-pro-react/views/presentationSections/sectionsStyle.jsx";
-
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import { Link } from 'react-router-dom';
 // library used for cool animations
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";

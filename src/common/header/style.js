@@ -2,11 +2,6 @@ import styled from 'styled-components';
 import logoPic from '../../static/logo_white_char.png'
 // background: url(${logoPic});
 
-export const HeaderWrapper = styled.div`
-    margin: 0px;
-    position: relative;
-`;
-
 export const LogoWrapper = styled.a.attrs({
     href: '/'
 })`
@@ -21,4 +16,19 @@ export const Logo = styled.img.attrs({
     alt: 'sami_logo'
 })`
     width: 70px;
+`;
+
+export const IconSpan = styled.span.attrs({
+    className: 'iconfont'
+})`
+    margin-right: 2px;
+
+    &.joinicon {
+        font-size: 18px;
+        margin-right: 5px;
+    }
+`;
+
+export const SearchWrapper = styled.div`
+    margin-top: -18px;
 `;

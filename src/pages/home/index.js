@@ -13,7 +13,6 @@ import {
 } from "./style";
 import Section from "./components/section";
 import bgImage from "../../static/geo_bg.jpg";
-// import sectionsStyle from "assets/jss/material-kit-pro-react/views/presentationSections/sectionsStyle.jsx";
 
 
 class Home extends PureComponent {
@@ -25,10 +24,10 @@ class Home extends PureComponent {
                 <Parallax image={bgImage}>
                     <div className={classes.container}>
                         <GridContainer>
-                          <GridItem xs={12} sm={7} md={7}>
-                            <h2 className={classes.title}>By the Students, For the Students</h2>
+                          <GridItem xs={12} sm={8} md={6}>
+                            <h2 className={classes.title}>By the Students,<br />For the Students</h2>
                             <h4>
-                                San Antonio Math Include, SaMi, is a Texas nonprofit organization founded by a group of students passionate about math. Our mission is to INCLUDE all students from different cultures, backgrounds and experiences and to help them achieve their success and pursue their interests in Math and other related fields. 
+                                San Antonio Math Include, SaMi, is a Texas nonprofit organization founded by a group of students passionate about math. Our mission is to INCLUDE all students from different cultures, backgrounds and experiences, and to help them achieve their success and pursue their interests in Math and other related fields. 
                             </h4>
                             <br />
                           </GridItem>
