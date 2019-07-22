@@ -2,10 +2,9 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 // own global style
-import { Globalstyle } from './style';
+// import { Globalstyle } from './style';
 import { GlobalIconfont } from './static/iconfont/iconfont';
-// global style of Material Kit
-import 'assets/scss/material-kit-pro-react.scss?v=1.7.0';
+import 'assets/scss/material-kit-pro-react.scss?v=1.7.0'
 import store from './store'
 import Header from './common/header/index';
 import Footer from './common/footer/index';
@@ -14,7 +13,6 @@ import Home from './pages/home';
 function App() {
     return (
         <Provider store={store}>
-            <Globalstyle/>
             <GlobalIconfont/>
             <BrowserRouter>
                 <Header />
