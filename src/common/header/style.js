@@ -21,11 +21,16 @@ export const Logo = styled.img.attrs({
 export const IconSpan = styled.span.attrs({
     className: 'iconfont'
 })`
-    margin-right: 2px;
+    margin-right: 3px;
 
-    &.joinicon {
+    &.joinIcon {
         font-size: 18px;
         margin-right: 5px;
+    }
+
+    &.dropDownIconFont {
+        font-size: 25px;
+        margin-top: 0px;
     }
 `;
 

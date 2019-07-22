@@ -25,7 +25,7 @@ class Home extends PureComponent {
                     <div className={classes.container}>
                         <GridContainer>
                           <GridItem xs={12} sm={8} md={6}>
-                            <h2 className={classes.title}>By the Students,<br />For the Students</h2>
+                            <h2 className={classes.title}>By the Students<br />For the Students</h2>
                             <h4>
                                 San Antonio Math Include, SaMi, is a Texas nonprofit organization founded by a group of students passionate about math. Our mission is to INCLUDE all students from different cultures, backgrounds and experiences, and to help them achieve their success and pursue their interests in Math and other related fields. 
                             </h4>

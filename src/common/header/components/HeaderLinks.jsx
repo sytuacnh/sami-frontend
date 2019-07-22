@@ -44,7 +44,6 @@ import Call from "@material-ui/icons/Call";
 import ViewCarousel from "@material-ui/icons/ViewCarousel";
 import AccountBalance from "@material-ui/icons/AccountBalance";
 import ArtTrack from "@material-ui/icons/ArtTrack";
-import ViewQuilt from "@material-ui/icons/ViewQuilt";
 import LocationOn from "@material-ui/icons/LocationOn";
 import Fingerprint from "@material-ui/icons/Fingerprint";
 import AttachMoney from "@material-ui/icons/AttachMoney";
@@ -145,21 +144,9 @@ function HeaderLinks({ ...props }) {
           }}
           buttonIcon={Event}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              <LineStyle className={classes.dropdownIcons} /> Presentation Page
-            </Link>,
-            <Link to="/components" className={classes.dropdownLink}>
-              <Layers className={classes.dropdownIcons} />
-              All components
-            </Link>,
-            <a
-              href="https://demos.creative-tim.com/material-kit-pro-react/#/documentation/tutorial?ref=mkpr-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              <Icon className={classes.dropdownIcons}>content_paste</Icon>
-              Documentation
-            </a>
+            <Link to="/pi-day-celebration" className={classes.dropdownLink}>
+              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration
+            </Link>
           ]}
         />
       </ListItem>
@@ -189,64 +176,27 @@ function HeaderLinks({ ...props }) {
           buttonIcon={SupervisedUserCircle}
           dropdownList={[
             <Link
-              to="/sections#headers"
+              to="/advisors"
               className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "headers")}
             >
-              <Dns className={classes.dropdownIcons} /> Headers
+              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe608;</IconSpan> ADVISORS
             </Link>,
             <Link
-              to="/sections#features"
+              to="/officers"
               className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "features")}
             >
-              <Build className={classes.dropdownIcons} /> Features
+              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe722;</IconSpan> OFFICERS
             </Link>,
             <Link
-              to="/sections#blogs"
+              to="/tutors"
               className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "blogs")}
             >
-              <ListIcon className={classes.dropdownIcons} /> Blogs
-            </Link>,
-            <Link
-              to="/sections#teams"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "teams")}
-            >
-              <People className={classes.dropdownIcons} /> Teams
-            </Link>,
-            <Link
-              to="/sections#projects"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "projects")}
-            >
-              <Assignment className={classes.dropdownIcons} /> Projects
-            </Link>,
-            <Link
-              to="/sections#pricing"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "pricing")}
-            >
-              <MonetizationOn className={classes.dropdownIcons} /> Pricing
-            </Link>,
-            <Link
-              to="/sections#testimonials"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "testimonials")}
-            >
-              <Chat className={classes.dropdownIcons} /> Testimonials
-            </Link>,
-            <Link
-              to="/sections#contacts"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "contacts")}
-            >
-              <Call className={classes.dropdownIcons} /> Contacts
+              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe66f;</IconSpan> TUTORS
             </Link>
           ]}
         />
       </ListItem>
+      
     </List>
 
     <SearchWrapper className={classes.mlAuto}>
@@ -269,6 +219,19 @@ function HeaderLinks({ ...props }) {
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
           <Button
+            href="/contact"
+            className={
+              classes.navLink
+            }
+            onClick={e => e.preventDefault()}
+            color="transparent"
+          >
+            <IconSpan>&#xe959;</IconSpan>
+            CONTACT
+          </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+          <Button
             href="/donate"
             className={
               classes.navLink
@@ -288,7 +251,7 @@ function HeaderLinks({ ...props }) {
           className={classes.navButton}
           round
         >
-          <IconSpan className="joinicon">&#xe77c;</IconSpan>
+          <IconSpan className="joinIcon">&#xe77c;</IconSpan>
           Join
         </Button>
       </ListItem>
