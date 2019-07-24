@@ -16,7 +16,7 @@ function App() {
             <GlobalIconfont/>
             <BrowserRouter>
                 <Header />
-                <Route path='/' exact component={Home}></Route>
+                    <Route path='/' exact component={Home}></Route>
                 <Footer />
             </BrowserRouter>
         </Provider>

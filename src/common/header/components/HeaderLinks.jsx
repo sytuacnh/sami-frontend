@@ -15,7 +15,10 @@
 
 */
 /* eslint-disable */
-import React, { Fragment } from "react";
+// useEffect is a hook which can replace both componentDidMount and componentDidUpdate
+import React, { Fragment, useEffect } from "react";
+import { connect } from 'react-redux';
+import compose from 'recompose/compose'
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // react components for routing our app without refresh
@@ -61,8 +64,17 @@ import {
   IconSpan,
   SearchWrapper
  } from "../style";
+import { actionCreators } from "../store";
 
-function HeaderLinks({ ...props }) {
+const HeaderLinks = ({ ...props }) => {
+
+  useEffect(() => {
+    // console.log('did mount!!!!')
+    // const api_url = process.env.REACT_APP_API_URL+'programs/1';
+    // console.log("API_URL: " + api_url);
+    props.changeCurrentProgramData();
+  });
+
   const easeInOutQuad = (t, b, c, d) => {
     t /= d / 2;
     if (t < 1) return (c / 2) * t * t + b;
@@ -260,9 +272,9 @@ function HeaderLinks({ ...props }) {
   );
 }
 
-HeaderLinks.defaultProps = {
-  hoverColor: "primary"
-};
+// HeaderLinks.defaultProps = {
+//   hoverColor: "primary"
+// };
 
 HeaderLinks.propTypes = {
   dropdownHoverColor: PropTypes.oneOf([
@@ -276,4 +288,25 @@ HeaderLinks.propTypes = {
   ])
 };
 
-export default withStyles(headerLinksStyle)(HeaderLinks);
+// export default withStyles(headerLinksStyle)(HeaderLinks);
+
+const mapStateToProps = (state) => {
+    return { 
+        currentProgram: state.currentProgram,
+        hoverColor: state.hoverColor
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        changeCurrentProgramData(e) {
+            const action = actionCreators.getCurrentProgram();
+            dispatch(action);
+        }
+    }
+}
+
+export default compose(
+    withStyles(headerLinksStyle),
+    connect(mapStateToProps, mapDispatchToProps)
+)(HeaderLinks)
