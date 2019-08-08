@@ -120,11 +120,11 @@ const HeaderLinks = ({ ...props }) => {
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <Button
-          href="/"
+          component={ Link }
+          to="/"
           className={
             classes.navLink + " " + classes.navLinkActive
           }
-          onClick={e => e.preventDefault()}
           color="transparent"
         >
           <IconSpan>&#xe64b;</IconSpan>
@@ -257,14 +257,14 @@ const HeaderLinks = ({ ...props }) => {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkpr-navbar"
+          component={ Link }
+          to="/register-program"
           color={window.innerWidth < 960 ? "info" : "white"}
-          target="_blank"
           className={classes.navButton}
           round
         >
-          <IconSpan className="joinIcon">&#xe77c;</IconSpan>
-          Join
+          { /*<IconSpan className="joinIcon">&#xe77c;</IconSpan> // not enough space */}
+          Register Program
         </Button>
       </ListItem>
     </List>
@@ -292,8 +292,8 @@ HeaderLinks.propTypes = {
 
 const mapStateToProps = (state) => {
     return { 
-        currentProgram: state.currentProgram,
-        hoverColor: state.hoverColor
+        currentProgram: state.getIn(['header', 'currentProgram']),
+        hoverColor: state.getIn(['header', 'hoverColor'])
     }
 }
 

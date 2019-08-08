@@ -9,6 +9,8 @@ import store from './store'
 import Header from './common/header/index';
 import Footer from './common/footer/index';
 import Home from './pages/home';
+import RegisterProgram from './pages/register_program';
+
 
 function App() {
     return (
@@ -17,6 +19,7 @@ function App() {
             <BrowserRouter>
                 <Header />
                     <Route path='/' exact component={Home}></Route>
+                    <Route path='/register-program' exact component={RegisterProgram}></Route>
                 <Footer />
             </BrowserRouter>
         </Provider>
