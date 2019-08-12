@@ -5,6 +5,7 @@ import { Formik, Field } from "formik";
 import * as Yup from "yup";
 import classNames from "classnames";
 import axios from "axios";
+import PayButton from "./PayButton";
 // Input feedback
 const InputFeedback = ({ error }) =>
     error ? <div className={classNames("input-feedback")}>{error}</div> : null;
@@ -638,6 +639,8 @@ const ProgramForm = () => (
             {errors.comment && touched.comment && (
               <div className="input-feedback">{errors.comment}</div>
             )}
+
+            <PayButton />
 
             <button
               type="button"

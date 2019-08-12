@@ -244,11 +244,11 @@ const HeaderLinks = ({ ...props }) => {
       </ListItem>
       <ListItem className={classes.listItem}>
           <Button
-            href="/donate"
+            component={ Link }
+            to="/donate"
             className={
               classes.navLink
             }
-            onClick={e => e.preventDefault()}
             color="transparent"
           >
             <IconSpan>&#xeb16;</IconSpan>

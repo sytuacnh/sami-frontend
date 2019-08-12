@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import logoPic from '../../static/logo_white_char.png'
+import logoPic from '../../static/sami_logo_white_tran_trim.png'
 // background: url(${logoPic});
 
 export const LogoWrapper = styled.a.attrs({
