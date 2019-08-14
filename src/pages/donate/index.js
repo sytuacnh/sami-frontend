@@ -1,16 +1,13 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import compose from 'recompose/compose'
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+// import Button from "components/CustomButtons/Button.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
-import Mail from "@material-ui/icons/Mail";
-import InputAdornment from "@material-ui/core/InputAdornment";
 import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
@@ -53,20 +50,20 @@ class Donate extends Component {
                               <h3 color="white" className={classes.title}>You're making a difference</h3>
                               <p className={classes.description}>
                                 <br />
-                                You have the power to help SaMi improve. Your investment will help SaMi beat the odds. 
+                                You have the power to help more students improve their math skills. Your investment will benefit all students in the greater San Antonio area to reveive the best math education. 
                               </p>
                             </div>
                             <Card raised className={classes.card}>
 
                               <CardBody className={classes.cardBody}>
-                                <h5 className={classes.cardTitle}>Donate to SaMi </h5>
+                                <h5 className={classes.cardTitle}>Donate to San Antonio Math Include </h5>
                                 <FormControl
                                   fullWidth
                                   className={classes.selectFormControl}>
                                   <InputLabel
                                       htmlFor="simple-select"
                                       className={classes.selectLabel}>
-                                      Select Donation Amount
+                                    Donation Amount
                                   </InputLabel>
                                   <Select
                                       MenuProps={{
@@ -125,7 +122,7 @@ class Donate extends Component {
                                 <form
                                   action="https://www.paypal.com/cgi-bin/webscr"
                                   method="post"
-                                  target="_top"
+                                  target="_blank"
                                 >
                                   <input type="hidden" name="cmd" value="_s-xclick" />
                                   <input type="hidden" name="hosted_button_id" value="GRHSFUQSWWHZJ" />
@@ -147,7 +144,7 @@ class Donate extends Component {
                                   />
                                 </form>
                                   <p className={classes.description}>
-                                    Click Button Above. Powered by PayPal.
+                                    Please click the button above to donate. PayPal account is not required.
                                   </p>
                               </CardBody>
                             </Card>

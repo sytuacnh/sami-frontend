@@ -22,25 +22,17 @@ import compose from 'recompose/compose'
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Tooltip from "@material-ui/core/Tooltip";
-import Checkbox from "@material-ui/core/Checkbox";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
 // @material-ui/icons
 import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
-// @material-ui/icons
-import PinDrop from "@material-ui/icons/PinDrop";
-import Phone from "@material-ui/icons/Phone";
-import Check from "@material-ui/icons/Check";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
-import InfoArea from "components/InfoArea/InfoArea.jsx";
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
+// import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
 import mathTwoGirls from "../../../static/math_two_girls.jpg";
@@ -146,10 +138,10 @@ function SectionProgramPills({ ...props }) {
                       </GridItem>
                       
                     </GridContainer>
-                    <ProgramFormWrapper className={props.formClicked && props.selectedForm == 0? 'clicked' : ''}>
+                    <ProgramFormWrapper className={props.formClicked && props.selectedForm === 0? 'clicked' : ''}>
                       Student Register Form
                     </ProgramFormWrapper>
-                    <ProgramFormWrapper className={props.formClicked && props.selectedForm == 1? 'clicked' : ''}>
+                    <ProgramFormWrapper className={props.formClicked && props.selectedForm === 1? 'clicked' : ''}>
                       <Card className={classes.card2}>
                         <CardHeader contact color="info" className={classes.textCenter}>
                           <h4 className={classes.cardTitle}>Tutor Register Form</h4>

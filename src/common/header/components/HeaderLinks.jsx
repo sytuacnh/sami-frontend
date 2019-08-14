@@ -210,7 +210,7 @@ const HeaderLinks = ({ ...props }) => {
       </ListItem>
       
     </List>
-
+  {/* 
     <SearchWrapper className={classes.mlAuto}>
       <CustomInput
         white
@@ -227,7 +227,7 @@ const HeaderLinks = ({ ...props }) => {
         }}
       />
     </SearchWrapper>
-    
+    */}
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
           <Button
@@ -255,11 +255,13 @@ const HeaderLinks = ({ ...props }) => {
             DONATE
           </Button>
       </ListItem>
+      
+      {/* color={window.pageYOffset < 100 ? "rose" : "rose"} */}
       <ListItem className={classes.listItem}>
         <Button
           component={ Link }
           to="/register-program"
-          color={window.innerWidth < 960 ? "info" : "white"}
+          color="rose"
           className={classes.navButton}
           round
         >

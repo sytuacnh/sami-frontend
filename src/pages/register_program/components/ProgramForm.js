@@ -1,6 +1,5 @@
 // import "./helper.css";
 import React from "react";
-import { render } from "react-dom";
 import { Formik, Field } from "formik";
 import * as Yup from "yup";
 import classNames from "classnames";

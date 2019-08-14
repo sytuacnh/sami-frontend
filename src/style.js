@@ -1,5 +1,9 @@
 // didn't use
 import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
+
+import logoPicWhite from './static/sami_logo_white_tran_trim.png'
+import logoPicBlack from './static/sami_logo_black_tran_trim.png'
 
 /* color: ${props => (props.greenFont ? 'green' : 'black')}; */
 
@@ -79,3 +83,17 @@ export const Globalstyle = createGlobalStyle`
             monospace;
     }
 `
+
+export const LogoWhite = styled.img.attrs({
+    src: logoPicWhite,
+    alt: 'SaMi logo'
+})`
+    width: 45px;
+`;
+
+export const LogoBlack = styled.img.attrs({
+    src: logoPicBlack,
+    alt: 'SaMi logo'
+})`
+    width: 45px;
+`;

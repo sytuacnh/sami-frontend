@@ -18,9 +18,11 @@ function App() {
             <GlobalIconfont/>
             <BrowserRouter>
                 <Header />
-                    <Route path='/' exact component={Home}></Route>
-                    <Route path='/donate' exact component={Donate}></Route>
-                    <Route path='/register-program' exact component={RegisterProgram}></Route>
+
+                <Route path='/' exact component={Home}></Route>
+                <Route path='/donate' exact component={Donate}></Route>
+                <Route path='/register-program' exact component={RegisterProgram}></Route>
+                
                 <Footer />
             </BrowserRouter>
         </Provider>

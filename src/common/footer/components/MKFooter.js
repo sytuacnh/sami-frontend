@@ -1,4 +1,4 @@
-import React, { PureComponent, Fragment } from 'react';
+import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 import withStyles from "@material-ui/core/styles/withStyles";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";

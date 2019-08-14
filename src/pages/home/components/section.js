@@ -40,6 +40,7 @@ class Section extends PureComponent  {
                           color="rose"
                           target="_blank"
                           className={classes.navButton}
+                          rel="noopener noreferrer"
                           round
                         >
                           View More

@@ -34,6 +34,15 @@ import Close from "@material-ui/icons/Close";
 // core components
 import headerStyle from "assets/jss/material-kit-pro-react/components/headerStyle.jsx";
 
+// for adding logo
+// import { 
+//   LogoWhite,
+//   LogoBlack
+//  } from "../../../style";
+
+// default logo
+ // var Logo = LogoBlack;
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -55,6 +64,7 @@ class Header extends React.Component {
     const { classes, color, changeColorOnScroll } = this.props;
     const windowsScrollTop = window.pageYOffset;
     if (windowsScrollTop > changeColorOnScroll.height) {
+      // console.log('change header color!!!!!!!')
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[color]);
@@ -87,7 +97,10 @@ class Header extends React.Component {
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
           <Button className={classes.title}>
-            <Link to="/">{brand}</Link>
+            <Link to="/">
+              {/* <Logo /> */}
+              {brand}
+            </Link>
           </Button>
           <Hidden smDown implementation="css" className={classes.hidden}>
             <div className={classes.collapse}>{links}</div>

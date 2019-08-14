@@ -7,12 +7,11 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import {
     HomeWrapper
 } from "./style";
 import Section from "./components/section";
-import bgImage from "../../static/geo_bg.jpg";
+import bgImage from "../../static/dice.jpg";
 
 
 class Home extends PureComponent {
@@ -21,7 +20,7 @@ class Home extends PureComponent {
 
         return (
             <HomeWrapper>
-                <Parallax image={bgImage}>
+                <Parallax image={bgImage} >
                     <div className={classes.container}>
                         <GridContainer>
                           <GridItem xs={12} sm={8} md={6}>

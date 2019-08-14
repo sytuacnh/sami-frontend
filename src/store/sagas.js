@@ -1,6 +1,6 @@
 import { all } from 'redux-saga/effects';
 import { headerSagas } from '../common/header/store';
-import { ResigterProgramSagas } from '../pages/register_program/store';
+// import { ResigterProgramSagas } from '../pages/register_program/store';
 // function* getInputChangeAction() {
 //     console.log('hello saga!')
 // }

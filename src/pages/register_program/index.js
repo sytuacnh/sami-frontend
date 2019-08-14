@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from "prop-types";
+import classNames from "classnames";
+// import { connect } from 'react-redux';
+// import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -13,7 +14,7 @@ import {
 } from "./style";
 
 import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
-import bgImage from "../../static/math_chalkboard.jpg";
+import bgImage from "../../static/children.jpg";
 
 class RegisterProgram extends PureComponent {
     render() {
@@ -21,8 +22,7 @@ class RegisterProgram extends PureComponent {
 
         return (
             <RegisterFormWrapper>
-
-                <Parallax image={bgImage} filter="info" small>
+                <Parallax image={bgImage} filter="dark" small>
                   <div className={classes.container}>
                     <GridContainer justify="center">
                       <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
@@ -33,7 +33,7 @@ class RegisterProgram extends PureComponent {
                     </GridContainer>
                   </div>
                 </Parallax>
-                <div className={classes.main}>
+                <div className={classNames(classes.main, classes.mainRaised)}>
                   <div className={classes.container}>
                     <SectionProgramPills />
                   </div>
