@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-// export const HeaderWrapper = styled.div`
-
-// `;
+export const HeaderWrapper = styled.div`
+    
+`;
 
 export const IconSpan = styled.span.attrs({
     className: 'iconfont'

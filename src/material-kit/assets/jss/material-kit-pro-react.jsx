@@ -333,8 +333,9 @@ const title = {
   fontWeight: "700",
   marginTop: "30px",
   marginBottom: "25px",
-  minHeight: "32px",
-  fontFamily: `"Roboto Slab", "Times New Roman", serif`
+  minHeight: "32px"
+  // cancel Serif title
+  //fontFamily: `"Roboto Slab", "Times New Roman", serif`
 };
 
 const cardTitle = {

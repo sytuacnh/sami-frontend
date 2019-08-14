@@ -83,6 +83,7 @@ const buttonStyle = {
         hexToRgb(grayColor[0]) +
         ", 0.2)"
     },
+    
     "& .fab,& .fas,& .far,& .fal,& .material-icons": {
       position: "relative",
       display: "inline-block",

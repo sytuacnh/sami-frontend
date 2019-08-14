@@ -6,9 +6,9 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import MKHeader from "components/Header/Header.jsx";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import HeaderLinks from "./components/HeaderLinks.jsx";
-// import { 
-//   HeaderWrapper,
-//  } from "./style";
+import { 
+  HeaderWrapper,
+ } from "./style";
 
 class Header extends PureComponent {
 
@@ -16,17 +16,19 @@ class Header extends PureComponent {
         const { classes, ...rest } = this.props;
         // console.log(classes)
         return (
-            <MKHeader
-                color="transparent"
-                brand="San Antonio Math Include"
-                links={<HeaderLinks dropdownHoverColor="info" />}
-                fixed
-                changeColorOnScroll={{
-                    height: 100,
-                    color: "white"
-                }}
-                {...rest}
-            />
+            <HeaderWrapper>
+                <MKHeader
+                    color="transparent"
+                    brand="San Antonio Math Include"
+                    links={<HeaderLinks dropdownHoverColor="info" />}
+                    fixed
+                    changeColorOnScroll={{
+                        height: 100,
+                        color: "white"
+                    }}
+                    {...rest}
+                />
+            </HeaderWrapper>
         );
     }
 }

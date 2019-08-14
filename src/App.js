@@ -1,4 +1,5 @@
 import React from 'react';
+// import compose from 'recompose/compose'
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 // own global style
@@ -11,6 +12,9 @@ import Footer from './common/footer/index';
 import Home from './pages/home';
 import RegisterProgram from './pages/register_program';
 import Donate from './pages/donate';
+// import withStyles from "@material-ui/core/styles/withStyles";
+// import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
+// import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 
 function App() {
     return (
@@ -31,4 +35,8 @@ function App() {
 
 export default App;
 
-
+// does not work
+// export default compose(
+    // withStyles(landingPageStyle),
+    // withStyles(blogPostsPageStyle)
+// )(App)

@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import classNames from "classnames";
 // import { connect } from 'react-redux';
-// import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -34,9 +33,7 @@ class RegisterProgram extends PureComponent {
                   </div>
                 </Parallax>
                 <div className={classNames(classes.main, classes.mainRaised)}>
-                  <div className={classes.container}>
-                    <SectionProgramPills />
-                  </div>
+                  <SectionProgramPills />
                 </div>
             </RegisterFormWrapper>
         );

@@ -4,24 +4,26 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import Footer from "components/Footer/Footer.jsx";
 
-import { IconSpan } from '../style';
+import { IconSpan, FooterWrapper } from '../style';
 
 class MKFooter extends PureComponent {
     render() {
         const { classes } = this.props;
         // console.log(classes)
         return (
-            <Footer
-              content={
-              <div className={classes.center}>
-                Copyright &copy; {1900 + new Date().getYear()} {" "}
-                <IconSpan>&#xe61f;</IconSpan> {" "}
-                <Link to='\'>
-                  San Antonio Math Include
-                </Link>
-              </div>
-              }
-            />
+            <FooterWrapper>
+                <Footer
+                  content={
+                  <div className={classes.center}>
+                    Copyright &copy; {1900 + new Date().getYear()} {" "}
+                    <IconSpan>&#xe61f;</IconSpan> {" "}
+                    <Link to='\'>
+                      San Antonio Math Include
+                    </Link>
+                  </div>
+                  }
+                />
+            </FooterWrapper>
         );
     }
 }

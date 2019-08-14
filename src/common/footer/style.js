@@ -5,3 +5,7 @@ export const IconSpan = styled.span.attrs({
 })`
     font-size: 20px;
 `;
+
+export const FooterWrapper = styled.div`
+    font-size: 16px;
+`;
