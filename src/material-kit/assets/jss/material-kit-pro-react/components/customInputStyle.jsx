@@ -19,6 +19,7 @@ import {
   dangerColor,
   successColor,
   whiteColor,
+  roseColor,
   grayColor,
   defaultFont
 } from "assets/jss/material-kit-pro-react.jsx";
@@ -35,7 +36,7 @@ const customInputStyle = {
       borderBottomWidth: "1px !important"
     },
     "&:after": {
-      borderBottomColor: primaryColor[0]
+      borderBottomColor: roseColor[0]
     }
   },
   underlineError: {
@@ -78,8 +79,9 @@ const customInputStyle = {
     pointerEvents: "none"
   },
   formControl: {
+    // margin: "0 0 17px 0",
     margin: "0 0 17px 0",
-    paddingTop: "27px",
+    // paddingTop: "27px",
     position: "relative",
     "& svg,& .fab,& .far,& .fal,& .fas,& .material-icons": {
       color: grayColor[13]
@@ -94,10 +96,10 @@ const customInputStyle = {
     }
   },
   input: {
-    color: grayColor[13],
+    color: roseColor[0],
     height: "unset",
     "&,&::placeholder": {
-      fontSize: "14px",
+      fontSize: "20px",
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: "400",
       lineHeight: "1.42857",
