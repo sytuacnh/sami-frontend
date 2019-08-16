@@ -123,7 +123,7 @@ const HeaderLinks = ({ ...props }) => {
           component={ Link }
           to="/"
           className={
-            classes.navLink + " " + classes.navLinkActive
+            classes.navLink
           }
           color="transparent"
         >
@@ -247,7 +247,8 @@ const HeaderLinks = ({ ...props }) => {
             component={ Link }
             to="/donate"
             className={
-              classes.navLink
+              classes.navLink + " " + classes.navLinkActive
+
             }
             color="transparent"
           >

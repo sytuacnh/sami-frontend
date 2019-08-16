@@ -119,17 +119,20 @@ class DonateSection extends PureComponent {
                           <GridItem xs={10} md={2}>
                             <Button id="0" value="200" fullWidth={true} onClick={handleMoneyButtonClicked} color="rose" size="lg"><AttachMoney />200</Button>
                           </GridItem>
-                          <GridItem xs={10} md={2}>
-                            <Button id="1" value="100" fullWidth={true} onClick={handleMoneyButtonClicked} color="rose" size="lg"><AttachMoney /> 100</Button>
+                           <GridItem xs={10} md={2}>
+                            <Button id="1" value="150" fullWidth={true} onClick={handleMoneyButtonClicked} color="rose" size="lg"><AttachMoney />150</Button>
                           </GridItem>
                           <GridItem xs={10} md={2}>
-                            <Button id="2" value="50" fullWidth={true} onClick={handleMoneyButtonClicked} color="rose" size="lg"><AttachMoney /> 50</Button>
+                            <Button id="2" value="100" fullWidth={true} onClick={handleMoneyButtonClicked} color="rose" size="lg"><AttachMoney />100</Button>
                           </GridItem>
                           <GridItem xs={10} md={2}>
-                            <Button id="3" value="20" fullWidth={true} onClick={handleMoneyButtonClicked} color="rose" size="lg"><AttachMoney /> 20</Button>
+                            <Button id="3" value="50" fullWidth={true} onClick={handleMoneyButtonClicked} color="rose" size="lg"><AttachMoney />50</Button>
                           </GridItem>
                           <GridItem xs={10} md={2}>
-                            <Button id="4" value="" fullWidth={true} onClick={this.handleOtherButtonClicked} color="rose" size="lg">Other</Button>
+                            <Button id="4" value="20" fullWidth={true} onClick={handleMoneyButtonClicked} color="rose" size="lg"><AttachMoney />20</Button>
+                          </GridItem>
+                          <GridItem xs={10} md={2}>
+                            <Button id="5" value="" fullWidth={true} onClick={this.handleOtherButtonClicked} color="rose" size="lg">Other</Button>
                           </GridItem>
                       </GridContainer>
                     </div>
