@@ -16,5 +16,6 @@ function* getCurrentProgramFunc() {
 }
 
 export default function* headerSagas() {
-    yield takeEvery(GET_CURRENT_PROGRAM, getCurrentProgramFunc);
+    // call backend api
+    // yield takeEvery(GET_CURRENT_PROGRAM, getCurrentProgramFunc);
 }

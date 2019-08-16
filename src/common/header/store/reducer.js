@@ -3,16 +3,16 @@ import { fromJS } from 'immutable';
 
 const defaultState = fromJS({
     currentProgram: {}, // an object
-    hoverColor: 'primary'
+    hoverColor: 'primary',
+    currentNav: "homeNav" 
 })
 
 export default (state=defaultState, action) => {
     switch(action.type) {
         case actionTypes.INIT_CURRENT_PROGRAM:
-            const newState = JSON.parse(JSON.stringify(state))
-            newState.program = action.program;
-            // console.log(newState.program);
-            return newState;
+            return state.set("currentProgram", action.program);
+        case actionTypes.CHANGE_CURRENT_NAV:
+            return state.set("currentNav", action.nav);
         default:
             return state;
     }

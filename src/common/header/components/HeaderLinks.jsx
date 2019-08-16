@@ -47,7 +47,6 @@ import Call from "@material-ui/icons/Call";
 import ViewCarousel from "@material-ui/icons/ViewCarousel";
 import AccountBalance from "@material-ui/icons/AccountBalance";
 import ArtTrack from "@material-ui/icons/ArtTrack";
-import LocationOn from "@material-ui/icons/LocationOn";
 import Fingerprint from "@material-ui/icons/Fingerprint";
 import AttachMoney from "@material-ui/icons/AttachMoney";
 import Store from "@material-ui/icons/Store";
@@ -114,7 +113,9 @@ const HeaderLinks = ({ ...props }) => {
   };
   var onClickSections = {};
 
-  const { classes, dropdownHoverColor } = props;
+  const { classes, dropdownHoverColor, currentNav, handleChangeCurrentNav } = props;
+
+
   return (
     <Fragment>
     <List className={classes.list + " " + classes.mlAuto}>
@@ -122,10 +123,10 @@ const HeaderLinks = ({ ...props }) => {
         <Button
           component={ Link }
           to="/"
-          className={
-            classes.navLink
-          }
+          id="homeNav"
+          className={ currentNav==="homeNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink} 
           color="transparent"
+          onClick={handleChangeCurrentNav}
         >
           <IconSpan>&#xe64b;</IconSpan>
           HOME
@@ -134,10 +135,9 @@ const HeaderLinks = ({ ...props }) => {
       <ListItem className={classes.listItem}>
           <Button
             href="/TUTORING"
-            className={
-              classes.navLink
-            }
-            onClick={e => e.preventDefault()}
+            id="tutoringNav"
+            className={ currentNav==="tutoringNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink} 
+            onClick={handleChangeCurrentNav}
             color="transparent"
           >
             <IconSpan>&#xe660;</IconSpan>
@@ -151,7 +151,9 @@ const HeaderLinks = ({ ...props }) => {
           hoverColor={dropdownHoverColor}
           buttonText="EVENTS"
           buttonProps={{
-            className: classes.navLink,
+            id: "eventsNav",
+            onClick: handleChangeCurrentNav,
+            className: currentNav==="eventsNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
             color: "transparent"
           }}
           buttonIcon={Event}
@@ -164,11 +166,10 @@ const HeaderLinks = ({ ...props }) => {
       </ListItem>
       <ListItem className={classes.listItem}>
           <Button
-            href="/TUTORING"
-            className={
-              classes.navLink
-            }
-            onClick={e => e.preventDefault()}
+            href="/gallery"
+            id="galleryNav"
+            className={ currentNav==="galleryNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink} 
+            onClick={handleChangeCurrentNav}
             color="transparent"
           >
             <IconSpan>&#xe70d;</IconSpan>
@@ -182,7 +183,9 @@ const HeaderLinks = ({ ...props }) => {
           hoverColor={dropdownHoverColor}
           buttonText="ABOUT"
           buttonProps={{
-            className: classes.navLink,
+            id: "aboutNav",
+            onClick: handleChangeCurrentNav,
+            className: currentNav==="aboutNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
             color: "transparent"
           }}
           buttonIcon={SupervisedUserCircle}
@@ -232,10 +235,9 @@ const HeaderLinks = ({ ...props }) => {
       <ListItem className={classes.listItem}>
           <Button
             href="/contact"
-            className={
-              classes.navLink
-            }
-            onClick={e => e.preventDefault()}
+            id="contactNav"
+            className={ currentNav==="contactNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink} 
+            onClick={handleChangeCurrentNav}
             color="transparent"
           >
             <IconSpan>&#xe959;</IconSpan>
@@ -246,10 +248,9 @@ const HeaderLinks = ({ ...props }) => {
           <Button
             component={ Link }
             to="/donate"
-            className={
-              classes.navLink + " " + classes.navLinkActive
-
-            }
+            id="donateNav"
+            className={ currentNav==="donateNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink} 
+            onClick={handleChangeCurrentNav}
             color="transparent"
           >
             <IconSpan>&#xeb16;</IconSpan>
@@ -262,9 +263,11 @@ const HeaderLinks = ({ ...props }) => {
         <Button
           component={ Link }
           to="/register-program"
+          id="registerProgramNav"
           color="rose"
           className={classes.navButton}
           round
+          onClick={handleChangeCurrentNav}
         >
           { /*<IconSpan className="joinIcon">&#xe77c;</IconSpan> // not enough space */}
           Register Program
@@ -296,7 +299,8 @@ HeaderLinks.propTypes = {
 const mapStateToProps = (state) => {
     return { 
         currentProgram: state.getIn(['header', 'currentProgram']),
-        hoverColor: state.getIn(['header', 'hoverColor'])
+        hoverColor: state.getIn(['header', 'hoverColor']),
+        currentNav: state.getIn(['header', 'currentNav'])
     }
 }
 
@@ -305,6 +309,10 @@ const mapDispatchToProps = (dispatch) => {
         changeCurrentProgramData(e) {
             const action = actionCreators.getCurrentProgram();
             dispatch(action);
+        },
+        handleChangeCurrentNav(e) {
+            const action = actionCreators.changeCurrentNav(e.currentTarget.id);
+            dispatch(action); 
         }
     }
 }
