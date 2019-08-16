@@ -79,8 +79,8 @@ class DonateSection extends PureComponent {
     focusDonationAmountInput() {
       // Explicitly focus the text input using the raw DOM API
       // Note: we're accessing "current" to get the DOM node
-      // setTimeout(() => this.donationAmountInput.current.focus(), 100);
-      this.donationAmountInput.current.focus();
+      setTimeout(() => this.donationAmountInput.current.focus(), 100);
+      // this.donationAmountInput.current.focus();
     }
 
     handleOtherButtonClicked(e) {

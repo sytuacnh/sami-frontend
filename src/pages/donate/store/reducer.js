@@ -3,7 +3,7 @@ import { fromJS } from 'immutable';
 import React from 'react';
 
 const noButtonClickedID = -1;
-const otherButtonID = 4;
+const otherButtonID = 5;
 const isInteger = (n) => n % 1 === 0;
 const buttonClickedAppendZero = (id) => id !== noButtonClickedID && id !== otherButtonID;
 
