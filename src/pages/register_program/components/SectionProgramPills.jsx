@@ -66,9 +66,6 @@ function SectionProgramPills({ ...props }) {
                         Our summer camps are FREE for all students in grades K-8. They are supervised by college professors and led by high school students and national/regional math contest winners. If your child is in grades K-8, please fill out this form.  
                         <br />
                         <br />
-                        <b>可以插入图片</b>
-                        <br />
-                        <br />
                         Three <b>Weeks</b>: July 22-July 26, July 29-August 2, August 5-August 9. All three weeks are the same so you just need to sign up for one week.
                         Two Math Sessions: 9-12 AM OR 1-4 PM.
                         Two Daycare Sessions: 9-12 AM OR 1-4 PM. The Daycare Session is for parents who are unable to pick/drop their child in the middle of the day. The daycare session provides time for kids to relax.

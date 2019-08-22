@@ -115,7 +115,6 @@ const HeaderLinks = ({ ...props }) => {
 
   const { classes, dropdownHoverColor, currentNav, handleChangeCurrentNav } = props;
 
-
   return (
     <Fragment>
     <List className={classes.list + " " + classes.mlAuto}>
@@ -134,7 +133,7 @@ const HeaderLinks = ({ ...props }) => {
       </ListItem>
       <ListItem className={classes.listItem}>
           <Button
-            href="/TUTORING"
+            href="/tutoring"
             id="tutoringNav"
             className={ currentNav==="tutoringNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink} 
             onClick={handleChangeCurrentNav}
