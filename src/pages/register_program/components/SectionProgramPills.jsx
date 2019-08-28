@@ -15,7 +15,7 @@
 
 */
 import React from "react";
-
+import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import compose from 'recompose/compose'
 // nodejs library to set properties for components
@@ -106,7 +106,7 @@ function SectionProgramPills({ ...props }) {
                                 Student Register
                               </h3>
                               <p className={classes.category}>
-                                Form description...
+                                Join as a student!
                               </p>
                               <Button round color="rose" onClick={() => {props.handleFormSignUpClick(0)}}>
                                 <FormatAlignLeft className={classes.icons} /> Sign Up
@@ -126,11 +126,13 @@ function SectionProgramPills({ ...props }) {
                                 Tutor Register
                               </h3>
                               <p className={classes.category}>
-                                Form description...
+                                Join as a tutor!
                               </p>
-                              <Button round color="rose" onClick={() => {props.handleFormSignUpClick(1)}}>
-                                <FormatAlignLeft className={classes.icons} /> Sign Up
-                              </Button>
+                              <a className="link" href="https://drive.google.com/open?id=1EeEJgS8c8cFz0fL8idHa6vOmcdhTYfyYIqrbmyWD7K8" target="_blank" rel="noopener noreferrer">
+                                  <Button round color="rose" onClick={() => {props.handleFormSignUpClick(1)}}>
+                                      <FormatAlignLeft className={classes.icons} />Sign Up
+                                  </Button>
+                              </a>
                             </CardBody>
                           </Card>
                         </GridItem>

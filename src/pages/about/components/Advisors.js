@@ -17,6 +17,7 @@ import Muted from "components/Typography/Muted.jsx";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
 import jiang from "../../../static/about/advisors/AlbertJiang.jpg";
+import TeacherMissing from "../../../static/about/advisors/Teacher_missing.png";
 import ErikaHsie from "../../../static/about/advisors/ErikaHsie.jpg";
 import QilongLu from "../../../static/about/advisors/QilongLu.jpg";
 import HoaNguyen from "../../../static/about/advisors/HoaNguyen.jpg";
@@ -47,7 +48,27 @@ class Advisors extends PureComponent {
                   </GridItem>
                 </GridContainer>
                 <GridContainer>
-                  <GridItem xs={12} sm={3} md={3}>
+                  <GridItem xs={12} sm={4} md={4}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={TeacherMissing} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Ms. Vidya Mannem</h4>
+                        <Muted>
+                          <h6 className={classes.cardCategory}>Faculty Advisor</h6>
+                        </Muted>
+                        <p className={classes.description}>
+                          AP Calculus AB Teacher, <br />
+                          Mathcounts Coach, <br />
+                          Basis San Antonio Shavano.
+                        </p>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={4} md={4}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -65,7 +86,7 @@ class Advisors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
-                  <GridItem xs={12} sm={3} md={3}>
+                  <GridItem xs={12} sm={4} md={4}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -85,7 +106,7 @@ class Advisors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
-                  <GridItem xs={12} sm={3} md={3}>
+                  <GridItem xs={12} sm={4} md={4}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -105,7 +126,7 @@ class Advisors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
-                  <GridItem xs={12} sm={3} md={3}>
+                  <GridItem xs={12} sm={4} md={4}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>

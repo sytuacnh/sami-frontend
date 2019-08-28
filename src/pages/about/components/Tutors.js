@@ -12,14 +12,10 @@ import CardAvatar from "components/Card/CardAvatar.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import Muted from "components/Typography/Muted.jsx";
+// import Button from "components/CustomButtons/Button.jsx";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
-import jiang from "../../../static/about/advisors/AlbertJiang.jpg";
-import ErikaHsie from "../../../static/about/advisors/ErikaHsie.jpg";
-import QilongLu from "../../../static/about/advisors/QilongLu.jpg";
-import HoaNguyen from "../../../static/about/advisors/HoaNguyen.jpg";
+import HannahGuan from "../../../static/about/tutors/HannahGuan.jpg";
 
 class Tutors extends PureComponent {
 
@@ -51,76 +47,13 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={jiang} alt="..." className={classes.img} />
+                          <img src={HannahGuan} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Dr. Albert Jiang</h4>
-                        <Muted>
-                          <h6 className={classes.cardCategory}>Advisory Board</h6>
-                        </Muted>
+                        <h4 className={classes.cardTitle}>Hannah Guan</h4>
                         <p className={classes.description}>
-                          Assistant Professor, <br /> Department of Computer Science, <br /> Trinity University
-                        </p>
-                      </CardBody>
-                    </Card>
-                  </GridItem>
-                  <GridItem xs={12} sm={3} md={3}>
-                    <Card profile plain>
-                      <CardAvatar profile plain>
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={ErikaHsie} alt="..." className={classes.img} />
-                        </a>
-                      </CardAvatar>
-                      <CardBody>
-                        <h4 className={classes.cardTitle}>Dr. Erika Hsie</h4>
-                        <Muted>
-                          <h6 className={classes.cardCategory}>Advisory Board</h6>
-                        </Muted>
-                        <p className={classes.description}>
-                            Director, <br /> 
-                            Modeling Analytics,<br />  
-                            USAA 
-                        </p>
-                      </CardBody>
-                    </Card>
-                  </GridItem>
-                  <GridItem xs={12} sm={3} md={3}>
-                    <Card profile plain>
-                      <CardAvatar profile plain>
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={QilongLu} alt="..." className={classes.img} />
-                        </a>
-                      </CardAvatar>
-                      <CardBody>
-                        <h4 className={classes.cardTitle}>Dr. Qilong Lu</h4>
-                        <Muted>
-                          <h6 className={classes.cardCategory}>Advisory Board</h6>
-                        </Muted>
-                        <p className={classes.description}>
-                          Program Manager, <br />
-                          Powertrain Engineering Division, <br />
-                          Southwest Research Institute
-                        </p>
-                      </CardBody>
-                    </Card>
-                  </GridItem>
-                  <GridItem xs={12} sm={3} md={3}>
-                    <Card profile plain>
-                      <CardAvatar profile plain>
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={HoaNguyen} alt="..." />
-                        </a>
-                      </CardAvatar>
-                      <CardBody>
-                        <h4 className={classes.cardTitle}>Dr. Hoa Nguyen</h4>
-                        <Muted>
-                          <h6 className={classes.cardCategory}>Advisory Board</h6>
-SaMi Advisors</Muted>
-                        <p className={classes.description}>
-                          Associate Professor, <br />
-                          Department of Mathematics, <br />
-                          Trinity University
+                          Hannah is part of the Class of 2023 at Basis San Antonio Shavano. Starting in sixth grade, she participated in both MATHCOUNTS competitions and AMC competitions. These experiences made she realize her potential and also made she realize that we only had a limited amount of resources here in San Antonio. Her mom used to drive her to Austin to attend the math activities held by the Austin Math Circle, but many of their activities are Olympiad level math which is not accessible to general students. This inspired her to found San Antonio Math Include, a non-profit organization that includes all students from different cultures, backgrounds, and experiences and to help them achieve their success and pursue their interests in math. She loves to work with younger students, so she is delighted to help all of students pursue their own interests in math. This was not available when she started to learn math, so she is ecstatic that SaMi is now available to help all students. In her spare time (which she obviously has very little of because she goes to BASIS), she likes to read and watch Netflix.
                         </p>
                       </CardBody>
                     </Card>

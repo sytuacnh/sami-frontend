@@ -22,7 +22,8 @@ import compose from 'recompose/compose'
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
