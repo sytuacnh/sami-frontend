@@ -19,6 +19,7 @@ import {
   dangerColor,
   successColor,
   whiteColor,
+  blackColor,
   roseColor,
   grayColor,
   defaultFont
@@ -51,14 +52,14 @@ const customInputStyle = {
   },
   labelRoot: {
     ...defaultFont,
-    color: grayColor[12] + " !important",
+    color: grayColor[0] + " !important",
     fontWeight: "400",
-    fontSize: "14px",
-    lineHeight: "1.42857",
-    top: "10px",
+    fontSize: "15px",
+    lineHeight: "0.01em",
+    // top: "20px",
     letterSpacing: "unset",
     "& + $underline": {
-      marginTop: "0px"
+      marginTop: "0px",
     }
   },
   labelRootError: {
@@ -96,14 +97,16 @@ const customInputStyle = {
     }
   },
   input: {
-    color: roseColor[0],
+    color: blackColor,
     height: "unset",
+    // fontSize: "14px",
     "&,&::placeholder": {
-      fontSize: "20px",
+      // top: "10px",
+      fontSize: "18px",
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: "400",
-      lineHeight: "1.42857",
-      opacity: "1"
+      lineHeight: "1.52857",
+      opacity: "1",
     },
     "&::placeholder": {
       color: grayColor[12]

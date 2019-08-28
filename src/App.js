@@ -2,8 +2,7 @@ import React from 'react';
 // import compose from 'recompose/compose'
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
-// own global style
-// import { Globalstyle } from './style';
+// import { Globalstyle } from './style';  // global style. not using
 import { GlobalIconfont } from './static/iconfont/iconfont';
 import 'assets/scss/material-kit-pro-react.scss?v=1.7.0'
 import store from './store'
@@ -12,9 +11,9 @@ import Footer from './common/footer/index';
 import Home from './pages/home';
 import RegisterProgram from './pages/register_program';
 import Donate from './pages/donate';
-// import withStyles from "@material-ui/core/styles/withStyles";
-// import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
-// import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
+import About from './pages/about';
+import Contact from './pages/contact';
+import Gallery from './pages/gallery';
 
 function App() {
     return (
@@ -25,7 +24,10 @@ function App() {
 
                 <Route path='/' exact component={Home}></Route>
                 <Route path='/donate' exact component={Donate}></Route>
+                <Route path='/contact' exact component={Contact}></Route>
+                <Route path='/gallery' exact component={Gallery}></Route>
                 <Route path='/register-program' exact component={RegisterProgram}></Route>
+                <Route path='/about' exact component={About}></Route>
                 
                 <Footer />
             </BrowserRouter>
@@ -34,9 +36,3 @@ function App() {
 }
 
 export default App;
-
-// does not work
-// export default compose(
-    // withStyles(landingPageStyle),
-    // withStyles(blogPostsPageStyle)
-// )(App)

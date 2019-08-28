@@ -14,7 +14,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import { whiteColor, grayColor } from "assets/jss/material-kit-pro-react.jsx";
+import { whiteColor, grayColor, blackColor } from "assets/jss/material-kit-pro-react.jsx";
 
 const modalStyle = theme => ({
   modalRoot: {
@@ -46,19 +46,19 @@ const modalStyle = theme => ({
   },
   modalCloseButton: {
     "&, &:hover": {
-      color: grayColor[0]
+      color: blackColor
     },
     "&:hover": {
       opacity: "1"
     },
     cursor: "pointer",
     padding: "1rem",
-    margin: "-1rem -1rem -1rem auto",
+    margin: "-0.7rem -2.3rem -1rem auto",
     backgroundColor: "transparent",
     border: "0",
     WebkitAppearance: "none",
     float: "right",
-    fontSize: "1.5rem",
+    fontSize: "1.8rem",
     fontWeight: "500",
     lineHeight: "1",
     textShadow: "0 1px 0 " + whiteColor,
@@ -152,7 +152,7 @@ const modalStyle = theme => ({
     }
   },
   modalSignup: {
-    maxWidth: "900px",
+    maxWidth: "800px",
     width: "100%",
     "& $modalHeader": {
       paddingTop: "0"
@@ -163,7 +163,7 @@ const modalStyle = theme => ({
       marginTop: "0.625rem"
     },
     "& $modalBody": {
-      paddingBottom: "0",
+      paddingBottom: "30",
       paddingTop: "0"
     }
   },

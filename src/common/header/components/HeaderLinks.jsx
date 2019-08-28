@@ -157,6 +157,9 @@ const HeaderLinks = ({ ...props }) => {
           }}
           buttonIcon={Event}
           dropdownList={[
+            <Link to="/summer-camp-2019" className={classes.dropdownLink}>
+              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer Camp 2019
+            </Link>,
             <Link to="/pi-day-celebration" className={classes.dropdownLink}>
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration
             </Link>
@@ -165,7 +168,8 @@ const HeaderLinks = ({ ...props }) => {
       </ListItem>
       <ListItem className={classes.listItem}>
           <Button
-            href="/gallery"
+          component={ Link }
+            to="/gallery"
             id="galleryNav"
             className={ currentNav==="galleryNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink} 
             onClick={handleChangeCurrentNav}
@@ -190,19 +194,19 @@ const HeaderLinks = ({ ...props }) => {
           buttonIcon={SupervisedUserCircle}
           dropdownList={[
             <Link
-              to="/advisors"
+              to="/about#advisors"
               className={classes.dropdownLink}
             >
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe608;</IconSpan> ADVISORS
             </Link>,
             <Link
-              to="/officers"
+              to="/about#officers"
               className={classes.dropdownLink}
             >
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe722;</IconSpan> OFFICERS
             </Link>,
             <Link
-              to="/tutors"
+              to="/about#tutors"
               className={classes.dropdownLink}
             >
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe66f;</IconSpan> TUTORS
@@ -233,7 +237,8 @@ const HeaderLinks = ({ ...props }) => {
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
           <Button
-            href="/contact"
+            component={ Link }
+            to="/contact"
             id="contactNav"
             className={ currentNav==="contactNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink} 
             onClick={handleChangeCurrentNav}

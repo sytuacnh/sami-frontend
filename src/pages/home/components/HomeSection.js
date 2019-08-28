@@ -1,14 +1,9 @@
 import React, { PureComponent } from 'react';
-// nodejs library to set properties for components
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import compose from 'recompose/compose'
-import { Link } from 'react-router-dom';
-import withStyles from "@material-ui/core/styles/withStyles";
-import sectionsStyle from "assets/jss/material-kit-pro-react/views/presentationSections/sectionsStyle.jsx";
-// import projectsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/projectsStyle.jsx";
-import blogsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/blogsStyle.jsx";
-import contentStyle from "assets/jss/material-kit-pro-react/views/presentationSections/contentStyle.jsx";
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -16,6 +11,13 @@ import Button from "components/CustomButtons/Button.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
+// import InfoArea from "components/InfoArea/InfoArea.jsx";
+// import Gesture from "@material-ui/icons/Gesture";
+import CustomInput from "components/CustomInput/CustomInput.jsx";
+import InfoArea from "components/InfoArea/InfoArea.jsx";
+import PinDrop from "@material-ui/icons/PinDrop";
+import BusinessCenter from "@material-ui/icons/BusinessCenter";
+import Phone from "@material-ui/icons/Phone";
 
 // library used for cool animations
 import ScrollAnimation from "react-animate-on-scroll";
@@ -27,6 +29,15 @@ import pi from "../../../static/home/PiDay_m14.jpg";
 import Icon from "@material-ui/core/Icon";
 import Build from "@material-ui/icons/Build";
 
+import withStyles from "@material-ui/core/styles/withStyles";
+import sectionsStyle from "assets/jss/material-kit-pro-react/views/presentationSections/sectionsStyle.jsx";
+// import projectsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/projectsStyle.jsx";
+import blogsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/blogsStyle.jsx";
+import contentStyle from "assets/jss/material-kit-pro-react/views/presentationSections/contentStyle.jsx";
+import workStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/workStyle.jsx";
+import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
+import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
+
 const style = {
      marginTopSmShrink: {
          marginTop: "-20px"
@@ -34,8 +45,16 @@ const style = {
      marginTopUnderTitleShrink: {
          marginTop: "-80px"
      },
+     cardHeader: {
+        fontSize: "20px",
+        fontWeight: "bold"
+     },
+     label: {
+      fontSize: "16px"
+     }
  }
 class HomeSection extends PureComponent  {
+
     render() {
         const { classes } = this.props;
 
@@ -145,13 +164,13 @@ class HomeSection extends PureComponent  {
                       <div className={classNames(classes.iframeContainer)}>
                         <iframe
                           title="SaMi Lecture"
-                          frameborder="0"
+                          frameBorder="0"
                           scrolling="no"
-                          marginheight="0"
-                          marginwidth="0"
+                          marginHeight="0"
+                          marginWidth="0"
                           allow="encrypted-media"
                           allowFullScreen=""
-                          width="534"
+                          width="450"
                           height="300"
                           type="text/html"
                           src="https://www.youtube.com/embed/jAWsr5w-CxU?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd720&origin=https://youtubeembedcode.com"
@@ -160,7 +179,7 @@ class HomeSection extends PureComponent  {
                     </GridItem>
                     <GridItem md={6} className={classes.marginTopUnderTitleShrink}>
                         <div className={classNames(classes.sectionDescription)}>
-                          <h2 className={classes.title}>Accessibility</h2>
+                          <h2 className={classes.title}>Youtube Channel</h2>
                           <h5>
                             All lectures will be video recorded and available in our 
                             <a className="link" href="https://www.youtube.com/channel/UCuXmN7-h56VP_-216V-1dZg" target="_blank" rel="noopener noreferrer"> YouTube Channel </a>
@@ -180,6 +199,142 @@ class HomeSection extends PureComponent  {
                       </GridItem>
                   </GridContainer>
                 </GridItem>
+                <GridItem
+                  xs={12}
+                  className={
+                    classNames(classes.section, classes.mlAuto, classes.mrAuto, classes.textCenter)
+                  }
+                >
+                  <div className={classes.sectionDescription}>
+                    <h2 className={classes.title}>About Us</h2>
+                    <GridContainer>
+                      <GridItem md={4} sm={4}>
+                        <Card style={{ width: "20rem" }}>
+                            <CardHeader color="rose" className={classes.cardHeader}>Advisors</CardHeader>
+                            <CardBody>
+                              <p>
+                                Our advisory board is composed of accomplished experts in academia and industry. They offer innovative advice and dynamic perspective to SaMi.
+                              </p>
+                              <Button component={ Link } to="/about#advisors" color="primary">View Advisors</Button>
+                            </CardBody>
+                        </Card>
+                      </GridItem>
+                      <GridItem md={4} sm={4}>
+                        <Card style={{ width: "20rem" }}>
+                            <CardHeader color="rose" className={classes.cardHeader}>Officers</CardHeader>
+                            <CardBody>
+                              <p>
+                                Our offers have a track record of success and leadership skills. They oversee and direct the major aspects of SaMi's operations.
+                              </p>
+                              <Button component={ Link } to="/about#officers" color="primary">View Officers</Button>
+                            </CardBody>
+                        </Card>
+                      </GridItem>
+                      <GridItem md={4} sm={4}>
+                        <Card style={{ width: "20rem" }}>
+                            <CardHeader color="rose" className={classes.cardHeader}>Tutors</CardHeader>
+                            <CardBody>
+                              <p>
+                                Our finest tutors won regional, national, and international math contests and are all passionate about helping every student to achieve their success in math.
+                              </p>
+                              <Button component={ Link } to="/about#tutors" color="primary">View Tutors</Button>
+                            </CardBody>
+                        </Card>
+                      </GridItem>
+                    </GridContainer>
+                  </div>
+                </GridItem>
+                <GridItem
+                  xs={12}
+                  className={
+                    classNames(classes.section, classes.mlAuto, classes.mrAuto, classes.textCenter)
+                  }
+                >
+                  <div className={classes.contactContent}>
+                    <div className={classes.container}>
+                      <h2 className={classes.title}>Contact Us</h2>
+                      <GridContainer>
+                        <GridItem md={6} sm={6}>
+                          <p className={classes.label}>
+                            You can email us at <b>sanantoniomathinclude@gmail.com</b>. Or send us a message below. Either way, we will contact you as soon as possible. 
+                            <br />
+                            <br />
+                          </p>
+                          <form>
+                            <CustomInput
+                              labelText="Your Name"
+                              id="float"
+                              formControlProps={{
+                                fullWidth: true
+                              }}
+                            />
+                            <CustomInput
+                              labelText="Email address"
+                              id="float"
+                              formControlProps={{
+                                fullWidth: true
+                              }}
+                            />
+                            <CustomInput
+                              labelText="Your message"
+                              id="float"
+                              formControlProps={{
+                                fullWidth: true
+                              }}
+                              inputProps={{
+                                multiline: true,
+                                rows: 6
+                              }}
+                            />
+                            <div className={classes.textCenter}>
+                              <Button color="rose" round>
+                                Send Message 
+                              </Button>
+                            </div>
+                          </form>
+                        </GridItem>
+                        <GridItem md={4} sm={4} className={classes.mlAuto}>
+                          <InfoArea
+                            className={classes.info}
+                            title="Find us at the office"
+                            description={
+                              <p>
+                                Bld Mihail Kogalniceanu, nr. 8, <br /> 7652 Bucharest,{" "}
+                                <br /> Romania
+                              </p>
+                            }
+                            icon={PinDrop}
+                            iconColor="rose"
+                          />
+                          <InfoArea
+                            className={classes.info}
+                            title="Give us a ring"
+                            description={
+                              <p>
+                                Michael Jordan <br /> +40 762 321 762 <br /> Mon - Fri,
+                                8:00-22:00
+                              </p>
+                            }
+                            icon={Phone}
+                            iconColor="info"
+                          />
+                          <InfoArea
+                            className={classes.info}
+                            title="Legal Information"
+                            description={
+                              <p>
+                                Creative Tim Ltd. <br /> VAT · EN2341241 <br /> IBAN ·
+                                EN8732ENGB2300099123 <br /> Bank · Great Britain Bank
+                              </p>
+                            }
+                            icon={BusinessCenter}
+                            iconColor="primary"
+                          />
+                        </GridItem>
+                      </GridContainer>
+                    </div>
+                  </div>
+                </GridItem>
               </GridContainer>
             </div>
         );
@@ -193,7 +348,9 @@ HomeSection.propTypes = {
 
 export default compose(
     withStyles(style),
+    withStyles(workStyle),
+    // withStyles(landingPageStyle),
     withStyles(sectionsStyle),
     withStyles(contentStyle), // padding between sections
-    // withStyles(blogsStyle)
+    withStyles(contactUsStyle), // padding between sections
 )(HomeSection)

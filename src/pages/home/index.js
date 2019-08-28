@@ -26,7 +26,7 @@ class Home extends PureComponent {
                             <h2 className={classes.title}>By the Students<br />For the Students</h2>
                             <h3>
                                 San Antonio Math Include, SaMi, is a Texas
-                                <a class="link" href="https://www.501c3.org/what-is-a-501c3/" target="_blank" rel="noopener noreferrer"> 501(c)(3) </a>
+                                <a className="link" href="https://www.501c3.org/what-is-a-501c3/" target="_blank" rel="noopener noreferrer"> 501(c)(3) </a>
                                 nonprofit organization founded by a group of students passionate about math. 
                             </h3>
                             <br />

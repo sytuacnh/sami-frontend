@@ -1,6 +1,5 @@
 import * as actionTypes from './actionTypes';
 import { fromJS } from 'immutable';
-import React from 'react';
 
 const noButtonClickedID = -1;
 const otherButtonID = 5;

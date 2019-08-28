@@ -8,4 +8,9 @@ export const IconSpan = styled.span.attrs({
 
 export const FooterWrapper = styled.div`
     font-size: 16px;
+
+    .link {
+        color: #e91e63;
+    }
 `;
+

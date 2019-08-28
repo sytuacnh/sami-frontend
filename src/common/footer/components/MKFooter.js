@@ -17,7 +17,7 @@ class MKFooter extends PureComponent {
                   <div className={classes.center}>
                     Copyright &copy; {1900 + new Date().getYear()} {" "}
                     <IconSpan>&#xe61f;</IconSpan> {" "}
-                    <Link to='\'>
+                    <Link to='\' className="link">
                       San Antonio Math Include
                     </Link>
                   </div>
