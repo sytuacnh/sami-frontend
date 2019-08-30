@@ -10,7 +10,7 @@ import SummerCamp2019Section from "./components/SummerCamp2019Section.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 
-import bgImage from "../../../static/dice_4.jpg";
+import bgImage from "../../../static/events/summer_camp/summer.png";
 import {
     SummerCamp2019Wrapper
 } from "./style";

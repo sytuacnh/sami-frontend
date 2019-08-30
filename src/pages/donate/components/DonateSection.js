@@ -21,7 +21,6 @@ import CustomInput from 'components/CustomInput/CustomInput.jsx';
 // import MoneyButtons from './MoneyButtons';
 // import giveImg from "../../../static/girls_giving_cut.jpg";
 import DonateButton from "./DonateButton";
-import girlGiving from "../../../static/girls_giving.jpg";
 import { actionCreators } from "../store";
 
 import { IconSpan } from "../style";
