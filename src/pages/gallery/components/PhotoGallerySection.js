@@ -25,7 +25,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const style = {
      paddingBottom: {
-         paddingBottom: "100px"
+         paddingBottom: "130px"
      }
 }
 class PhotoGallerySection extends PureComponent {

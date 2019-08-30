@@ -61,8 +61,10 @@ const style = {
             hexToRgb(grayColor[0]) +
             ", 0.2)"
     },
+    paddingCustom: {
+        padding: "30px 0"
+    }
 };
-
 const alignLeft = { textAlign: "left" }
 
 class DonateSection extends PureComponent {
@@ -106,7 +108,7 @@ class DonateSection extends PureComponent {
               <GridContainer justify="center">
                 <GridItem
                   md={10}
-                  className={classNames(classes.section, classes.textCenter, classes.mrAuto, classes.mlAuto)}
+                  className={classNames(classes.section, classes.textCenter, classes.mrAuto, classes.mlAuto, classes.paddingCustom)}
                 >
                   <div className={classes.sectionDescription}>
                     <h2 className={classes.title}>

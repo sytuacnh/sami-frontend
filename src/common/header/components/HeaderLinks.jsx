@@ -114,7 +114,7 @@ const HeaderLinks = ({ ...props }) => {
   };
   var onClickSections = {};
 
-  const { classes, dropdownHoverColor, currentNav, handleChangeCurrentNav } = props;
+  const { classes, dropdownHoverColor, currentNav, handleChangeCurrentNav, handleChangeCurrentNavDropDown } = props;
 
   return (
     <Fragment>
@@ -134,7 +134,8 @@ const HeaderLinks = ({ ...props }) => {
       </ListItem>
       <ListItem className={classes.listItem}>
           <Button
-            href="/tutoring"
+            component={ Link }
+            to="/tutoring"
             id="tutoringNav"
             className={ currentNav==="tutoringNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink} 
             onClick={handleChangeCurrentNav}
@@ -187,26 +188,30 @@ const HeaderLinks = ({ ...props }) => {
           hoverColor={dropdownHoverColor}
           buttonText="ABOUT"
           buttonProps={{
-            id: "aboutNav",
-            onClick: handleChangeCurrentNav,
-            className: currentNav==="aboutNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
+            className: currentNav==="aboutNav#tutors" || currentNav==="aboutNav#officers" || currentNav==="aboutNav#advisors" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
             color: "transparent"
           }}
           buttonIcon={SupervisedUserCircle}
           dropdownList={[
             <Link
+              id="aboutNav#advisors"
+              onClick={handleChangeCurrentNav}
               to="/about#advisors"
               className={classes.dropdownLink}
             >
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe608;</IconSpan> ADVISORS
             </Link>,
             <Link
+              id="aboutNav#officers"
+              onClick={handleChangeCurrentNav}
               to="/about#officers"
               className={classes.dropdownLink}
             >
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe722;</IconSpan> OFFICERS
             </Link>,
             <Link
+              id="aboutNav#tutors"
+              onClick={handleChangeCurrentNav}
               to="/about#tutors"
               className={classes.dropdownLink}
             >
@@ -317,6 +322,10 @@ const mapDispatchToProps = (dispatch) => {
         },
         handleChangeCurrentNav(e) {
             const action = actionCreators.changeCurrentNav(e.currentTarget.id);
+            dispatch(action); 
+        },
+        handleChangeCurrentNavDropDown(id) {
+            const action = actionCreators.changeCurrentNav(id);
             dispatch(action); 
         }
     }

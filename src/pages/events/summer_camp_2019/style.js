@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const TutoringWrapper = styled.div`
+export const SummerCamp2019Wrapper = styled.div`
     
 `;

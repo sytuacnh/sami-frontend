@@ -75,7 +75,7 @@ class HomeSection extends PureComponent  {
                     <h5>
                         Our free tutoring program is supervised by college professors and professionals and led by students who are passionate about math. The tutoring sessions are FREE for all students in grades 4-8.
                     </h5>
-                    <Button round color="rose">
+                    <Button component={ Link } to="/tutoring" round color="rose">
                       View More
                     </Button> 
                     <CardHeader image plain >

@@ -12,8 +12,10 @@ import Home from './pages/home';
 import RegisterProgram from './pages/register_program';
 import Donate from './pages/donate';
 import About from './pages/about';
+import Tutoring from './pages/tutoring';
 import Contact from './pages/contact';
 import Gallery from './pages/gallery';
+import SummerCamp2019 from './pages/events/summer_camp_2019';
 
 function App() {
     return (
@@ -28,6 +30,8 @@ function App() {
                 <Route path='/gallery' exact component={Gallery}></Route>
                 <Route path='/register-program' exact component={RegisterProgram}></Route>
                 <Route path='/about' exact component={About}></Route>
+                <Route path='/tutoring' exact component={Tutoring}></Route>
+                <Route path='/summer-camp-2019' exact component={SummerCamp2019}></Route>
                 
                 <Footer />
             </BrowserRouter>

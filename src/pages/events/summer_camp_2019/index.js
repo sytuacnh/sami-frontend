@@ -6,47 +6,45 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Parallax from "components/Parallax/Parallax.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import TutoringSection from "./components/TutoringSection.js";
+import SummerCamp2019Section from "./components/SummerCamp2019Section.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
-import bgImage from "../../static/kids_run.jpg";
+
+import bgImage from "../../../static/dice_4.jpg";
 import {
-    TutoringWrapper
+    SummerCamp2019Wrapper
 } from "./style";
 
-class Tutoring extends Component {
+class SummerCamp2019 extends Component {
     render() {
         const { classes } = this.props;
 
         return (
-            <TutoringWrapper>
+            <SummerCamp2019Wrapper>
                 <Parallax image={bgImage} filter="dark" small>
                   <div className={classes.container}>
                     <GridContainer justify="center">
                       <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
                         <h2 className={classes.title}>
-                          Free Tutoring Program
+                            Summer Camp 2019
                         </h2>
-                        <h3>
-                          Our free tutoring program is supervised by college professors and professionals and led by students who are passionate about math. The tutoring sessions are FREE for all students in grades 4-8.
-                        </h3>
                       </GridItem>
                     </GridContainer>
                   </div>
                 </Parallax>
                 <div className={classNames(classes.main, classes.mainRaised)}>
-                  <TutoringSection />
+                  <SummerCamp2019Section /> 
                 </div>
-            </TutoringWrapper>
+            </SummerCamp2019Wrapper>
         );
     }
 }
 
-Tutoring.propTypes = {
+SummerCamp2019.propTypes = {
     classes: PropTypes.object
 };
 
 export default compose(
     withStyles(landingPageStyle),
     withStyles(blogPostsPageStyle),
-)(Tutoring)
+)(SummerCamp2019)

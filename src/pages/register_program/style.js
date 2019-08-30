@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const RegisterFormWrapper = styled.div`
+    .link { 
+        color: #FF0000; 
+    }
 `;
 
 export const TabContentWrapper = styled.div`

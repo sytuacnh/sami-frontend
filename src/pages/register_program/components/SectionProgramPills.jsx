@@ -1,4 +1,4 @@
-/*!
+/*
 
 =========================================================
 * Material Kit PRO React - v1.7.0
@@ -17,6 +17,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
+import classNames from "classnames";
 import compose from 'recompose/compose'
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
@@ -34,14 +35,26 @@ import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 // import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-
-import mathTwoGirls from "../../../static/math_two_girls.jpg";
-import tutorHelp from "../../../static/tutor_help_2.jpg";
+import Table from "components/Table/Table.jsx";
+import mathTwoGirls from "../../../static/summer_camp/math_two_girls.jpg";
+import tutorHelp from "../../../static/summer_camp/tutor_help_2.jpg";
+import lawn from "../../../static/summer_camp/lawn.jpg";
+import piece from "../../../static/summer_camp/piece.jpg";
 
 import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
-import { TabContentWrapper, ProgramFormWrapper } from "../style";
+import { TabContentWrapper } from "../style";
 import ProgramForm from "./ProgramForm";
 import { actionCreators } from '../store';
+
+const style = {
+     paddingCustom: {
+         padding: "20px"
+     },
+     cellText: {
+        fontSize: "16px",
+        textAlign: "center"
+     }
+}
 
 function SectionProgramPills({ ...props }) {
   const { classes } = props;
@@ -54,45 +67,83 @@ function SectionProgramPills({ ...props }) {
             <NavPills
               alignCenter
               color="info"
+              className={classes.tabFont}
               tabs={[
                 {
-                  tabButton: "Summer Camp",
+                  tabButton: "Summer Camp 2019",
                   tabContent: (
-                    <TabContentWrapper>
-                      <h3>
-                        Summer Camp 2019
-                      </h3>
-                      <p>
-                        Our summer camps are FREE for all students in grades K-8. They are supervised by college professors and led by high school students and national/regional math contest winners. If your child is in grades K-8, please fill out this form.  
-                        <br />
-                        <br />
-                        Three <b>Weeks</b>: July 22-July 26, July 29-August 2, August 5-August 9. All three weeks are the same so you just need to sign up for one week.
-                        Two Math Sessions: 9-12 AM OR 1-4 PM.
-                        Two Daycare Sessions: 9-12 AM OR 1-4 PM. The Daycare Session is for parents who are unable to pick/drop their child in the middle of the day. The daycare session provides time for kids to relax.
-                        <br />
-                        <br />
-                        You can sign up your child for the following <b>sessions</b>:
-                        1.  9-12 AM Math Session only.
-                        2.  1-4 PM Math Session only.
-                        3.  9-12 AM Math Session AND 1-4 PM Daycare Session.
-                        4.  9-12 AM Daycare Session AND 1-4 PM Math Session.
-                        If you sign up option 3 or 4, your child needs to bring his/her own lunch. 
-                        <br />
-                        <br />
-                        For low income families, <b>scholarships</b> are provided to cover transportation costs and lunch, for any options you sign up.
-                        <br />
-                        <br />
-                        For each 9-12 AM Math Session or 1-4 PM Math Session, there are four <b>classes</b>:
-                        Tadpoles (K-1).
-                        Whirlpool (2-3).
-                        Andromeda (4-5).
-                        Triangulum (6-8, MATHCOUNTS & AMC8).
-
-                        Every class has a 25 student limit. These who sign up after the 25 student limit will be automatically waitlisted.
-                        <br />
-                        <br /> 
-                        <b>Address</b>: Basis San Antonio Shavano, 4114 Lockhill Selma Rd, San Antonio, TX 78230.  
-                      </p>
+                    <TabContentWrapper >
+                      <div className={classes.paddingCustom}>
+                        <Table
+                          tableHead={[<b>Program Name</b>, <b>Information</b>,<b>Status</b>]}
+                          tableData={[
+                            ["Summer Camp 2019", 
+                              <Link to='/summer-camp-2019' target="_blank" className="link">
+                                Description Page
+                              </Link>, 
+                            "Ended"],
+                          ]}
+                          customCellClasses={[
+                            classes.cellText,
+                            classes.cellText,
+                            classes.cellText
+                          ]}
+                          customClassesForCells={[0, 1, 2]}
+                          customHeadCellClasses={[
+                            classes.textCenter,
+                            classes.textCenter,
+                            classes.textCenter
+                          ]}
+                          customHeadClassesForCells={[0, 1, 2]}
+                        />
+                      </div>
+                      <GridContainer>
+                        <GridItem xs={12} sm={6} md={6}>
+                          <Card
+                            raised
+                            background
+                            style={{ backgroundImage: "url(" + lawn + ")" }}
+                          >
+                            <CardBody background>
+                              <h6 className={classes.category}>Summer Camp 2019</h6>
+                              <h3 className={classes.cardTitle}>
+                                Program Poster
+                              </h3>
+                              <p className={classes.textCenter}>
+                                Click button below to view our poster
+                              </p>
+                              <a className="link" href="https://drive.google.com/open?id=1Fe7zxwDhEDsdwgWNtFGvsXcYr7g_T7IS" target="_blank" rel="noopener noreferrer">
+                                  <Button round color="rose">
+                                      <FormatAlignLeft className={classes.icons} />View Poster
+                                  </Button>
+                              </a>
+                            </CardBody>
+                          </Card>
+                        </GridItem>
+                        <GridItem xs={12} sm={6} md={6}>
+                          <Card
+                            raised
+                            background
+                            style={{ backgroundImage: "url(" + piece + ")" }}
+                          >
+                            <CardBody background>
+                              <h6 className={classes.category}>Summer Camp 2019</h6>
+                              <h3 className={classes.cardTitle}>
+                                F&Q
+                              </h3>
+                              <p className={classes.category}>
+                                Click button below to view F&Q
+                              </p>
+                              <a className="link" href="https://drive.google.com/open?id=1yUFUXhub6TutIXbuAAc2pprZBiozVJRlC_xFYeKekck" target="_blank" rel="noopener noreferrer">
+                                  <Button round color="rose">
+                                      <FormatAlignLeft className={classes.icons} />View F&Q
+                                  </Button>
+                              </a>
+                            </CardBody>
+                          </Card>
+                        </GridItem>
+                        
+                      </GridContainer>
                       <GridContainer>
                         <GridItem xs={12} sm={6} md={6}>
                           <Card
@@ -105,12 +156,14 @@ function SectionProgramPills({ ...props }) {
                               <h3 className={classes.cardTitle}>
                                 Student Register
                               </h3>
-                              <p className={classes.category}>
-                                Join as a student!
+                              <p className={classes.textCenter}>
+                                Click button below to join as a student
                               </p>
-                              <Button round color="rose" onClick={() => {props.handleFormSignUpClick(0)}}>
-                                <FormatAlignLeft className={classes.icons} /> Sign Up
-                              </Button>
+                              <a className="link" href="https://docs.google.com/forms/d/1o1RESzltjK8KW1jQDrzNvU-3cuDYiD-WSU9dJ0AtecU/edit" target="_blank" rel="noopener noreferrer">
+                                  <Button round color="rose">
+                                      <FormatAlignLeft className={classes.icons} />Sign Up
+                                  </Button>
+                              </a>
                             </CardBody>
                           </Card>
                         </GridItem>
@@ -126,10 +179,10 @@ function SectionProgramPills({ ...props }) {
                                 Tutor Register
                               </h3>
                               <p className={classes.category}>
-                                Join as a tutor!
+                                Click button below to join as a tutor
                               </p>
                               <a className="link" href="https://drive.google.com/open?id=1EeEJgS8c8cFz0fL8idHa6vOmcdhTYfyYIqrbmyWD7K8" target="_blank" rel="noopener noreferrer">
-                                  <Button round color="rose" onClick={() => {props.handleFormSignUpClick(1)}}>
+                                  <Button round color="rose">
                                       <FormatAlignLeft className={classes.icons} />Sign Up
                                   </Button>
                               </a>
@@ -138,22 +191,6 @@ function SectionProgramPills({ ...props }) {
                         </GridItem>
                         
                       </GridContainer>
-                      <ProgramFormWrapper className={props.formClicked && props.selectedForm === 0? 'clicked' : ''}>
-                        Student Register Form
-                      </ProgramFormWrapper>
-                      <ProgramFormWrapper className={props.formClicked && props.selectedForm === 1? 'clicked' : ''}>
-                        <Card className={classes.card2}>
-                          <CardHeader contact color="info" className={classes.textCenter}>
-                            <h4 className={classes.cardTitle}>Tutor Register Form</h4>
-                          </CardHeader>
-                          <CardBody>
-                            <ProgramForm />
-                          </CardBody>
-                          <CardFooter className={classes.justifyContentBetween}>
-                            Footer of Register form
-                          </CardFooter>
-                        </Card>
-                      </ProgramFormWrapper>
                     </TabContentWrapper>
                   )
                 },
@@ -193,5 +230,6 @@ const mapDispatchToProps = (dispatch) => {
 
 export default compose(
     connect(mapStateToProps, mapDispatchToProps),
-    withStyles(sectionPillsStyle)
+    withStyles(style),
+    withStyles(sectionPillsStyle),
 )(SectionProgramPills)

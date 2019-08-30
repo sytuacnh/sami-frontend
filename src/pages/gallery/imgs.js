@@ -1,5 +1,5 @@
 const imgs = [
-  ["summer_camp_img_136", "summer_camp_img_139", "summer_camp_img_146", "summer_camp_img_147"],
+  ["summer_camp_img_136", "summer_camp_img_139", "summer_camp_img_146", "summer_camp_img_104"],
   ["summer_camp_img_157", "summer_camp_img_4", "summer_camp_img_15", "summer_camp_img_16"],
   ["summer_camp_img_17", "summer_camp_img_18", "summer_camp_img_21", "summer_camp_img_35"],
   ["summer_camp_img_79", "summer_camp_img_83", "summer_camp_img_97", "summer_camp_img_113"],
