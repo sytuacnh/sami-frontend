@@ -44,7 +44,7 @@ class TutoringSection extends PureComponent {
                       classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)
                     }
                   > 
-                    <h2 className={classes.title}>Features of Our Program</h2>
+                    <h2 className={classes.title}>Features of Our Tutoring Program</h2>
                   </GridItem>
                   <GridItem
                     xs={12}

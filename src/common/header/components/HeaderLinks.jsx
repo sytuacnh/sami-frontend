@@ -154,15 +154,25 @@ const HeaderLinks = ({ ...props }) => {
           buttonProps={{
             id: "eventsNav",
             onClick: handleChangeCurrentNav,
-            className: currentNav==="eventsNav" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
+            className: currentNav==="summer-camp-2019" || currentNav==="pi-day-celebration" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
             color: "transparent"
           }}
           buttonIcon={Event}
           dropdownList={[
-            <Link to="/summer-camp-2019" className={classes.dropdownLink}>
+            <Link 
+              id="summer-camp-2019"
+              onClick={handleChangeCurrentNav}
+              to="/summer-camp-2019" 
+              className={classes.dropdownLink}
+            >
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer Camp 2019
             </Link>,
-            <Link to="/pi-day-celebration" className={classes.dropdownLink}>
+            <Link 
+              id="pi-day-celebration"
+              to="/pi-day-celebration" 
+              onClick={handleChangeCurrentNav}
+              className={classes.dropdownLink}
+            >
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration
             </Link>
           ]}

@@ -16,6 +16,7 @@ import Tutoring from './pages/tutoring';
 import Contact from './pages/contact';
 import Gallery from './pages/gallery';
 import SummerCamp2019 from './pages/events/summer_camp_2019';
+import PiDayCelebration from './pages/events/pi_day_celebration';
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                 <Route path='/about' exact component={About}></Route>
                 <Route path='/tutoring' exact component={Tutoring}></Route>
                 <Route path='/summer-camp-2019' exact component={SummerCamp2019}></Route>
+                <Route path='/pi-day-celebration' exact component={PiDayCelebration}></Route>
                 
                 <Footer />
             </BrowserRouter>

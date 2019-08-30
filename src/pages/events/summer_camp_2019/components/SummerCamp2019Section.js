@@ -6,6 +6,7 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import withStyles from "@material-ui/core/styles/withStyles";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
+import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
 
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
@@ -15,18 +16,21 @@ import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 
-import mathTwoGirls from "../..//../../static/summer_camp/math_two_girls.jpg";
-import tutorHelp from "../../../../static/summer_camp/tutor_help_2.jpg";
-import lawn from "../../../../static/summer_camp/lawn.jpg";
-import piece from "../../../../static/summer_camp/piece.jpg";
+import mathTwoGirls from "../..//../../static/events/summer_camp/math_two_girls.jpg";
+import tutorHelp from "../../../../static/events/summer_camp/tutor_help_2.jpg";
+import lawn from "../../../../static/events/summer_camp/lawn.jpg";
+import piece from "../../../../static/events/summer_camp/piece.jpg";
 
 const style = {
     paddingCustom: {
         padding: "30px 0"
     },
     eventFont: {
-        fontSize: "16px",
+        fontSize: "18px",
         textAlign: "left"
+    },
+    cardTitle: {
+      fontWeight: "700"
     }
 }
 
@@ -51,7 +55,7 @@ class SummerCamp2019Section extends PureComponent {
                   > 
                     <h2 className={classes.title}>Program Description</h2>
                     <p className={classes.eventFont}>
-                      Our summer camps are FREE for all students in grades K-8. They are supervised by college professors and led by high school students and national/regional math contest winners. If your child is in grades K-8, please fill out this form.  
+                      Our summer camps are <b>FREE</b> for all students in grades K-8. They are supervised by college professors and led by high school students and national/regional math contest winners. If your child is in grades K-8, please fill out this form.  
                       <br />
                       <br />
                       Three <b>Weeks</b>: July 22-July 26, July 29-August 2, August 5-August 9. All three weeks are the same so you just need to sign up for one week.
@@ -190,4 +194,5 @@ class SummerCamp2019Section extends PureComponent {
 export default compose(
     withStyles(style),
     withStyles(featuresStyle),
+    // withStyles(sectionPillsStyle),
 )(SummerCamp2019Section);

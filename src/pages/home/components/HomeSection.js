@@ -109,15 +109,15 @@ class HomeSection extends PureComponent  {
                           >
                             <CardBody background>
                               <h6 className={classes.cardCategory}>Event</h6>
-                              <a href="/summer-camp-2019">
+                              <Link to='/summer-camp-2019' className="link">
                                 <h3 className={classes.cardTitleWhite}>
                                   Free Summer Camps 2019
                                 </h3>
-                              </a>
+                              </Link>
                               <p className={classes.cardDescription}>
                                 Our summer camps are FREE for all students in grades K-8. They are supervised by college professors and led by high school students and national/regional math contest winners...
                               </p>
-                              <Button round color="primary">
+                              <Button component={ Link } to="/summer-camp-2019" round color="primary">
                                 <Icon>content_copy</Icon> View More
                               </Button>
                             </CardBody>
@@ -133,17 +133,15 @@ class HomeSection extends PureComponent  {
                           >
                             <CardBody background>
                               <h6 className={classes.cardCategory}>Event</h6>
-                              <a href="/pi-day-celebration">
+                              <Link to='/pi-day-celebration' className="link">
                                 <h3 className={classes.cardTitleWhite}>
                                   Pi Day Celebration
                                 </h3>
-                              </a>
+                              </Link>
                               <p className={classes.cardDescription}>
                                 Celebration of Inclusive Excellence on Pi Day is an annual ceremony to bring all students in math to forefront. The three keynote speakers will talk about math pathways in three...
-                                
-                                
                               </p>
-                              <Button round color="info">
+                              <Button component={ Link } to="/pi-day-celebration" round color="info">
                                 <Icon>content_copy</Icon> View More 
                               </Button>
                             </CardBody>
