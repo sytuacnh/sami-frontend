@@ -19,7 +19,7 @@ class Header extends PureComponent {
             <HeaderWrapper>
                 <MKHeader
                     color="transparent"
-                    brand="San Antonio Math Include"
+                    brand="SaMi"
                     links={<HeaderLinks dropdownHoverColor="info" />}
                     fixed
                     changeColorOnScroll={{

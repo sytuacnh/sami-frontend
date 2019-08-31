@@ -26,7 +26,7 @@ class PiDayCelebration extends Component {
                     <GridContainer justify="center">
                       <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
                         <h2 className={classes.title}>
-                            Celebration Of Inclusive Excellence on Pi Day
+                           The Celebration Of Inclusive Excellence on Pi Day
                         </h2>
                       </GridItem>
                     </GridContainer>

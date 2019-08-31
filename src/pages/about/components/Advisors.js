@@ -12,7 +12,7 @@ import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Muted from "components/Typography/Muted.jsx";
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
-import jiang from "../../../static/about/advisors/AlbertJiang.jpg";
+import tan from "../../../static/about/advisors/ShengTan.png";
 import TeacherMissing from "../../../static/about/advisors/Teacher_missing.png";
 import ErikaHsie from "../../../static/about/advisors/ErikaHsie.jpg";
 import QilongLu from "../../../static/about/advisors/QilongLu.jpg";
@@ -39,7 +39,7 @@ class Advisors extends PureComponent {
                   >
                     <h2 className={classes.title}>SaMi Advisors</h2>
                     <h5 className={classes.description}>
-                        Our advisory board is composed of accomplished experts in academia and industry. They offer innovative advice and dynamic perspective to SaMi.
+                        Our advisory board is composed of accomplished experts in academia and industry. They offer innovative advice and a dynamic perspective to SaMi.
                     </h5>
                   </GridItem>
                 </GridContainer>
@@ -68,11 +68,11 @@ class Advisors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={jiang} alt="..." className={classes.img} />
+                          <img src={tan} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Dr. Albert Jiang</h4>
+                        <h4 className={classes.cardTitle}>Dr. Sheng Tan</h4>
                         <Muted>
                           <h6 className={classes.cardCategory}>Advisory Board</h6>
                         </Muted>

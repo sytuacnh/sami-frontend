@@ -28,7 +28,7 @@ class Tutoring extends Component {
                           Free Tutoring Program
                         </h2>
                         <h3>
-                          Our free tutoring program is supervised by college professors and professionals and led by students who are passionate about math. The tutoring sessions are FREE for all students in grades 4-8.
+                          Our free tutoring program is supervised by college professors and professionals and led by students who are passionate about math. The tutoring sessions are FREE for all students in grades K-12.
                         </h3>
                       </GridItem>
                     </GridContainer>

@@ -81,7 +81,7 @@ class Officers extends PureComponent {
                           <h6 className={classes.cardCategory}>Vice President</h6>
                         </Muted>
                         <p className={classes.description}>
-                           closely with the president to define the mission of the organization
+                           works closely with the president to define the mission of the organization
                         </p>
                       </CardBody>
                     </Card>
@@ -99,7 +99,7 @@ class Officers extends PureComponent {
                           <h6 className={classes.cardCategory}>Vice President</h6>
                         </Muted>
                         <p className={classes.description}>
-                           closely with the president to define the mission of the organization
+                           works closely with the president to define the mission of the organization
                         </p>
                       </CardBody>
                     </Card>

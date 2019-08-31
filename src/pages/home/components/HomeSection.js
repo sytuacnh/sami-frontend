@@ -82,7 +82,7 @@ class HomeSection extends PureComponent  {
                     <h2 className={classes.title}>Free Tutoring Program</h2>
                       <h6 className={classes.description}>For the Best of Students</h6>
                     <h5>
-                        Our free tutoring program is supervised by college professors and professionals and led by students who are passionate about math. The tutoring sessions are FREE for all students in grades 4-8.
+                        Our free tutoring program is supervised by college professors and professionals and led by students who are passionate about math. The tutoring sessions are FREE for all students in grades K-12.
                     </h5>
                     <Button component={ Link } to="/tutoring" round color="rose">
                       View More

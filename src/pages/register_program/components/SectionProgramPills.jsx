@@ -130,14 +130,14 @@ function SectionProgramPills({ ...props }) {
                             <CardBody background>
                               <h6 className={classes.category}>Summer Camp 2019</h6>
                               <h3 className={classes.cardTitle}>
-                                F&Q
+                                FAQ
                               </h3>
                               <p className={classes.category}>
-                                Click button below to view F&Q
+                                Click button below to view FAQ
                               </p>
                               <a className="link" href="https://drive.google.com/open?id=1yUFUXhub6TutIXbuAAc2pprZBiozVJRlC_xFYeKekck" target="_blank" rel="noopener noreferrer">
                                   <Button round color="rose">
-                                      <FormatAlignLeft className={classes.icons} />View F&Q
+                                      <FormatAlignLeft className={classes.icons} />View FAQ
                                   </Button>
                               </a>
                             </CardBody>

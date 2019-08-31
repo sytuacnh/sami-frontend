@@ -67,19 +67,10 @@ class TutoringSection extends PureComponent {
                     <GridItem xs={12} sm={6} md={6}>
                       <InfoArea
                         vertical
-                        icon={PeopleTwoTone}
-                        title="Low Student/Tutor Ratio"
-                        description="In every session, we have 20 students and at least 5 tutors. The student/tutor ratio is less than 4/1. This low ratio guarantees that every student will receive close attentions from the tutors."
-                        iconColor="rose"
-                      />
-                    </GridItem>
-                    <GridItem xs={12} sm={6} md={6}>
-                      <InfoArea
-                        vertical
-                        icon={HighQuality}
-                        title="High Quality of Tutors"
-                        description="All tutors are past and current math contestants. They won international, national and regional contests. They are all passionate about helping each and every student to achieve their success in math. "
-                        iconColor="danger"
+                        icon={AccessibilityNew}
+                        title="Accessibility"
+                        description={"We want to help all students. The SaMi YouTube Channel posts our lectures. Students around the world can watch them and learn Math from anywhere. This is meaningful for those from disadvantaged families who can’t transport their child to classes and afford expensive tuition fees."}
+                        iconColor="success"
                       />
                     </GridItem>
                     <GridItem xs={12} sm={6} md={6}>
@@ -87,17 +78,17 @@ class TutoringSection extends PureComponent {
                         vertical
                         icon={SentimentSatisfied}
                         title="Affordability"
-                        description="Our tutoring sessions are free and students don't need to bring any thing with them. All utensils and snacks are provided by SaMi."
+                        description="Our tutoring sessions are free of charge for all students. For low income families, scholarships are provided to cover transportation costs and lunch, for any options you sign up."
                         iconColor="info"
                       />
                     </GridItem>
-                    <GridItem>
+                    <GridItem xs={12} sm={6} md={6}>
                       <InfoArea
                         vertical
-                        icon={AccessibilityNew}
-                        title="Accessibility"
-                        description={"All lectures will be video recorded and available in our YouTube Channel. We want to benefit more students, especially those from disadvantaged families who can't transport their child to Basis Shavano. If you know this kind of the students, please refer them to our YouTube Channel and let them contact us at sanantoniomathinclude@gmail.com. We are happy to provide onsite help in their schools."}
-                        iconColor="success"
+                        icon={HighQuality}
+                        title="High Quality of Tutors"
+                        description="Our tutors represent the finest level of Math in San Antonio. They won international, national and regional contests. They are all passionate about helping each and every student to achieve their success in math. "
+                        iconColor="danger"
                       />
                     </GridItem>
                   </GridContainer>

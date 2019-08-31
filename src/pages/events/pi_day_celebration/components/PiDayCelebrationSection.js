@@ -49,7 +49,7 @@ class PiDayCelebrationSection extends PureComponent {
                   > 
                     <h2 className={classes.title}>Event Description</h2>
                     <p className={classes.eventFont}>
-                      Celebration of Inclusive Excellence on Pi Day is an <b>annual</b> ceremony to bring all students in math to forefront. 
+                      The Celebration of Inclusive Excellence on Pi Day is an <b>annual</b> ceremony to bring all students in math to the forefront. 
                       The three keynote speakers will talk about math pathways in three different phases: <b>high school</b>, <b>college</b>, and <b>career</b>. 
                       <br />
                       <br />
