@@ -2,6 +2,14 @@ import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div`
     
+    .link {
+        color: #333333;
+    } 
+
+    .link:hover {
+        color: white;
+    } 
+    
 `;
 
 export const IconSpan = styled.span.attrs({
@@ -18,4 +26,5 @@ export const IconSpan = styled.span.attrs({
         font-size: 25px;
         margin-top: 0px;
     }
+
 `;

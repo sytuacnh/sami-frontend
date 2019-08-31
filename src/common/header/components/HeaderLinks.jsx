@@ -174,7 +174,20 @@ const HeaderLinks = ({ ...props }) => {
               className={classes.dropdownLink}
             >
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration
-            </Link>
+            </Link>,
+            <div
+              className={classes.dropdownLink}
+            >
+              <a 
+                id="youtube-channel"
+                className="link" 
+                href="https://www.youtube.com/channel/UCuXmN7-h56VP_-216V-1dZg" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              > 
+                <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Youtube Channel
+              </a>
+            </div>
           ]}
         />
       </ListItem>

@@ -106,7 +106,7 @@ class HomeSection extends PureComponent  {
                 <GridItem
                   xs={12}
                   className={
-                    classNames(classes.marginTopSmShrink, classes.marginBottomSmExpand, classes.mlAuto, classes.mrAuto, classes.textCenter)
+                    classNames(classes.marginTopSmShrink, classes.marginBottomLgExpand, classes.mlAuto, classes.mrAuto, classes.textCenter)
                   }
                 >
                   <div className={classes.sectionDescription}>
@@ -212,7 +212,7 @@ class HomeSection extends PureComponent  {
                 <GridItem
                   xs={12}
                   className={
-                    classNames(classes.marginTopSmShrink, classes.mlAuto, classes.mrAuto, classes.textCenter)
+                    classNames(classes.marginTopSmShrink, classes.section, classes.mlAuto, classes.mrAuto, classes.textCenter)
                   }
                 >
                   <div className={classes.sectionDescription}>
@@ -257,7 +257,7 @@ class HomeSection extends PureComponent  {
                 <GridItem
                   xs={12}
                   className={
-                    classNames(classes.marginBottomLgExpand, classes.mlAuto, classes.mrAuto, classes.textCenter)
+                    classNames(classes.marginTopSmShrink, classes.marginBottomLgExpand, classes.mlAuto, classes.mrAuto, classes.textCenter)
                   }
                 >
                   <div className={classNames(classes.contactContent)}>

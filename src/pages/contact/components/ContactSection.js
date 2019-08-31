@@ -1,4 +1,6 @@
 import React, { PureComponent } from 'react';
+import { connect } from 'react-redux';
+import compose from 'recompose/compose'
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -11,7 +13,12 @@ import BusinessCenter from "@material-ui/icons/BusinessCenter";
 import Phone from "@material-ui/icons/Phone";
 import withStyles from "@material-ui/core/styles/withStyles";
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
+import SendMessageForm from "./SendMessage/SendMessageForm";
+import showResults from './SendMessage/showResults';
+import { createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
+// const theme = createMuiTheme();
 
 class ContactSection extends PureComponent {
 
@@ -28,38 +35,11 @@ class ContactSection extends PureComponent {
                   <br />
                   <br />
                 </p>
-                <form>
-                  <CustomInput
-                    labelText="Your Name"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                  <CustomInput
-                    labelText="Email address"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                  <CustomInput
-                    labelText="Your message"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                    inputProps={{
-                      multiline: true,
-                      rows: 6
-                    }}
-                  />
-                  <div className={classes.textCenter}>
-                    <Button color="rose" round>
-                      Send Message 
-                    </Button>
-                  </div>
-                </form>
+                  <MuiThemeProvider muiTheme={createMuiTheme()}>
+                    <div>
+                      <SendMessageForm onSubmit={showResults} />
+                    </div>
+                  </MuiThemeProvider> 
               </div>
             </div>
         );
@@ -68,4 +48,8 @@ class ContactSection extends PureComponent {
 
 
 
-export default withStyles(contactUsStyle)(ContactSection)
+// export default withStyles(contactUsStyle)(ContactSection)
+export default compose(
+    withStyles(contactUsStyle),
+    connect(null, null)
+)(ContactSection)
