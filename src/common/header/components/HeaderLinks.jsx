@@ -185,7 +185,7 @@ const HeaderLinks = ({ ...props }) => {
                 target="_blank" 
                 rel="noopener noreferrer"
               > 
-                <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Youtube Channel
+                <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe880;</IconSpan> Youtube Channel
               </a>
             </div>
           ]}
