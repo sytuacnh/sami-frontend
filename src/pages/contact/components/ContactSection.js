@@ -13,12 +13,19 @@ import BusinessCenter from "@material-ui/icons/BusinessCenter";
 import Phone from "@material-ui/icons/Phone";
 import withStyles from "@material-ui/core/styles/withStyles";
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
-import SendMessageForm from "./SendMessage/SendMessageForm";
+// import SendMessageForm from "./SendMessage/SendMessageForm";
 import showResults from './SendMessage/showResults';
 import { createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
 // import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 // const theme = createMuiTheme();
+
+const style = {
+    contactFont: {
+        fontSize: "16px",
+        textAlign: "left"
+    }
+}
 
 class ContactSection extends PureComponent {
 
@@ -30,16 +37,18 @@ class ContactSection extends PureComponent {
         return (
             <div className={classNames(classes.contactContent)}>
               <div className={classes.container}>
-                <p className={classes.label}>
+                <p className={classNames(classes.label, classes.contactFont)}>
                   You can email us at <b>sanantoniomathinclude@gmail.com</b>. Or send us a message below. Either way, we will contact you ASAP. 
                   <br />
                   <br />
                 </p>
-                  <MuiThemeProvider muiTheme={createMuiTheme()}>
-                    <div>
-                      <SendMessageForm onSubmit={showResults} />
-                    </div>
-                  </MuiThemeProvider> 
+                <MuiThemeProvider>
+                  <div>
+                    <p>
+                    Send Message Functionality will be provided soon.
+                    </p>
+                  </div>
+                </MuiThemeProvider> 
               </div>
             </div>
         );
@@ -50,6 +59,6 @@ class ContactSection extends PureComponent {
 
 // export default withStyles(contactUsStyle)(ContactSection)
 export default compose(
+    withStyles(style),
     withStyles(contactUsStyle),
-    connect(null, null)
 )(ContactSection)

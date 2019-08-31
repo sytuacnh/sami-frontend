@@ -1,5 +1,5 @@
 import React from "react";
-import { Field, reduxForm } from "redux-form";
+import { Field, reduxForm } from 'redux-form/immutable'
 import TextField from "@material-ui/core/TextField";
 import asyncValidate from "./asyncValidate";
 import validate from "./validate";

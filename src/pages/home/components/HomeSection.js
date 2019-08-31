@@ -15,10 +15,7 @@ import CardHeader from "components/Card/CardHeader.jsx";
 // import Gesture from "@material-ui/icons/Gesture";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
-import PinDrop from "@material-ui/icons/PinDrop";
-import BusinessCenter from "@material-ui/icons/BusinessCenter";
-import Phone from "@material-ui/icons/Phone";
-
+import ContactSection from "../../contact/components/ContactSection";
 // library used for cool animations
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
@@ -263,43 +260,7 @@ class HomeSection extends PureComponent  {
                   <div className={classNames(classes.contactContent)}>
                     <div className={classes.container}>
                       <h2 className={classes.title}>Contact Us</h2>
-                      <p className={classes.label}>
-                        You can email us at <b>sanantoniomathinclude@gmail.com</b>. Or send us a message below. Either way, we will contact you ASAP. 
-                        <br />
-                        <br />
-                      </p>
-                      <form>
-                        <CustomInput
-                          labelText="Your Name"
-                          id="float"
-                          formControlProps={{
-                            fullWidth: true
-                          }}
-                        />
-                        <CustomInput
-                          labelText="Email address"
-                          id="float"
-                          formControlProps={{
-                            fullWidth: true
-                          }}
-                        />
-                        <CustomInput
-                          labelText="Your message"
-                          id="float"
-                          formControlProps={{
-                            fullWidth: true
-                          }}
-                          inputProps={{
-                            multiline: true,
-                            rows: 6
-                          }}
-                        />
-                        <div className={classes.textCenter}>
-                          <Button color="rose" round>
-                            Send Message 
-                          </Button>
-                        </div>
-                      </form>
+                      <ContactSection  />
                     </div>
                   </div>
                 </GridItem>
