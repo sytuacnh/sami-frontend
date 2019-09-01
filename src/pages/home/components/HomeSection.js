@@ -148,7 +148,7 @@ class HomeSection extends PureComponent  {
                                 </h3>
                               </Link>
                               <p className={classes.cardDescription}>
-                                Celebration of Inclusive Excellence on Pi Day is an annual ceremony to bring all students in math to forefront. The three keynote speakers will talk about math pathways in three...
+                                The Celebration of Inclusive Excellence on Pi Day is an annual ceremony to bring all students in math to the forefront. The three keynote speakers will talk about math pathways in three...
                               </p>
                               <Button component={ Link } to="/pi-day-celebration-2019" round color="info">
                                 <Icon>content_copy</Icon> View More 
