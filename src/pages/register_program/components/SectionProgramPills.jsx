@@ -145,7 +145,7 @@ function SectionProgramPills({ ...props }) {
                           tableHead={[<b>Program Name</b>, <b>Information</b>,<b>Status</b>]}
                           tableData={[
                             ["Pi Day Celebration 2019", 
-                              <Link to='/pi-day-celebration' target="_blank" className="link">
+                              <Link to='/pi-day-celebration-2019' target="_blank" className="link">
                                 Description Page
                               </Link>, 
                             "Ended"],
