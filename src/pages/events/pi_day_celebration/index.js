@@ -28,6 +28,9 @@ class PiDayCelebration extends Component {
                         <h2 className={classes.title}>
                            The Celebration Of Inclusive Excellence on Pi Day
                         </h2>
+                        <h3>
+                            2019
+                        </h3>
                       </GridItem>
                     </GridContainer>
                   </div>

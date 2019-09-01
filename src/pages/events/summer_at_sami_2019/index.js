@@ -6,47 +6,45 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Parallax from "components/Parallax/Parallax.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import DonateSection from "./components/DonateSection";
-import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
+import SummerAtSaMi2019Section from "./components/SummerAtSaMi2019Section.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
-import bgImage from "../../static/heart.jpg";
+import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
+
+import bgImage from "../../../static/events/summer_camp/summer.png";
 import {
-    DonateWrapper
+    SummerAtSami2019Wrapper
 } from "./style";
 
-class Donate extends Component {
+class SummerAtSaMi2019 extends Component {
     render() {
         const { classes } = this.props;
 
         return (
-            <DonateWrapper>
+            <SummerAtSami2019Wrapper>
                 <Parallax image={bgImage} filter="dark" small>
                   <div className={classes.container}>
                     <GridContainer justify="center">
                       <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
                         <h2 className={classes.title}>
-                          Making A Difference
+                            Summer@SaMi 2019
                         </h2>
-                        <h3>
-                          You have the power to help more students improve their math skills. Your investment will benefit all students in the greater San Antonio area to receive the best math education.
-                        </h3>
                       </GridItem>
                     </GridContainer>
                   </div>
                 </Parallax>
                 <div className={classNames(classes.main, classes.mainRaised)}>
-                  <DonateSection />
+                  <SummerAtSaMi2019Section /> 
                 </div>
-            </DonateWrapper>
+            </SummerAtSami2019Wrapper>
         );
     }
 }
 
-Donate.propTypes = {
+SummerAtSaMi2019.propTypes = {
     classes: PropTypes.object
 };
 
 export default compose(
     withStyles(landingPageStyle),
-    withStyles(blogPostsPageStyle)
-)(Donate)
+    withStyles(blogPostsPageStyle),
+)(SummerAtSaMi2019)

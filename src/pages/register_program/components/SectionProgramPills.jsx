@@ -44,8 +44,10 @@ import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPosts
 import { TabContentWrapper } from "../style";
 import ProgramForm from "./ProgramForm";
 import { actionCreators } from '../store';
-import celebrate_pi_day from "../../../static/events/pi_day_celebration/celebrate_pi_day.jpg";
-import trinity from "../../../static/events/pi_day_celebration/trinity.jpg";
+import SummerAtSaMi2019Cards from "../../events/summer_at_sami_2019/components/SummerAtSaMi2019Cards";
+import PiDayCelebrationCards from "../../events/pi_day_celebration/components/PiDayCelebrationCards";
+
+// import { Cards as Tutoring20182019 } from "../../events/free_tutoring_2018_2019/components/Cards";
 
 const style = {
      paddingCustom: {
@@ -71,15 +73,128 @@ function SectionProgramPills({ ...props }) {
               className={classes.tabFont}
               tabs={[
                 {
-                  tabButton: "Summer Camp 2019",
+                  tabButton: "Free Tutoring 2019-2020",
+                  tabContent: (
+                    <TabContentWrapper >
+                      <div className={classes.paddingCustom}>
+                        <Table
+                          tableHead={[<b>Program Name</b>, <b>Information</b>, <b>Previous Year</b>, <b>Status</b>]}
+                          tableData={[
+                            ["Free Tutoring 2019-2020", 
+                              <Link to='/tutoring' target="_blank" className="link">
+                                Description Page
+                              </Link>, 
+                              <Link to='/free-tutoring-2018-2019' target="_blank" className="link">
+                                2018-2019
+                              </Link>,
+                            "Ongoing"],
+                          ]}
+                          customCellClasses={[
+                            classes.cellText,
+                            classes.cellText,
+                            classes.cellText,
+                            classes.cellText
+                          ]}
+                          customClassesForCells={[0, 1, 2, 3]}
+                          customHeadCellClasses={[
+                            classes.textCenter,
+                            classes.textCenter,
+                            classes.textCenter,
+                            classes.textCenter
+                          ]}
+                          customHeadClassesForCells={[0, 1, 2, 3]}
+                        />
+                      </div>
+                      <GridContainer>
+                          <GridItem xs={12} sm={6} md={6}>
+                            <Card
+                              raised
+                              background
+                              style={{ backgroundImage: "url(" + lawn + ")" }}
+                            >
+                              <CardBody background>
+                                <h6 className={classes.category}>Free Tutoring 2019-2020</h6>
+                                <h3 className={classes.cardTitle}>
+                                  Program Poster
+                                </h3>
+                                <p className={classes.textCenter}>
+                                  Click button below to view our poster
+                                </p>
+                                <a className="link" href="https://drive.google.com/open?id=1JZXmvN6qvU1YSrbte5a6hsU_FWw8DjPE" target="_blank" rel="noopener noreferrer">
+                                    <Button round color="rose">
+                                        <FormatAlignLeft className={classes.icons} />Sign Up
+                                    </Button>
+                                </a>
+                              </CardBody>
+                            </Card>
+                          </GridItem>
+                          <GridItem xs={12} sm={6} md={6}>
+                            <Card
+                              raised
+                              background
+                              style={{ backgroundImage: "url(" + mathTwoGirls + ")" }}
+                            >
+                              <CardBody background>
+                                <h6 className={classes.category}>Free Tutoring 2019-2020</h6>
+                                <h3 className={classes.cardTitle}>
+                                  Student Register
+                                </h3>
+                                <p className={classes.textCenter}>
+                                  Click button below to join as a student
+                                </p>
+                                <a className="link" href="" target="_blank" rel="noopener noreferrer">
+                                    <Button round color="rose">
+                                        <FormatAlignLeft className={classes.icons} />Sign Up
+                                    </Button>
+                                </a>
+                              </CardBody>
+                            </Card>
+                          </GridItem>
+                          <GridItem xs={12} sm={6} md={6}>
+                            <Card
+                              raised
+                              background
+                              style={{ backgroundImage: "url(" + tutorHelp + ")" }}
+                            >
+                              <CardBody background>
+                                <h6 className={classes.category}>Free Tutoring 2019-2020</h6>
+                                <h3 className={classes.cardTitle}>
+                                  Tutor Register
+                                </h3>
+                                <p className={classes.category}>
+                                  Click button below to join as a tutor
+                                </p>
+                                <a className="link" href="https://drive.google.com/open?id=1Z834W0SEKYXf5FbsxREGWVsaZVMD0euWSJU_DSiLdhI" target="_blank" rel="noopener noreferrer">
+                                    <Button round color="rose">
+                                        <FormatAlignLeft className={classes.icons} />Sign Up
+                                    </Button>
+                                </a>
+                              </CardBody>
+                            </Card>
+                          </GridItem>
+                          <GridItem xs={12} sm={6} md={6}>
+                            <Card
+                              raised
+                              background
+                              style={{ backgroundImage: "url(" + piece + ")" }}
+                            >
+                              <CardBody background />
+                            </Card>
+                          </GridItem>
+                      </GridContainer>
+                    </TabContentWrapper>
+                  )
+                },
+                {
+                  tabButton: "Summer@SaMi 2019",
                   tabContent: (
                     <TabContentWrapper >
                       <div className={classes.paddingCustom}>
                         <Table
                           tableHead={[<b>Program Name</b>, <b>Information</b>,<b>Status</b>]}
                           tableData={[
-                            ["Summer Camp 2019", 
-                              <Link to='/summer-camp-2019' target="_blank" className="link">
+                            ["Summer@SaMi 2019", 
+                              <Link to='/summer-at-sami-2019' target="_blank" className="link">
                                 Description Page
                               </Link>, 
                             "Ended"],
@@ -98,112 +213,19 @@ function SectionProgramPills({ ...props }) {
                           customHeadClassesForCells={[0, 1, 2]}
                         />
                       </div>
-                      <GridContainer>
-                        <GridItem xs={12} sm={6} md={6}>
-                          <Card
-                            raised
-                            background
-                            style={{ backgroundImage: "url(" + lawn + ")" }}
-                          >
-                            <CardBody background>
-                              <h6 className={classes.category}>Summer Camp 2019</h6>
-                              <h3 className={classes.cardTitle}>
-                                Program Poster
-                              </h3>
-                              <p className={classes.textCenter}>
-                                Click button below to view our poster
-                              </p>
-                              <a className="link" href="https://drive.google.com/open?id=1Fe7zxwDhEDsdwgWNtFGvsXcYr7g_T7IS" target="_blank" rel="noopener noreferrer">
-                                  <Button round color="rose">
-                                      <FormatAlignLeft className={classes.icons} />View Poster
-                                  </Button>
-                              </a>
-                            </CardBody>
-                          </Card>
-                        </GridItem>
-                        <GridItem xs={12} sm={6} md={6}>
-                          <Card
-                            raised
-                            background
-                            style={{ backgroundImage: "url(" + piece + ")" }}
-                          >
-                            <CardBody background>
-                              <h6 className={classes.category}>Summer Camp 2019</h6>
-                              <h3 className={classes.cardTitle}>
-                                FAQ
-                              </h3>
-                              <p className={classes.category}>
-                                Click button below to view FAQ
-                              </p>
-                              <a className="link" href="https://drive.google.com/open?id=1yUFUXhub6TutIXbuAAc2pprZBiozVJRlC_xFYeKekck" target="_blank" rel="noopener noreferrer">
-                                  <Button round color="rose">
-                                      <FormatAlignLeft className={classes.icons} />View FAQ
-                                  </Button>
-                              </a>
-                            </CardBody>
-                          </Card>
-                        </GridItem>
-                        
-                      </GridContainer>
-                      <GridContainer>
-                        <GridItem xs={12} sm={6} md={6}>
-                          <Card
-                            raised
-                            background
-                            style={{ backgroundImage: "url(" + mathTwoGirls + ")" }}
-                          >
-                            <CardBody background>
-                              <h6 className={classes.category}>Summer Camp 2019</h6>
-                              <h3 className={classes.cardTitle}>
-                                Student Register
-                              </h3>
-                              <p className={classes.textCenter}>
-                                Click button below to join as a student
-                              </p>
-                              <a className="link" href="https://docs.google.com/forms/d/1o1RESzltjK8KW1jQDrzNvU-3cuDYiD-WSU9dJ0AtecU/edit" target="_blank" rel="noopener noreferrer">
-                                  <Button round color="rose">
-                                      <FormatAlignLeft className={classes.icons} />Sign Up
-                                  </Button>
-                              </a>
-                            </CardBody>
-                          </Card>
-                        </GridItem>
-                        <GridItem xs={12} sm={6} md={6}>
-                          <Card
-                            raised
-                            background
-                            style={{ backgroundImage: "url(" + tutorHelp + ")" }}
-                          >
-                            <CardBody background>
-                              <h6 className={classes.category}>Summer Camp 2019</h6>
-                              <h3 className={classes.cardTitle}>
-                                Tutor Register
-                              </h3>
-                              <p className={classes.category}>
-                                Click button below to join as a tutor
-                              </p>
-                              <a className="link" href="https://drive.google.com/open?id=1EeEJgS8c8cFz0fL8idHa6vOmcdhTYfyYIqrbmyWD7K8" target="_blank" rel="noopener noreferrer">
-                                  <Button round color="rose">
-                                      <FormatAlignLeft className={classes.icons} />Sign Up
-                                  </Button>
-                              </a>
-                            </CardBody>
-                          </Card>
-                        </GridItem>
-                        
-                      </GridContainer>
+                      <SummerAtSaMi2019Cards />
                     </TabContentWrapper>
                   )
                 },
                 {
-                  tabButton: "Pi Day Celebration",
+                  tabButton: "Pi Day Celebration 2019",
                   tabContent: (
                     <TabContentWrapper >
                       <div className={classes.paddingCustom}>
                         <Table
                           tableHead={[<b>Program Name</b>, <b>Information</b>,<b>Status</b>]}
                           tableData={[
-                            ["Pi Day Celebration", 
+                            ["Pi Day Celebration 2019", 
                               <Link to='/pi-day-celebration' target="_blank" className="link">
                                 Description Page
                               </Link>, 
@@ -223,52 +245,7 @@ function SectionProgramPills({ ...props }) {
                           customHeadClassesForCells={[0, 1, 2]}
                         />
                       </div>
-                      <GridContainer>
-                        <GridItem xs={12} sm={6} md={6}>
-                          <Card
-                            raised
-                            background
-                            style={{ backgroundImage: "url(" + celebrate_pi_day + ")" }}
-                          >
-                            <CardBody background>
-                              <h6 className={classes.category}>Pi Day Celebration</h6>
-                              <h3 className={classes.cardTitle}>
-                                Program Poster
-                              </h3>
-                              <p className={classes.textCenter}>
-                                Click button below to view our poster
-                              </p>
-                              <a className="link" href="https://drive.google.com/open?id=1nf3HOtN93QQGtB-k8O4ttdwe-hzCldnb" target="_blank" rel="noopener noreferrer">
-                                  <Button round color="rose">
-                                      <FormatAlignLeft className={classes.icons} />View Poster
-                                  </Button>
-                              </a>
-                            </CardBody>
-                          </Card>
-                        </GridItem>
-                        <GridItem xs={12} sm={6} md={6}>
-                          <Card
-                            raised
-                            background
-                            style={{ backgroundImage: "url(" + trinity + ")" }}
-                          >
-                            <CardBody background>
-                              <h6 className={classes.category}>Pi Day Celebration</h6>
-                              <h3 className={classes.cardTitle}>
-                                Map
-                              </h3>
-                              <p className={classes.category}>
-                                To view the map of Trinity University
-                              </p>
-                              <a className="link" href="https://drive.google.com/open?id=1BRIuFTOEtOGgMm8rqgecozn3Sh1f_fVM" target="_blank" rel="noopener noreferrer">
-                                  <Button round color="rose">
-                                      <FormatAlignLeft className={classes.icons} />View Map
-                                  </Button>
-                              </a>
-                            </CardBody>
-                          </Card>
-                        </GridItem>
-                      </GridContainer>
+                      <PiDayCelebrationCards />
                     </TabContentWrapper>
                   )
                 }

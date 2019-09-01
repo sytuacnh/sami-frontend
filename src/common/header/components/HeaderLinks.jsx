@@ -153,28 +153,60 @@ const HeaderLinks = ({ ...props }) => {
           buttonText="EVENTS"
           buttonProps={{
             id: "eventsNav",
-            onClick: handleChangeCurrentNav,
-            className: currentNav==="summer-camp-2019" || currentNav==="pi-day-celebration" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
+            className: currentNav==="free-tutoring-2019-2020" || currentNav==="free-tutoring-2018-2019" || currentNav==="summer-at-sami-2019" || currentNav==="pi-day-celebration-2019" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
             color: "transparent"
           }}
-          buttonIcon={Event}
           dropdownList={[
+            <CustomDropdown
+              data-ref="multi"
+              innerDropDown
+              noLiPadding
+              hoverColor={dropdownHoverColor}
+              buttonText="Free Tutoring"
+              buttonProps={{
+                simple: true,
+                block: true,
+              }}
+              dropPlacement="right-start"
+              dropdownList={[
+                  <Link
+                    id="free-tutoring-2018-2019"
+                    to="/free-tutoring-2018-2019" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe660;</IconSpan>
+                    Free Tutoring 2019-2020 
+                  </Link>,
+                  <Link 
+                    id="free-tutoring-2018-2019"
+                    to="/free-tutoring-2018-2019" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe660;</IconSpan>
+                    Free Tutoring 2018-2019
+                  </Link>
+              ]}
+            />,
+            { divider: true },
             <Link 
-              id="summer-camp-2019"
+              id="summer-at-sami-2019"
               onClick={handleChangeCurrentNav}
-              to="/summer-camp-2019" 
+              to="/summer-at-sami-2019" 
               className={classes.dropdownLink}
             >
-              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer Camp 2019
+              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer@Sami 2019
             </Link>,
+            { divider: true },
             <Link 
-              id="pi-day-celebration"
-              to="/pi-day-celebration" 
+              id="pi-day-celebration-2019"
+              to="/pi-day-celebration-2019" 
               onClick={handleChangeCurrentNav}
               className={classes.dropdownLink}
             >
-              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration
-            </Link>
+              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration 2019
+            </Link> 
           ]}
         />
       </ListItem>

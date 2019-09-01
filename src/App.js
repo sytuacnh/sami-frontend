@@ -15,8 +15,9 @@ import About from './pages/about';
 import Tutoring from './pages/tutoring';
 import Contact from './pages/contact';
 import Gallery from './pages/gallery';
-import SummerCamp2019 from './pages/events/summer_camp_2019';
+import SummerAtSaMi2019 from './pages/events/summer_at_sami_2019';
 import PiDayCelebration from './pages/events/pi_day_celebration';
+import FreeTutoring20182019 from './pages/events/free_tutoring_2018_2019';
 
 function App() {
     return (
@@ -32,8 +33,9 @@ function App() {
                 <Route path='/register-program' exact component={RegisterProgram}></Route>
                 <Route path='/about' exact component={About}></Route>
                 <Route path='/tutoring' exact component={Tutoring}></Route>
-                <Route path='/summer-camp-2019' exact component={SummerCamp2019}></Route>
-                <Route path='/pi-day-celebration' exact component={PiDayCelebration}></Route>
+                <Route path='/summer-at-sami-2019' exact component={SummerAtSaMi2019}></Route>
+                <Route path='/pi-day-celebration-2019' exact component={PiDayCelebration}></Route>
+                <Route path='/free-tutoring-2018-2019' exact component={FreeTutoring20182019}></Route>
                 
                 <Footer />
             </BrowserRouter>

@@ -834,7 +834,7 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={LouisGeer} alt="..." className={classes.img} />
+                          <img src={FabrizioMolina} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>

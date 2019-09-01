@@ -45,7 +45,7 @@ class Officers extends PureComponent {
                   >
                     <h2 className={classes.title}>SaMi Officers</h2>
                     <h5 className={classes.description}>
-                        Our offers have a track record of success and leadership skills. They oversee and direct the major aspects of SaMi's operations.
+                        Our officers have a track record of success and leadership skills. They oversee and direct the major aspects of SaMi's operations.
                     </h5>
                   </GridItem>
                 </GridContainer>

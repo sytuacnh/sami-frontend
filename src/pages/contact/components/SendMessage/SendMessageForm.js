@@ -24,7 +24,7 @@ const SendMessageForm = props => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <Field
+        <Field 
           name="senderName"
           component={renderTextField}
           label="Your Name"
@@ -32,7 +32,7 @@ const SendMessageForm = props => {
       </div>
       <div>
         <Field name="senderEmail" component={renderTextField} label="Email" />
-      </div>
+      </div>                                                                                                                                                                                                                  
       <div>
         <Field
           name="message"
