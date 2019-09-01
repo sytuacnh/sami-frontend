@@ -7,18 +7,6 @@ import GridItem from "components/Grid/GridItem.jsx";
 import withStyles from "@material-ui/core/styles/withStyles";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
 // import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
-import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-// import CustomInput from "components/CustomInput/CustomInput.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
-
-import mathTwoGirls from "../..//../../static/events/summer_camp/math_two_girls.jpg";
-import tutorHelp from "../../../../static/events/summer_camp/tutor_help_2.jpg";
-import lawn from "../../../../static/events/summer_camp/lawn.jpg";
-import piece from "../../../../static/events/summer_camp/piece.jpg";
 
 import SummerAtSaMi2019Cards from "./SummerAtSaMi2019Cards";
 

@@ -6,48 +6,44 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Parallax from "components/Parallax/Parallax.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import TutoringSection from "./components/TutoringSection.js";
+import FreeTutoring20182019Section from "./components/FreeTutoring20182019Section.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
-import bgImage from "../../static/events/free_tutoring/kids_run.jpg";
-
+import bgImage from "../../../../static/events/free_tutoring/kids_run.jpg";
 import {
-    TutoringWrapper
+    FreeTutoring20182019Wrapper
 } from "./style";
 
-class Tutoring extends Component {
+class FreeTutoring20182019 extends Component {
     render() {
         const { classes } = this.props;
 
         return (
-            <TutoringWrapper>
+            <FreeTutoring20182019Wrapper>
                 <Parallax image={bgImage} filter="dark" small>
                   <div className={classes.container}>
                     <GridContainer justify="center">
                       <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
                         <h2 className={classes.title}>
-                          Free Tutoring Program
+                            Free Tutoring 2018-2019
                         </h2>
-                        <h3>
-                          Our free tutoring program is supervised by college professors and professionals and led by students who are passionate about math. The tutoring sessions are FREE for all students in grades K-12.
-                        </h3>
                       </GridItem>
                     </GridContainer>
                   </div>
                 </Parallax>
                 <div className={classNames(classes.main, classes.mainRaised)}>
-                  <TutoringSection />
+                  <FreeTutoring20182019Section /> 
                 </div>
-            </TutoringWrapper>
+            </FreeTutoring20182019Wrapper>
         );
     }
 }
 
-Tutoring.propTypes = {
+FreeTutoring20182019.propTypes = {
     classes: PropTypes.object
 };
 
 export default compose(
     withStyles(landingPageStyle),
     withStyles(blogPostsPageStyle),
-)(Tutoring)
+)(FreeTutoring20182019)

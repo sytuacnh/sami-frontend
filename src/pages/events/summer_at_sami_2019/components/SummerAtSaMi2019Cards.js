@@ -14,10 +14,10 @@ import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import mathTwoGirls from "../../../../static/events/summer_camp/math_two_girls.jpg";
-import tutorHelp from "../../../../static/events/summer_camp/tutor_help_2.jpg";
-import lawn from "../../../../static/events/summer_camp/lawn.jpg";
-import piece from "../../../../static/events/summer_camp/piece.jpg";
+import mathTwoGirls from "../../../../static/events/math_two_girls.jpg";
+import tutorHelp from "../../../../static/events/tutor_help_2.jpg";
+import lawn from "../../../../static/events/lawn.jpg";
+import piece from "../../../../static/events/piece.jpg";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
 
 class SummerAtSaMi2019Cards extends PureComponent {

@@ -10,7 +10,7 @@ import SummerAtSaMi2019Section from "./components/SummerAtSaMi2019Section.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 
-import bgImage from "../../../static/events/summer_camp/summer.png";
+import bgImage from "../../../static/events/summer_at_sami/summer.png";
 import {
     SummerAtSami2019Wrapper
 } from "./style";

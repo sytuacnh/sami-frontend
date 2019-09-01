@@ -36,18 +36,13 @@ import CardFooter from "components/Card/CardFooter.jsx";
 // import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Table from "components/Table/Table.jsx";
-import mathTwoGirls from "../../../static/events/summer_camp/math_two_girls.jpg";
-import tutorHelp from "../../../static/events/summer_camp/tutor_help_2.jpg";
-import lawn from "../../../static/events/summer_camp/lawn.jpg";
-import piece from "../../../static/events/summer_camp/piece.jpg";
 import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
 import { TabContentWrapper } from "../style";
 import ProgramForm from "./ProgramForm";
 import { actionCreators } from '../store';
 import SummerAtSaMi2019Cards from "../../events/summer_at_sami_2019/components/SummerAtSaMi2019Cards";
 import PiDayCelebrationCards from "../../events/pi_day_celebration/components/PiDayCelebrationCards";
-
-// import { Cards as Tutoring20182019 } from "../../events/free_tutoring_2018_2019/components/Cards";
+import FreeTutoring20192020Cards from "../../events/free_tutoring/free_tutoring_2019_2020/components/FreeTutoring20192020Cards";
 
 const style = {
      paddingCustom: {
@@ -81,7 +76,7 @@ function SectionProgramPills({ ...props }) {
                           tableHead={[<b>Program Name</b>, <b>Information</b>, <b>Previous Year</b>, <b>Status</b>]}
                           tableData={[
                             ["Free Tutoring 2019-2020", 
-                              <Link to='/tutoring' target="_blank" className="link">
+                              <Link to='/free-tutoring-2019-2020' target="_blank" className="link">
                                 Description Page
                               </Link>, 
                               <Link to='/free-tutoring-2018-2019' target="_blank" className="link">
@@ -105,83 +100,7 @@ function SectionProgramPills({ ...props }) {
                           customHeadClassesForCells={[0, 1, 2, 3]}
                         />
                       </div>
-                      <GridContainer>
-                          <GridItem xs={12} sm={6} md={6}>
-                            <Card
-                              raised
-                              background
-                              style={{ backgroundImage: "url(" + lawn + ")" }}
-                            >
-                              <CardBody background>
-                                <h6 className={classes.category}>Free Tutoring 2019-2020</h6>
-                                <h3 className={classes.cardTitle}>
-                                  Program Poster
-                                </h3>
-                                <p className={classes.textCenter}>
-                                  Click button below to view our poster
-                                </p>
-                                <a className="link" href="https://drive.google.com/open?id=1JZXmvN6qvU1YSrbte5a6hsU_FWw8DjPE" target="_blank" rel="noopener noreferrer">
-                                    <Button round color="rose">
-                                        <FormatAlignLeft className={classes.icons} />Sign Up
-                                    </Button>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                          <GridItem xs={12} sm={6} md={6}>
-                            <Card
-                              raised
-                              background
-                              style={{ backgroundImage: "url(" + mathTwoGirls + ")" }}
-                            >
-                              <CardBody background>
-                                <h6 className={classes.category}>Free Tutoring 2019-2020</h6>
-                                <h3 className={classes.cardTitle}>
-                                  Student Register
-                                </h3>
-                                <p className={classes.textCenter}>
-                                  Click button below to join as a student
-                                </p>
-                                <a className="link" href="" target="_blank" rel="noopener noreferrer">
-                                    <Button round color="rose">
-                                        <FormatAlignLeft className={classes.icons} />Sign Up
-                                    </Button>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                          <GridItem xs={12} sm={6} md={6}>
-                            <Card
-                              raised
-                              background
-                              style={{ backgroundImage: "url(" + tutorHelp + ")" }}
-                            >
-                              <CardBody background>
-                                <h6 className={classes.category}>Free Tutoring 2019-2020</h6>
-                                <h3 className={classes.cardTitle}>
-                                  Tutor Register
-                                </h3>
-                                <p className={classes.category}>
-                                  Click button below to join as a tutor
-                                </p>
-                                <a className="link" href="https://drive.google.com/open?id=1Z834W0SEKYXf5FbsxREGWVsaZVMD0euWSJU_DSiLdhI" target="_blank" rel="noopener noreferrer">
-                                    <Button round color="rose">
-                                        <FormatAlignLeft className={classes.icons} />Sign Up
-                                    </Button>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                          <GridItem xs={12} sm={6} md={6}>
-                            <Card
-                              raised
-                              background
-                              style={{ backgroundImage: "url(" + piece + ")" }}
-                            >
-                              <CardBody background />
-                            </Card>
-                          </GridItem>
-                      </GridContainer>
+                      <FreeTutoring20192020Cards />
                     </TabContentWrapper>
                   )
                 },
