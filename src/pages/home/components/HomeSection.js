@@ -118,7 +118,7 @@ class HomeSection extends PureComponent  {
                           >
                             <CardBody background>
                               <h6 className={classes.cardCategory}>Event</h6>
-                              <Link to='/summer-camp-2019' className="link">
+                              <Link to='/summer-at-sami-2019' className="link">
                                 <h3 className={classes.cardTitleWhite}>
                                   Free Summer Camps 2019
                                 </h3>
@@ -126,7 +126,7 @@ class HomeSection extends PureComponent  {
                               <p className={classes.cardDescription}>
                                 Our summer camps are FREE for all students in grades K-8. They are supervised by college professors and led by high school students and national/regional math contest winners...
                               </p>
-                              <Button component={ Link } to="/summer-camp-2019" round color="primary">
+                              <Button component={ Link } to="/summer-at-sami-2019" round color="primary">
                                 <Icon>content_copy</Icon> View More
                               </Button>
                             </CardBody>
@@ -142,15 +142,15 @@ class HomeSection extends PureComponent  {
                           >
                             <CardBody background>
                               <h6 className={classes.cardCategory}>Event</h6>
-                              <Link to='/pi-day-celebration' className="link">
+                              <Link to='/pi-day-celebration-2019' className="link">
                                 <h3 className={classes.cardTitleWhite}>
-                                  Pi Day Celebration
+                                  Pi Day Celebration 2019
                                 </h3>
                               </Link>
                               <p className={classes.cardDescription}>
                                 Celebration of Inclusive Excellence on Pi Day is an annual ceremony to bring all students in math to forefront. The three keynote speakers will talk about math pathways in three...
                               </p>
-                              <Button component={ Link } to="/pi-day-celebration" round color="info">
+                              <Button component={ Link } to="/pi-day-celebration-2019" round color="info">
                                 <Icon>content_copy</Icon> View More 
                               </Button>
                             </CardBody>
@@ -180,7 +180,7 @@ class HomeSection extends PureComponent  {
                           width="450"
                           height="300"
                           type="text/html"
-                          src="https://www.youtube.com/embed/jAWsr5w-CxU?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd720&origin=https://youtubeembedcode.com"
+                          src="https://www.youtube.com/embed/JWhLrE-pF98"
                         />
                       </div> 
                     </GridItem>

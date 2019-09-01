@@ -24,7 +24,7 @@ export const IconSpan = styled.span.attrs({
 
     &.dropDownIconFont {
         font-size: 25px;
-        margin-top: 0px;
+        margin-top: -2px;
     }
 
 `;

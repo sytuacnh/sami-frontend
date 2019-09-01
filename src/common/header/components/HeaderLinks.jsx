@@ -116,6 +116,8 @@ const HeaderLinks = ({ ...props }) => {
 
   const { classes, dropdownHoverColor, currentNav, handleChangeCurrentNav, handleChangeCurrentNavDropDown } = props;
 
+  // const TutoringLogo = <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan>
+
   return (
     <Fragment>
     <List className={classes.list + " " + classes.mlAuto}>
@@ -188,25 +190,55 @@ const HeaderLinks = ({ ...props }) => {
                     Free Tutoring 2018-2019
                   </Link>
               ]}
-            />,
+            />
+            ,
             { divider: true },
-            <Link 
-              id="summer-at-sami-2019"
-              onClick={handleChangeCurrentNav}
-              to="/summer-at-sami-2019" 
-              className={classes.dropdownLink}
-            >
-              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer@Sami 2019
-            </Link>,
+            <CustomDropdown
+              data-ref="multi"
+              innerDropDown
+              noLiPadding
+              hoverColor={dropdownHoverColor}
+              buttonText="Summer@Sami"
+              buttonProps={{
+                simple: true,
+                block: true,
+              }}
+              dropPlacement="right-start"
+              dropdownList={[
+                  <Link 
+                    id="summer-at-sami-2019"
+                    onClick={handleChangeCurrentNav}
+                    to="/summer-at-sami-2019" 
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer@Sami 2019
+                  </Link>
+              ]}
+            />
+            ,
             { divider: true },
-            <Link 
-              id="pi-day-celebration-2019"
-              to="/pi-day-celebration-2019" 
-              onClick={handleChangeCurrentNav}
-              className={classes.dropdownLink}
-            >
-              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration 2019
-            </Link> 
+            <CustomDropdown
+              data-ref="multi"
+              innerDropDown
+              noLiPadding
+              hoverColor={dropdownHoverColor}
+              buttonText="Pi Day Celebration"
+              buttonProps={{
+                simple: true,
+                block: true,
+              }}
+              dropPlacement="right-start"
+              dropdownList={[
+                  <Link 
+                    id="pi-day-celebration-2019"
+                    to="/pi-day-celebration-2019" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration 2019
+                  </Link> 
+              ]}
+            />
           ]}
         />
       </ListItem>

@@ -38,7 +38,7 @@ class ContactSection extends PureComponent {
             <div className={classNames(classes.contactContent)}>
               <div className={classes.container}>
                 <p className={classNames(classes.label, classes.contactFont)}>
-                  You can email us at <b>sanantoniomathinclude@gmail.com</b>. Or send us a message below. Either way, we will contact you ASAP. 
+                  You can email us at <b>sanantoniomathinclude@gmail.com</b>. Or fill out the <a className="link" href="https://drive.google.com/open?id=1FKKYmFug-66SaKkEgebvcsecMCcy2_N5wFCQY1LcLm8" target="_blank" rel="noopener noreferrer">Contact Us form</a>. Either way, we will contact you ASAP. 
                   <br />
                   <br />
                 </p>

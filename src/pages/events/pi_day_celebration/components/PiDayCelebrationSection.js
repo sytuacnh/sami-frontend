@@ -48,6 +48,53 @@ class PiDayCelebrationSection extends PureComponent {
                       Mathletes in Action is a count-down round game where a pair of students will play with each other by <b>solving a math problem</b> in <b>45</b> seconds. 
                       This game is suitable for all students and we welcome all students to play the game.   
                     </p>
+                    <div className={classes.paddingCustom}>
+                      <h2 className={classes.title}>Mathronauts Award for High Achieving Students</h2>
+                      <div className={classes.eventFont}>
+                        <h3><b>Academic Excellence Awards</b></h3>
+                        <h4><b>First Place</b></h4>
+                        <ul>
+                          <li>Poojaswi Gudapati</li>
+                          <li>Anish Kalva</li>
+                          <li>Anshuman Chhawcharia</li>
+                        </ul>
+                        <h4><b>Second Place</b></h4>
+                        <ul>
+                          <li>Eddie Bao</li>
+                          <li>James Lu</li>
+                          <li>Kaden Fenno</li>
+                          <li>Navom Gupta</li>
+                          <li>Saad Mustafa</li>
+                          <li>Shiven Patel</li>
+                          <li>Vedant Patel</li>
+                        </ul>
+                        <h4><b>Third Place</b></h4>
+                        <ul>
+                          <li>Rushil Patel</li>
+                          <li>Bitan Bhattacharya</li>
+                          <li>Dharmik Kamballi</li>
+                          <li>Mitul Sendilkumar</li>
+                        </ul>
+                        <h3><b>Outstanding Achievement Awards</b></h3>
+                        <ul>
+                          <li>Poojaswi Gudapati</li>
+                          <li>Aadi Iyengar</li>
+                          <li>Ellen Geng</li>
+                          <li>Kennedy Fenno</li>
+                          <li>Ansh Chandak</li>
+                          <li>Bethel Getachew</li>
+                          <li>Simeon Gore</li>
+                          <li>Alicia Johnson </li>
+                          <li>Mateo Machado</li>
+                          <li>Ella Zou-Bao</li>
+                          <li>Jehan Haluwana</li>
+                          <li>Shamita Tripathy</li>
+                          <li>Shamita Tripathy</li>
+                          <li>Vishal Kothuri</li>
+                          <li>Luciano Martinez</li>
+                        </ul>
+                      </div>
+                    </div>
                     <PiDayCelebrationCards />
                   </GridItem>
                 </GridContainer>
