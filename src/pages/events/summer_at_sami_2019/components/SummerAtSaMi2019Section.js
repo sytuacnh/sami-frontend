@@ -9,10 +9,14 @@ import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSecti
 // import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
 
 import SummerAtSaMi2019Cards from "./SummerAtSaMi2019Cards";
+import SummerAtSaMi2019Carousel from "./SummerAtSaMi2019Carousel";
 
 const style = {
     paddingCustom: {
         padding: "30px 0"
+    },
+    paddingTop: {
+        paddingTop: "30px"
     },
     eventFont: {
         fontSize: "18px",
@@ -74,6 +78,7 @@ class SummerAtSaMi2019Section extends PureComponent {
                       <br /> 
                       <b>Address</b>: Basis San Antonio Shavano, 4114 Lockhill Selma Rd, San Antonio, TX 78230.  
                     </p>
+                    <SummerAtSaMi2019Carousel />
                     <SummerAtSaMi2019Cards />
                   </GridItem>
                 </GridContainer>

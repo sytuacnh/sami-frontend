@@ -9,10 +9,14 @@ import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSecti
 import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
 
 import PiDayCelebrationCards from "./PiDayCelebrationCards";
+import PiDayCelebrationCarousel from "./PiDayCelebrationCarousel";
 
 const style = {
     paddingCustom: {
         padding: "30px 0"
+    },
+    paddingTop: {
+        paddingTop: "30px"
     },
     eventFont: {
         fontSize: "18px",
@@ -48,7 +52,7 @@ class PiDayCelebrationSection extends PureComponent {
                       Mathletes in Action is a count-down round game where a pair of students will play with each other by <b>solving a math problem</b> in <b>45</b> seconds. 
                       This game is suitable for all students and we welcome all students to play the game.   
                     </p>
-                    <div className={classes.paddingCustom}>
+                    <div className={classes.paddingTop}>
                       <h2 className={classes.title}>Mathronauts Award for High Achieving Students</h2>
                       <div className={classes.eventFont}>
                         <h3><b>Academic Excellence Awards</b></h3>
@@ -95,6 +99,7 @@ class PiDayCelebrationSection extends PureComponent {
                         </ul>
                       </div>
                     </div>
+                    <PiDayCelebrationCarousel />
                     <PiDayCelebrationCards />
                   </GridItem>
                 </GridContainer>
