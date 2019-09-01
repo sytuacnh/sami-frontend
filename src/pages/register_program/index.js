@@ -16,6 +16,10 @@ import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPost
 import bgImage from "../../static/children.jpg";
 
 class RegisterProgram extends PureComponent {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         const { classes } = this.props;
 

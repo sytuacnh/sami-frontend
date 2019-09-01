@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import compose from 'recompose/compose'
@@ -6,7 +7,6 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import withStyles from "@material-ui/core/styles/withStyles";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
-// import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
 
 import SummerAtSaMi2019Cards from "./SummerAtSaMi2019Cards";
 import SummerAtSaMi2019Carousel from "./SummerAtSaMi2019Carousel";
@@ -64,7 +64,11 @@ class SummerAtSaMi2019Section extends PureComponent {
                       If you sign up option 3 or 4, your child needs to bring his/her own lunch. 
                       <br />
                       <br />
-                      For low income families, <b>scholarships</b> are provided to cover transportation costs and lunch, for any options you sign up.
+                      For low income families, the {" "} 
+                      <Link to='/casting-your-future-scholarship' target="_blank" className="link">
+                          <b>Casting Your Future Scholarship</b>
+                      </Link>
+                      {" "} are provided to cover transportation costs and lunch, for any options you sign up.
                       <br />
                       <br />
                       For each 9-12 AM Math Session or 1-4 PM Math Session, there are four <b>classes</b>:

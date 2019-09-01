@@ -16,6 +16,10 @@ import {
 } from "./style";
 
 class PiDayCelebration extends Component {
+    componentDidMount() {
+      window.scrollTo(0, 0)
+    }
+    
     render() {
         const { classes } = this.props;
 

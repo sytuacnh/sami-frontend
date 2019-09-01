@@ -155,7 +155,7 @@ const HeaderLinks = ({ ...props }) => {
           buttonText="EVENTS"
           buttonProps={{
             id: "eventsNav",
-            className: currentNav==="free-tutoring-2019-2020" || currentNav==="free-tutoring-2018-2019" || currentNav==="summer-at-sami-2019" || currentNav==="pi-day-celebration-2019" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
+            className: currentNav==="casting-your-future-scholarship" || currentNav==="free-tutoring-2019-2020" || currentNav==="free-tutoring-2018-2019" || currentNav==="summer-at-sami-2019" || currentNav==="pi-day-celebration-2019" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
             color: "transparent"
           }}
           dropdownList={[
@@ -186,7 +186,7 @@ const HeaderLinks = ({ ...props }) => {
                     onClick={handleChangeCurrentNav}
                     className={classes.dropdownLink}
                   >
-                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe660;</IconSpan>
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe61a;</IconSpan>
                     Free Tutoring 2018-2019
                   </Link>
               ]}
@@ -236,6 +236,30 @@ const HeaderLinks = ({ ...props }) => {
                     className={classes.dropdownLink}
                   >
                     <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration 2019
+                  </Link> 
+              ]}
+            />
+            ,
+            { divider: true },
+            <CustomDropdown
+              data-ref="multi"
+              innerDropDown
+              noLiPadding
+              hoverColor={dropdownHoverColor}
+              buttonText="Scholarship"
+              buttonProps={{
+                simple: true,
+                block: true,
+              }}
+              dropPlacement="right-start"
+              dropdownList={[
+                  <Link 
+                    id="casting-your-future-scholarship"
+                    to="/casting-your-future-scholarship" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe612;</IconSpan> Casting Your Future Scholarship
                   </Link> 
               ]}
             />

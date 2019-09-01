@@ -14,6 +14,10 @@ import bgImage from "../../static/dice.jpg";
 
 
 class Home extends PureComponent {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         const { classes } = this.props;
 
