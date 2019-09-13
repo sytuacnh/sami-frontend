@@ -31,28 +31,6 @@ class FreeTutoring20192020Cards extends PureComponent {
                       <Card
                         raised
                         background
-                        style={{ backgroundImage: "url(" + lawn + ")" }}
-                      >
-                        <CardBody background>
-                          <h6 className={classes.category}>Free Tutoring 2019-2020</h6>
-                          <h3 className={classes.cardTitle}>
-                            Program Poster
-                          </h3>
-                          <p className={classes.textCenter}>
-                            Click button below to view our poster
-                          </p>
-                          <a className="link" href="https://drive.google.com/open?id=1n9rCobqCGVJLGmR4F9teFasMuk3xcDwu" target="_blank" rel="noopener noreferrer">
-                              <Button round color="rose">
-                                  <FormatAlignLeft className={classes.icons} />Sign Up
-                              </Button>
-                          </a>
-                        </CardBody>
-                      </Card>
-                    </GridItem>
-                    <GridItem xs={12} sm={6} md={6}>
-                      <Card
-                        raised
-                        background
                         style={{ backgroundImage: "url(" + mathTwoGirls + ")" }}
                       >
                         <CardBody background>
@@ -93,6 +71,96 @@ class FreeTutoring20192020Cards extends PureComponent {
                         </CardBody>
                       </Card>
                     </GridItem>
+                    <GridItem xs={12} sm={6} md={6}>
+                      <Card
+                        raised
+                        background
+                        style={{ backgroundImage: "url(" + lawn + ")" }}
+                      >
+                        <CardBody background>
+                          <h6 className={classes.category}>Free Tutoring 2019-2020</h6>
+                          <h3 className={classes.cardTitle}>
+                            Program Poster(English)
+                          </h3>
+                          <p className={classes.textCenter}>
+                            Click button below to view our poster
+                          </p>
+                          <a className="link" href="https://drive.google.com/open?id=1GhuVb0j7sXPpNs4-wsd4QVlI9taERw6H" target="_blank" rel="noopener noreferrer">
+                              <Button round color="rose">
+                                  <FormatAlignLeft className={classes.icons} />View Poster
+                              </Button>
+                          </a>
+                        </CardBody>
+                      </Card>
+                    </GridItem>
+                    <GridItem xs={12} sm={6} md={6}>
+                      <Card
+                        raised
+                        background
+                        style={{ backgroundImage: "url(" + lawn + ")" }}
+                      >
+                        <CardBody background>
+                          <h6 className={classes.category}>Free Tutoring 2019-2020</h6>
+                          <h3 className={classes.cardTitle}>
+                            Program Poster(Spanish)
+                          </h3>
+                          <p className={classes.textCenter}>
+                            Click button below to view our poster
+                          </p>
+                          <a className="link" href="https://drive.google.com/open?id=1BahdKYFuOm3v1GdH2FrJmuVsSKAEC1z-" target="_blank" rel="noopener noreferrer">
+                              <Button round color="rose">
+                                  <FormatAlignLeft className={classes.icons} />View Poster
+                              </Button>
+                          </a>
+                        </CardBody>
+                      </Card>
+                    </GridItem>
+
+                    <GridItem xs={12} sm={6} md={6}>
+                      <Card
+                        raised
+                        background
+                        style={{ backgroundImage: "url(" + lawn + ")" }}
+                      >
+                        <CardBody background>
+                          <h6 className={classes.category}>Free Tutoring 2019-2020</h6>
+                          <h3 className={classes.cardTitle}>
+                            Week 1 Schedule(English)
+                          </h3>
+                          <p className={classes.textCenter}>
+                            Click button below to view the schedule
+                          </p>
+                          <a className="link" href="https://drive.google.com/open?id=1GhuVb0j7sXPpNs4-wsd4QVlI9taERw6H" target="_blank" rel="noopener noreferrer">
+                              <Button round color="rose">
+                                  <FormatAlignLeft className={classes.icons} />View Schedule
+                              </Button>
+                          </a>
+                        </CardBody>
+                      </Card>
+                    </GridItem>
+                    <GridItem xs={12} sm={6} md={6}>
+                      <Card
+                        raised
+                        background
+                        style={{ backgroundImage: "url(" + lawn + ")" }}
+                      >
+                        <CardBody background>
+                          <h6 className={classes.category}>Free Tutoring 2019-2020</h6>
+                          <h3 className={classes.cardTitle}>
+                            Week 1 Schedule(Spanish)
+                          </h3>
+                          <p className={classes.textCenter}>
+                            Click button below to view the schedule
+                          </p>
+                          <a className="link" href="https://drive.google.com/open?id=1BahdKYFuOm3v1GdH2FrJmuVsSKAEC1z-" target="_blank" rel="noopener noreferrer">
+                              <Button round color="rose">
+                                  <FormatAlignLeft className={classes.icons} />View Schedule
+                              </Button>
+                          </a>
+                        </CardBody>
+                      </Card>
+                    </GridItem>
+                    
                     <GridItem xs={12} sm={6} md={6}>
                       <Card
                         raised

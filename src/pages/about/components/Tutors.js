@@ -22,34 +22,45 @@ import CardFooter from "components/Card/CardFooter.jsx";
 import Muted from "components/Typography/Muted.jsx";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
-import HannahGuan from "../../../static/about/tutors/HannahGuan.jpg";
-import NancyAbraham from "../../../static/about/tutors/NancyAbraham.jpg";
-import AustinRamos from "../../../static/about/tutors/AustinRamos.jpg";
-import TordaBordas from "../../../static/about/tutors/TordaBordas.jpg";
-import EmilyCevey from "../../../static/about/tutors/EmilyCevey.jpg";
-import JoshCevey from "../../../static/about/tutors/JoshCevey.jpg";
-import AnshumanChhawcharia from "../../../static/about/tutors/AnshumanChhawcharia.jpg";
-import AryamanChhawcharia from "../../../static/about/tutors/AryamanChhawcharia.png";
-import ShiwinFernando from "../../../static/about/tutors/ShiwinFernando.jpg";
-import LouisGeer from "../../../static/about/tutors/LouisGeer.jpg";
-import BranimirGore from "../../../static/about/tutors/BranimirGore.jpg";
-import JieonKim from "../../../static/about/tutors/JieonKim.jpg";
-import AyushKumar from "../../../static/about/tutors/AyushKumar.jpg";
-import DavidLie from "../../../static/about/tutors/DavidLie.jpg";
-import TanyaLertpradist from "../../../static/about/tutors/TanyaLertpradist.jpg";
-import AllenLiang from "../../../static/about/tutors/AllenLiang.jpg";
-import EvaLin from "../../../static/about/tutors/EvaLin.jpg";
-import JenLin from "../../../static/about/tutors/JenLin.jpg";
-import JoyceLiu from "../../../static/about/tutors/JoyceLiu.jpg";
-import PrateekMishra from "../../../static/about/tutors/PrateekMishra.jpg";
-import FabrizioMolina from "../../../static/about/tutors/FabrizioMolina.jpg";
-import ColinPerera from "../../../static/about/tutors/ColinPerera.jpg";
-import SunnyVuong from "../../../static/about/tutors/SunnyVuong.jpg";
-import SuranSomawardana from "../../../static/about/tutors/SuranSomawardana.png";
-import PrestonTranbarger from "../../../static/about/tutors/PrestonTranbarger.jpg";
-import ElijahWhang from "../../../static/about/tutors/ElijahWhang.jpg";
-import TejsaiYelamanchili from "../../../static/about/tutors/TejsaiYelamanchili.jpg";
-import EricZou from "../../../static/about/tutors/EricZou.jpg";
+import HannahG from "../../../static/about/tutors/HannahG.jpg";
+import HannahA from "../../../static/about/tutors/HannahA.jpg";
+import SamanthaF from "../../../static/about/tutors/SamanthaF.jpg";
+import AlessandraF from "../../../static/about/tutors/AlessandraF.jpg";
+import NancyA from "../../../static/about/tutors/NancyA.jpg";
+import AustinR from "../../../static/about/tutors/AustinR.jpg";
+import BrandonR from "../../../static/about/tutors/BrandonR.jpg";
+import TordaB from "../../../static/about/tutors/TordaB.jpg";
+import AnanyaL from "../../../static/about/tutors/AnanyaL.jpg";
+import EmilyC from "../../../static/about/tutors/EmilyC.jpg";
+import JoshC from "../../../static/about/tutors/JoshC.jpg";
+import ElenaG from "../../../static/about/tutors/ElenaG.jpg";
+import AnshumanC from "../../../static/about/tutors/AnshumanC.jpg";
+import AryamanC from "../../../static/about/tutors/AryamanC.png";
+import ShiwinF from "../../../static/about/tutors/ShiwinF.jpg";
+import LouisG from "../../../static/about/tutors/LouisG.jpg";
+import BranimirG from "../../../static/about/tutors/BranimirG.jpg";
+import JieonK from "../../../static/about/tutors/JieonK.jpg";
+import AyushK from "../../../static/about/tutors/AyushK.jpg";
+import AndrewR from "../../../static/about/tutors/AndrewR.jpg";
+import DavidL from "../../../static/about/tutors/DavidL.jpg";
+import TanyaL from "../../../static/about/tutors/TanyaL.jpg";
+import AllenL from "../../../static/about/tutors/AllenL.jpg";
+import EvaL from "../../../static/about/tutors/EvaL.jpg";
+import MaggieJ from "../../../static/about/tutors/MaggieJ.jpg";
+import JenL from "../../../static/about/tutors/JenL.jpg";
+import JoshW from "../../../static/about/tutors/JoshW.jpg";
+import JoyceL from "../../../static/about/tutors/JoyceL.jpg";
+import PrateekM from "../../../static/about/tutors/PrateekM.jpg";
+import FabrizioM from "../../../static/about/tutors/FabrizioM.jpg";
+import ColinP from "../../../static/about/tutors/ColinP.jpg";
+import SunnyV from "../../../static/about/tutors/SunnyV.jpg";
+import SuranS from "../../../static/about/tutors/SuranS.jpg";
+import AnnastinaT from "../../../static/about/tutors/AnnastinaT.jpg";
+import PrestonT from "../../../static/about/tutors/PrestonT.jpg";
+import ElijahW from "../../../static/about/tutors/ElijahW.jpg";
+import TejsaiY from "../../../static/about/tutors/TejsaiY.jpg";
+import EricZ from "../../../static/about/tutors/EricZ.jpg";
+
 
 const styles = theme => ({
   typography: {
@@ -93,11 +104,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={HannahGuan} alt="..." className={classes.img} />
+                          <img src={HannahG} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Hannah Guan, Head Tutor</h4>
+                        <h4 className={classes.cardTitle}>Hannah G., Head Tutor</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -132,11 +143,50 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={NancyAbraham} alt="..." className={classes.img} />
+                          <img src={HannahA} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Nancy Abraham</h4>
+                        <h4 className={classes.cardTitle}>Hannah A.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Hannah has been in njhs for two years and this is her third year. Math has been her favorite subject since she was little. Hannah loves to help and work with small kids. She had volunteered in many summer camps where she has worked with small children. Hannah is very excited to be joining San Antonio Math Includes. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={NancyA} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Nancy A.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -171,11 +221,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={TordaBordas} alt="..." className={classes.img} />
+                          <img src={TordaB} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Torda Bordas</h4>
+                        <h4 className={classes.cardTitle}>Torda B.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -210,11 +260,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={EmilyCevey} alt="..." className={classes.img} />
+                          <img src={EmilyC} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Emily Cevey</h4>
+                        <h4 className={classes.cardTitle}>Emily C.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -249,11 +299,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={JoshCevey} alt="..." className={classes.img} />
+                          <img src={JoshC} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Josh Cevey</h4>
+                        <h4 className={classes.cardTitle}>Josh C.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -288,11 +338,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={AnshumanChhawcharia} alt="..." className={classes.img} />
+                          <img src={AnshumanC} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Anshuman Chhawcharia</h4>
+                        <h4 className={classes.cardTitle}>Anshuman C.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -327,11 +377,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={AryamanChhawcharia} alt="..." className={classes.img} />
+                          <img src={AryamanC} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Aryaman Chhawcharia</h4>
+                        <h4 className={classes.cardTitle}>Aryaman C.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -366,11 +416,50 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={ShiwinFernando} alt="..." className={classes.img} />
+                          <img src={SamanthaF} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Shiwin Fernando</h4>
+                        <h4 className={classes.cardTitle}>Samantha F.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Sam is part of the Basis Shavano class of 2022. She has always loved math, far superior to English in her opinion, and enjoys teaching other students. She joined SAMI to help her fellow students with math and because she believed in its message and what it is doing. Her favorite subjects are chemistry, biology, and math. Outside of school, she enjoys reading, writing, and playing volleyball. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={ShiwinF} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Shiwin F.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -405,11 +494,89 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={LouisGeer} alt="..." className={classes.img} />
+                          <img src={AlessandraF} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Louis Geer</h4>
+                        <h4 className={classes.cardTitle}>Alessandra F</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Alessandra is apart of the Class of 2022 at Basis Shavano High School. She has participated in NJHS for 3 years and NHS for one year. She has participated in Youth Orchestra of San Antonio and the San Antonio Figure Skating Club. She has also been apart of numerous volunteer groups. She has won many awards including the Presidential Volunteer Service Award gold standard. Lastly, she enjoys helping others and tutoring children. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={ElenaG} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Elena G.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Elena is part of the Class of 2021 at BASIS Shavano. For the past six years, she’s been a member of NHS and NJHS before that. In addition, she loves animals and volunteers frequently at the San Antonio Humane Society. She also has a passion for the sciences and hopes to major in economics in college. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={LouisG} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Louis G.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -444,11 +611,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={BranimirGore} alt="..." className={classes.img} />
+                          <img src={BranimirG} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Branimir Gore</h4>
+                        <h4 className={classes.cardTitle}>Branimir G.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -483,11 +650,50 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={JieonKim} alt="..." className={classes.img} />
+                          <img src={MaggieJ} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Jieon Kim</h4>
+                        <h4 className={classes.cardTitle}>Maggie J.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Maggie is part of the class of 2022 at Basis Shavano. She enjoys all her classes in school and has won awards in physics and literature. She is a member of NHS and participates in Academic World Quest at Basis. She is also a Girl Scout and earned her Silver Award by doing a volunteer project with the Humane Society. Maggie’s favorite activity outside school is soccer! In her free time, she enjoys reading and spending time with friends. She also likes to sleep! She doesn’t understand why little kids refuse to take naps. Maggie is excited to be part of SaMi so she can help other students learn about math. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={JieonK} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Jieon K.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -522,11 +728,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={AyushKumar} alt="..." className={classes.img} />
+                          <img src={AyushK} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Ayush Kumar</h4>
+                        <h4 className={classes.cardTitle}>Ayush K.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -561,11 +767,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={DavidLie} alt="..." className={classes.img} />
+                          <img src={DavidL} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>David Lie</h4>
+                        <h4 className={classes.cardTitle}>David L.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -600,11 +806,50 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={TanyaLertpradist} alt="..." className={classes.img} />
+                          <img src={AnanyaL} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Tanya Lertpradist</h4>
+                        <h4 className={classes.cardTitle}>Ananya L.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Ananya is part of the Class of 2022 at Basis San Antonio Shavano. She's been playing piano since she was four and a half, and plays basketball for BASIS. Although math is usually one of the easier subjects for her, there are many times when she wishes she had a tutor to help her with the subject; as a result, she joined SaMi so that others don't have to face this problem. Ananya aspires to help individuals succeed in math, acting as someone who kids can turn to for guidance and encouragement to continue to work for their goal. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={TanyaL} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Tanya L.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -639,11 +884,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={AllenLiang} alt="..." className={classes.img} />
+                          <img src={AllenL} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Allen Liang</h4>
+                        <h4 className={classes.cardTitle}>Allen L.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -678,11 +923,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={EvaLin} alt="..." className={classes.img} />
+                          <img src={EvaL} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Eva Lin</h4>
+                        <h4 className={classes.cardTitle}>Eva L.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -717,11 +962,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={JenLin} alt="..." className={classes.img} />
+                          <img src={JenL} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Jen Lin</h4>
+                        <h4 className={classes.cardTitle}>Jen L.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -756,11 +1001,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={JoyceLiu} alt="..." className={classes.img} />
+                          <img src={JoyceL} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Joyce Liu</h4>
+                        <h4 className={classes.cardTitle}>Joyce L.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -795,11 +1040,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={PrateekMishra} alt="..." className={classes.img} />
+                          <img src={PrateekM} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Prateek Mishra</h4>
+                        <h4 className={classes.cardTitle}>Prateek M.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -834,11 +1079,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={FabrizioMolina} alt="..." className={classes.img} />
+                          <img src={FabrizioM} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Fabrizio Molina</h4>
+                        <h4 className={classes.cardTitle}>Fabrizio M.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -872,11 +1117,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={ColinPerera} alt="..." className={classes.img} />
+                          <img src={ColinP} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Colin Perera</h4>
+                        <h4 className={classes.cardTitle}>Colin P.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -910,11 +1155,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={AustinRamos} alt="..." className={classes.img} />
+                          <img src={AustinR} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Austin Ramos</h4>
+                        <h4 className={classes.cardTitle}>Austin R.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -948,11 +1193,87 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={SuranSomawardana} alt="..." className={classes.img} />
+                          <img src={BrandonR} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Suran Somawardana</h4>
+                        <h4 className={classes.cardTitle}>Brandon R.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Brandon is part of the class of 2020 at BASIS Shavano. He is a dedicated student who works to complete what he starts. Brandon has taken math classes through Calculus BC, including Statistics. He also enjoys physics, engineering, and computer science. Brandon has tutored many subjects before, especially in various math subjects When he isn’t working on his education, Brandon enjoys various strategy and skill games such as the Civilization series and Magic: The Gathering. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AndrewR} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Andrew R.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Brandon Rice is part of the class of 2020 at BASIS Shavano. He is a dedicated student who works to complete what he starts. Brandon has taken math classes through Calculus BC, including Statistics. He also enjoys physics, engineering, and computer science. Brandon has tutored many subjects before, especially in various math subjects When he isn’t working on his education, Brandon enjoys various strategy and skill games such as the Civilization series and Magic: The Gathering. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={SuranS} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Suran S.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -986,11 +1307,49 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={PrestonTranbarger} alt="..." className={classes.img} />
+                          <img src={AnnastinaT} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Preston Tranbarger</h4>
+                        <h4 className={classes.cardTitle}>Annastina T.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Annastina is excited to help you on your math journey!  She has taken math classes through AP Calculus BC, and is currently taking AP Statistics.  Her favorite science classes are physics and computer science.   Annastina has competed in Science Bowl, participates in CyberPartriots and has presented her science fair projects at various levels, including the Intel International Science & Engineering Fair.  In her extra time, she plays the piano and follows sports and their related statistics like a crazy fan girl!  Annastina enjoys helping others with any subject… math, language, or the sciences, and has two younger brothers who, willingly or not, are recipients of her tutoring!  
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={PrestonT} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Preston T.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -1024,11 +1383,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={SunnyVuong} alt="..." className={classes.img} />
+                          <img src={SunnyV} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Sunny Vuong</h4>
+                        <h4 className={classes.cardTitle}>Sunny V.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -1062,11 +1421,49 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={ElijahWhang} alt="..." className={classes.img} />
+                          <img src={JoshW} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Elijah Whang</h4>
+                        <h4 className={classes.cardTitle}>Josh W.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Josh is apart of the class of 2022 at Basis San Antonio Shavano. His favorite subjects are AP Computer Science, AP Chemistry, and AP Economics. He loves to volunteer for his community, play basketball, and read. He chose to join SAMI because of its goal to help students obtain a better grasp on the concept of math and to also help the community. Having the motivation of volunteering for SAMI has given him the benefit of gaining teaching experience as well. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={ElijahW} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Elijah W.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -1100,11 +1497,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={TejsaiYelamanchili} alt="..." className={classes.img} />
+                          <img src={TejsaiY} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Tejsai Yelamanchili</h4>
+                        <h4 className={classes.cardTitle}>Tejsai Y.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -1138,11 +1535,11 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={EricZou} alt="..." className={classes.img} />
+                          <img src={EricZ} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Eric Zou</h4>
+                        <h4 className={classes.cardTitle}>Eric Z.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
