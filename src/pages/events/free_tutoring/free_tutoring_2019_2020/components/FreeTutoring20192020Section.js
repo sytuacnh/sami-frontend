@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import compose from 'recompose/compose'
@@ -45,6 +46,11 @@ class FreeTutoring20192020Section extends PureComponent {
                       classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)
                     }
                   > 
+                    <h2 className={classes.title}>
+                      <Link to='/free-tutoring-2019-2020/weekly-schedule' target="_blank" className="link">
+                          <b>Weekly Schedule</b>
+                      </Link>
+                    </h2>
                     <h2 className={classes.title}>Program Description</h2>
                     <div className={classes.eventFont}>
                       <p className={classes.eventFont}>
@@ -93,7 +99,7 @@ class FreeTutoring20192020Section extends PureComponent {
                         </ul>
                       </div>
                       <p className={classes.eventFont}>
-                        <b>The 2019-2020 Program is from September 15 to November 15 in 2019, and January 15 to March 14, in 2020.</b>
+                        <b>The 2019-2020 Program is from September 23 to November 15 in 2019, and January 13 to March 14, in 2020.</b>
                         <br />
                         <br />
                         If you have any questions, please contact us at <b>sanantoniomathinclude@gmail.com</b>.  

@@ -88,7 +88,7 @@ class SummerAtSaMi2019Cards extends PureComponent {
                         <p className={classes.textCenter}>
                           Click button below to join as a student
                         </p>
-                        <a className="link" href="https://docs.google.com/forms/d/1o1RESzltjK8KW1jQDrzNvU-3cuDYiD-WSU9dJ0AtecU/edit" target="_blank" rel="noopener noreferrer">
+                        <a className="link" href="https://docs.google.com/forms/d/e/1FAIpQLSfgYWmQcGwo1wd_0xkyM1jojlO18MZXJ8HQgBrjGMW9epIXww/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
                             <Button round color="rose">
                                 <FormatAlignLeft className={classes.icons} />Sign Up
                             </Button>
@@ -110,7 +110,7 @@ class SummerAtSaMi2019Cards extends PureComponent {
                         <p className={classes.category}>
                           Click button below to join as a tutor
                         </p>
-                        <a className="link" href="https://drive.google.com/open?id=1EeEJgS8c8cFz0fL8idHa6vOmcdhTYfyYIqrbmyWD7K8" target="_blank" rel="noopener noreferrer">
+                        <a className="link" href="https://docs.google.com/forms/d/e/1FAIpQLSeg1PfUKy5LPoR8jBiLQAj2atn_B1YX5RsHBUnmvEH6dpYOjg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
                             <Button round color="rose">
                                 <FormatAlignLeft className={classes.icons} />Sign Up
                             </Button>

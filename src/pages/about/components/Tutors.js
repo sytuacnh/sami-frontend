@@ -59,6 +59,8 @@ import AnnastinaT from "../../../static/about/tutors/AnnastinaT.jpg";
 import PrestonT from "../../../static/about/tutors/PrestonT.jpg";
 import ElijahW from "../../../static/about/tutors/ElijahW.jpg";
 import TejsaiY from "../../../static/about/tutors/TejsaiY.jpg";
+import JohnC from "../../../static/about/tutors/JohnC.jpg";
+import PoonachaC from "../../../static/about/tutors/PoonachaC.jpg";
 import EricZ from "../../../static/about/tutors/EricZ.jpg";
 
 
@@ -260,6 +262,45 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={JohnC} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>John C.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            John is part of the Class of 2023 at Basis San Antonio Shavano. He enjoys any classes that have to do with math including Pre-Calculus, Physics, and Chemistry; He also has tutored peers for his teachers every year from 5th to 8th. John plays many video games during his spare time with his friends, and he frequently helps them with their homework. He is also interested in guitars and music. John enjoys filming and editing videos for his Youtube channel; He also is a big fan of media and enjoys watching movies, making and looking at memes, and finding new things on the internet. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
                           <img src={EmilyC} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
@@ -324,6 +365,45 @@ class Tutors extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Josh is part of the Class of 2024 at Basis San Antonio Shavano. Josh currently tutors third, fourth, and fifth grade kids after school. When he was younger, he was more interested in the fields of physics and chemistry. Although math has not always been his favorite subject, it has always been a very easy topic to learn. This year however, he has begin to enjoy the topic more though he’ve never had any major math related experiences. You can find Josh running, swimming, playing tennis, reading, and drawing!
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={PoonachaC} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Poonacha C.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Poonacha is part of the Class of 2022 at Basis Shavano. He has always been passionate about mathematics from a young age. He is extremely interested in tutoring others, and it has always been an interest of his. His favorite subjects are Calculus, Physics, Computer Science, and Programming. He has participated and done well in HOSA (Health Occupations Students of America) while also co-founding a computer science club at his school. He is very excited to teach in SAMi since he believes it is an excellent organization that gives opportunities to teach others mathematics. 
                                         </p>
                                     </Typography>
                                   </Popover>
