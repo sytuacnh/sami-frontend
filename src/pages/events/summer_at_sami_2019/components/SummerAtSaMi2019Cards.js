@@ -63,7 +63,7 @@ class SummerAtSaMi2019Cards extends PureComponent {
                         <p className={classes.category}>
                           Click button below to view FAQ
                         </p>
-                        <a className="link" href="https://drive.google.com/open?id=1yUFUXhub6TutIXbuAAc2pprZBiozVJRlC_xFYeKekck" target="_blank" rel="noopener noreferrer">
+                        <a className="link" href="https://docs.google.com/document/d/1yUFUXhub6TutIXbuAAc2pprZBiozVJRlC_xFYeKekck/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <Button round color="rose">
                                 <FormatAlignLeft className={classes.icons} />View FAQ
                             </Button>

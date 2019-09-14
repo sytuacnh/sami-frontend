@@ -1335,7 +1335,7 @@ class Tutors extends PureComponent {
                                   >
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
-                                            Brandon Rice is part of the class of 2020 at BASIS Shavano. He is a dedicated student who works to complete what he starts. Brandon has taken math classes through Calculus BC, including Statistics. He also enjoys physics, engineering, and computer science. Brandon has tutored many subjects before, especially in various math subjects When he isn’t working on his education, Brandon enjoys various strategy and skill games such as the Civilization series and Magic: The Gathering. 
+                                            Andrew is part of the class of 2023 at Basis San Antonio Shavano. He has received the Gold Presidential Volunteer Service Award for community service. He has a strong drive to help others and the community. His favorite classes are math and science. He enjoys playing basketball and watching F.R.I.E.N.D.S. He has been the team captain of the BASIS Certamen team, and is a member of HOSA. He also is a member of NJHS and has been to State competition for JCL. He really enjoys seeing people finally understand a topic and the joy they have when getting the problem right.  
                                         </p>
                                     </Typography>
                                   </Popover>
