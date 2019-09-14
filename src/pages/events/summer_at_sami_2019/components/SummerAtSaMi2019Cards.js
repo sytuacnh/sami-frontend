@@ -20,6 +20,8 @@ import lawn from "../../../../static/events/lawn.jpg";
 import piece from "../../../../static/events/piece.jpg";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
 
+import poster from "../../../../static/events/summer_at_sami/pdf/SaMiSummerCamp2019.pdf";
+
 class SummerAtSaMi2019Cards extends PureComponent {
     render() {
         const { classes } = this.props;
@@ -41,9 +43,9 @@ class SummerAtSaMi2019Cards extends PureComponent {
                         <p className={classes.textCenter}>
                           Click button below to view our poster
                         </p>
-                        <a className="link" href="https://drive.google.com/open?id=1Fe7zxwDhEDsdwgWNtFGvsXcYr7g_T7IS" target="_blank" rel="noopener noreferrer">
+                        <a className="link" href={poster} target="_blank" rel="noopener noreferrer">
                             <Button round color="rose">
-                                <FormatAlignLeft className={classes.icons} />View Poster
+                                <FormatAlignLeft className={classes.icons} />View PDF
                             </Button>
                         </a>
                       </CardBody>

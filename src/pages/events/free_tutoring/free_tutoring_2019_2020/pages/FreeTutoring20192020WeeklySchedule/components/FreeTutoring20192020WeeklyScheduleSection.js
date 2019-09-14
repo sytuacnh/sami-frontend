@@ -60,8 +60,8 @@ class FreeTutoring20192020Section extends PureComponent {
                       tableData={[
                         ["Week 1", 
                           "9/23-9/29", 
-                          <a className="link" href={Week1} target="_blank" rel="noopener noreferrer">Link (English)</a>, 
-                          <a className="link" href={Week1Spanish} target="_blank" rel="noopener noreferrer">Link (Spanish)</a>],
+                          <a className="link" href={Week1} target="_blank" rel="noopener noreferrer">PDF (English)</a>, 
+                          <a className="link" href={Week1Spanish} target="_blank" rel="noopener noreferrer">PDF (Spanish)</a>],
                         ["Week 2", 
                           "9/30-10/06", 
                           <a className="link" href="https://drive.google.com/open?id=1ffDOvmQW4THObe91sbx7dNjmXruK-LfQ" target="_blank" rel="noopener noreferrer"></a>, 

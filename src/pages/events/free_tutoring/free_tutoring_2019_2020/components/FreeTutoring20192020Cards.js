@@ -20,6 +20,8 @@ import tutorHelp from "../../../../../static/events/tutor_help_2.jpg";
 import lawn from "../../../../../static/events/lawn.jpg";
 import piece from "../../../../../static/events/piece.jpg";
 
+import programPoster from "../../../../../static/events/free_tutoring/2019-2020/pdf/SaMi2019-2020Program.pdf";
+import programPosterSpanish from "../../../../../static/events/free_tutoring/2019-2020/pdf/SaMi2019-2020Program-Spanish.pdf";
 import CalendarCurriculum from "../../../../../static/events/free_tutoring/2019-2020/pdf/CalendarCurriculum.pdf";
 import CalendarCurriculumSpanish from "../../../../../static/events/free_tutoring/2019-2020/pdf/CalendarCurriculumSpanish.pdf";
 
@@ -88,9 +90,9 @@ class FreeTutoring20192020Cards extends PureComponent {
                           <p className={classes.textCenter}>
                             Click button below to view our poster
                           </p>
-                          <a className="link" href="https://drive.google.com/open?id=17j5aEH7XkBsf_LaXNP1hL3Ek976A5Ole" target="_blank" rel="noopener noreferrer">
+                          <a className="link" href={programPoster} target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
-                                  <FormatAlignLeft className={classes.icons} />View Poster
+                                  <FormatAlignLeft className={classes.icons} />View PDF
                               </Button>
                           </a>
                         </CardBody>
@@ -110,9 +112,9 @@ class FreeTutoring20192020Cards extends PureComponent {
                           <p className={classes.textCenter}>
                             Click button below to view our poster
                           </p>
-                          <a className="link" href="https://drive.google.com/open?id=1NIxH3xW1R0skmLwaPOhOs445PO5fM2Js" target="_blank" rel="noopener noreferrer">
+                          <a className="link" href={programPosterSpanish} target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
-                                  <FormatAlignLeft className={classes.icons} />View Poster
+                                  <FormatAlignLeft className={classes.icons} />View PDF
                               </Button>
                           </a>
                         </CardBody>
