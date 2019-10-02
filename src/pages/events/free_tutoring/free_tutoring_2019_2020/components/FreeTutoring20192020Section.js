@@ -7,9 +7,8 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import withStyles from "@material-ui/core/styles/withStyles";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
-// import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
-
 import FreeTutoring20192020Cards from "./FreeTutoring20192020Cards";
+import FreeTutoring20192020ScheduleTable from "./FreeTutoring20192020ScheduleTable";
 
 const style = {
     paddingCustom: {
@@ -47,10 +46,9 @@ class FreeTutoring20192020Section extends PureComponent {
                     }
                   > 
                     <h2 className={classes.title}>
-                      <Link to='/free-tutoring-2019-2020/weekly-schedule' target="_blank" className="link">
-                          <b>Weekly Schedule</b>
-                      </Link>
+                      <b>Weekly Schedule</b>
                     </h2>
+                    <FreeTutoring20192020ScheduleTable />
                     <h2 className={classes.title}>Program Description</h2>
                     <div className={classes.eventFont}>
                       <p className={classes.eventFont}>
