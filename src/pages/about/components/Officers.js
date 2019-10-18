@@ -18,7 +18,6 @@ import Muted from "components/Typography/Muted.jsx";
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
 import HannahGuan from "../../../static/about/officers/HannahG.jpg";
 import CoinP from "../../../static/about/officers/CoinP.jpg";
-import JoshW from "../../../static/about/officers/JoshW.jpg";
 import SamanthaF from "../../../static/about/officers/SamanthaF.jpg";
 import EricZ from "../../../static/about/officers/EricZ.jpg";
 import AnnastinaT from "../../../static/about/officers/AnnastinaT.jpg";
@@ -102,24 +101,6 @@ class Officers extends PureComponent {
                         </Muted>
                         <p className={classes.description}>
                           Develops the curriculum. 
-                        </p>
-                      </CardBody>
-                    </Card>
-                  </GridItem>
-                  <GridItem xs={12} sm={3} md={3}>
-                    <Card profile plain>
-                      <CardAvatar profile plain>
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={JoshW} alt="..." />
-                        </a>
-                      </CardAvatar>
-                      <CardBody>
-                        <h4 className={classes.cardTitle}>Josh W.</h4>
-                        <Muted>
-                          <h6 className={classes.cardCategory}>Head Recruitment Officer</h6>
-                        </Muted>
-                        <p className={classes.description}>
-                            Reaches out to all schools. 
                         </p>
                       </CardBody>
                     </Card>
