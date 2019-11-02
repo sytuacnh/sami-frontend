@@ -207,7 +207,7 @@ class HomeSection extends PureComponent  {
                   </GridContainer>
                 </GridItem>
                 <GridItem
-                  xs={12}
+                  xs={8}
                   className={
                     classNames(classes.marginTopSmShrink, classes.section, classes.mlAuto, classes.mrAuto, classes.textCenter)
                   }
@@ -216,7 +216,7 @@ class HomeSection extends PureComponent  {
                     <h2 className={classes.title}>About Us</h2>
                     <GridContainer>
                       <GridItem md={4} sm={4}>
-                        <Card style={{ width: "20rem" }}>
+                        <Card style={{ width: "15rem" }}>
                             <CardHeader color="rose" className={classes.cardHeader}>Advisors</CardHeader>
                             <CardBody>
                               <p>
@@ -227,7 +227,7 @@ class HomeSection extends PureComponent  {
                         </Card>
                       </GridItem>
                       <GridItem md={4} sm={4}>
-                        <Card style={{ width: "20rem" }}>
+                        <Card style={{ width: "15rem" }}>
                             <CardHeader color="rose" className={classes.cardHeader}>Officers</CardHeader>
                             <CardBody>
                               <p>
@@ -238,7 +238,18 @@ class HomeSection extends PureComponent  {
                         </Card>
                       </GridItem>
                       <GridItem md={4} sm={4}>
-                        <Card style={{ width: "20rem" }}>
+                        <Card style={{ width: "15rem" }}>
+                            <CardHeader color="rose" className={classes.cardHeader}>Chapters</CardHeader>
+                            <CardBody>
+                              <p>
+                                Our chapters are directed by high school students across the nation. They recruit and coordinate students in their chapters to attend our free tutoring programs.  
+                              </p>
+                              <Button component={ Link } to="/about#chapters" color="primary">View Chapters</Button>
+                            </CardBody>
+                        </Card>
+                      </GridItem>
+<GridItem md={4} sm={4}>
+                        <Card style={{ width: "15rem" }}>
                             <CardHeader color="rose" className={classes.cardHeader}>Tutors</CardHeader>
                             <CardBody>
                               <p>
@@ -248,6 +259,7 @@ class HomeSection extends PureComponent  {
                             </CardBody>
                         </Card>
                       </GridItem>
+
                     </GridContainer>
                   </div>
                 </GridItem>

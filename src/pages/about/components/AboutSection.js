@@ -6,8 +6,9 @@ import GridItem from "components/Grid/GridItem.jsx";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Advisors from "./Advisors";
 import Officers from "./Officers";
+import Chapters from "./Chapters";
 import Tutors from "./Tutors";
-
+ 
 class AboutSection extends PureComponent {
 
     render() {
@@ -41,6 +42,18 @@ class AboutSection extends PureComponent {
                     <Officers />
                   </GridItem>
 
+	            <GridItem
+                    xs={12}
+                    sm={8}
+                    md={8}
+                    className={
+                      classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)
+                    }
+                  > 
+                    <Chapters />
+                  </GridItem>
+
+
                   <GridItem
                     xs={12}
                     sm={8}
@@ -51,6 +64,9 @@ class AboutSection extends PureComponent {
                   > 
                     <Tutors />
                   </GridItem>
+
+
+
                 </GridContainer>
               </div>
             </div>

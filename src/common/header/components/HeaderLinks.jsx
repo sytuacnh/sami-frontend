@@ -320,6 +320,15 @@ const HeaderLinks = ({ ...props }) => {
             >
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe722;</IconSpan> OFFICERS
             </Link>,
+
+<Link
+              id="aboutNav#chapters"
+              onClick={handleChangeCurrentNav}
+              to="/about#chapters"
+              className={classes.dropdownLink}
+            >
+              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe722;</IconSpan> CHAPTERS
+            </Link>,
             <Link
               id="aboutNav#tutors"
               onClick={handleChangeCurrentNav}
