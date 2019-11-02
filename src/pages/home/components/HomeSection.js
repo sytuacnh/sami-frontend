@@ -207,7 +207,7 @@ class HomeSection extends PureComponent  {
                   </GridContainer>
                 </GridItem>
                 <GridItem
-                  xs={8}
+                  xs={12}
                   className={
                     classNames(classes.marginTopSmShrink, classes.section, classes.mlAuto, classes.mrAuto, classes.textCenter)
                   }
@@ -215,8 +215,8 @@ class HomeSection extends PureComponent  {
                   <div className={classes.sectionDescription}>
                     <h2 className={classes.title}>About Us</h2>
                     <GridContainer>
-                      <GridItem md={4} sm={4}>
-                        <Card style={{ width: "15rem" }}>
+                      <GridItem md={6} sm={3}>
+                        <Card>
                             <CardHeader color="rose" className={classes.cardHeader}>Advisors</CardHeader>
                             <CardBody>
                               <p>
@@ -226,8 +226,8 @@ class HomeSection extends PureComponent  {
                             </CardBody>
                         </Card>
                       </GridItem>
-                      <GridItem md={4} sm={4}>
-                        <Card style={{ width: "15rem" }}>
+                      <GridItem md={6} sm={3}>
+                        <Card>
                             <CardHeader color="rose" className={classes.cardHeader}>Officers</CardHeader>
                             <CardBody>
                               <p>
@@ -237,8 +237,10 @@ class HomeSection extends PureComponent  {
                             </CardBody>
                         </Card>
                       </GridItem>
-                      <GridItem md={4} sm={4}>
-                        <Card style={{ width: "15rem" }}>
+                    </GridContainer>
+                    <GridContainer>
+                      <GridItem md={6} sm={3}>
+                        <Card>
                             <CardHeader color="rose" className={classes.cardHeader}>Chapters</CardHeader>
                             <CardBody>
                               <p>
@@ -248,8 +250,8 @@ class HomeSection extends PureComponent  {
                             </CardBody>
                         </Card>
                       </GridItem>
-<GridItem md={4} sm={4}>
-                        <Card style={{ width: "15rem" }}>
+                      <GridItem md={6} sm={3}>
+                        <Card>
                             <CardHeader color="rose" className={classes.cardHeader}>Tutors</CardHeader>
                             <CardBody>
                               <p>
