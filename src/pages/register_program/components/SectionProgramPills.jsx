@@ -40,8 +40,8 @@ import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPosts
 import { TabContentWrapper } from "../style";
 import ProgramForm from "./ProgramForm";
 import { actionCreators } from '../store';
-import SummerAtSaMi2019Cards from "../../events/summer_at_sami_2019/components/SummerAtSaMi2019Cards";
-import PiDayCelebrationCards from "../../events/pi_day_celebration/components/PiDayCelebrationCards";
+import SummerAtSaMi2019Cards from "../../events/summer_at_sami/summer_at_sami_2019/components/SummerAtSaMiCards";
+import PiDayCelebrationCards from "../../events/pi_day_celebration/pi_day_celebration_2019/components/PiDayCelebrationCards";
 import FreeTutoring20192020Cards from "../../events/free_tutoring/free_tutoring_2019_2020/components/FreeTutoring20192020Cards";
 
 const style = {
