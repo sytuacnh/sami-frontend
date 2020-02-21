@@ -232,7 +232,7 @@ class HomeSection extends PureComponent  {
                             <CardHeader color="rose" className={classes.cardHeader}>Officers</CardHeader>
                             <CardBody>
                               <p>
-                                Our offers have a track record of success and leadership skills. They oversee and direct the major aspects of SaMi's operations.
+                                Our offers have a track record of success and leadership skills. They oversee and direct the major aspects of SaMi's operations and events. 
                               </p>
                               <Button component={ Link } to="/about#officers" color="primary">View Officers</Button>
                             </CardBody>
