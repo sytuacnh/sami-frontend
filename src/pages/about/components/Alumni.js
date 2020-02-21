@@ -73,7 +73,8 @@ class Alumni extends PureComponent {
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Torda B., Duke University Class 2020</h4>
+                        <h4 className={classes.cardTitle}>Torda B.</h4>
+                        <p className={classes.description}>Duke University Class 2020</p>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -112,7 +113,8 @@ class Alumni extends PureComponent {
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Annastina T., MIT Class 2020</h4>
+                        <h4 className={classes.cardTitle}>Annastina T.</h4>
+                        <p className={classes.description}>MIT Class 2020</p>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
