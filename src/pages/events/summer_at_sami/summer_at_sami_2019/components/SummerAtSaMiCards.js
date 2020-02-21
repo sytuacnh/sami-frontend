@@ -14,15 +14,15 @@ import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import mathTwoGirls from "../../../../static/events/math_two_girls.jpg";
-import tutorHelp from "../../../../static/events/tutor_help_2.jpg";
-import lawn from "../../../../static/events/lawn.jpg";
-import piece from "../../../../static/events/piece.jpg";
+import mathTwoGirls from "../../../../../static/events/math_two_girls.jpg";
+import tutorHelp from "../../../../../static/events/tutor_help_2.jpg";
+import lawn from "../../../../../static/events/lawn.jpg";
+import piece from "../../../../../static/events/piece.jpg";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
 
-import poster from "../../../../static/events/summer_at_sami/pdf/SaMiSummerCamp2019.pdf";
+import poster from "../../../../../static/events/summer_at_sami/pdf/SaMiSummerCamp2019.pdf";
 
-class SummerAtSaMi2019Cards extends PureComponent {
+class SummerAtSaMiCards extends PureComponent {
     render() {
         const { classes } = this.props;
 
@@ -129,7 +129,7 @@ class SummerAtSaMi2019Cards extends PureComponent {
 
 
 
-export default withStyles(featuresStyle)(SummerAtSaMi2019Cards);
+export default withStyles(featuresStyle)(SummerAtSaMiCards);
 
 // export default compose(
 //     withStyles(style),

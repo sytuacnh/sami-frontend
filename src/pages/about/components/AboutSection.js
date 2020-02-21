@@ -8,6 +8,7 @@ import Advisors from "./Advisors";
 import Officers from "./Officers";
 import Chapters from "./Chapters";
 import Tutors from "./Tutors";
+import Alumni from "./Alumni";
  
 class AboutSection extends PureComponent {
 
@@ -65,7 +66,16 @@ class AboutSection extends PureComponent {
                     <Tutors />
                   </GridItem>
 
-
+                  <GridItem
+                    xs={12}
+                    sm={8}
+                    md={8}
+                    className={
+                      classNames(classes.mlAuto, classes.mrAuto, classes.textCenter)
+                    }
+                  > 
+                    <Alumni />
+                  </GridItem>
 
                 </GridContainer>
               </div>

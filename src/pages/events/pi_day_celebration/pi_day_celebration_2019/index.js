@@ -10,7 +10,7 @@ import PiDayCelebrationSection from "./components/PiDayCelebrationSection.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 
-import bgImage from "../../../static/events/pi_day_celebration/pi_digits.png";
+import bgImage from "../../../../static/events/pi_day_celebration/pi_digits.png";
 import {
     PiDayCelebrationWrapper
 } from "./style";

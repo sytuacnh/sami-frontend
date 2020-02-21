@@ -14,12 +14,15 @@ import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
+import mathTwoGirls from "../../../../../static/events/math_two_girls.jpg";
+import tutorHelp from "../../../../../static/events/tutor_help_2.jpg";
+import lawn from "../../../../../static/events/lawn.jpg";
+import piece from "../../../../../static/events/piece.jpg";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
-import celebrate_pi_day from "../../../../static/events/pi_day_celebration/celebrate_pi_day.jpg";
-import trinity from "../../../../static/events/pi_day_celebration/trinity.jpg";
 
+import poster from "../../../../../static/events/summer_at_sami/pdf/SaMiSummerCamp2020.pdf";
 
-class PiDayCelebrationCards extends PureComponent {
+class SummerAtSaMiCards extends PureComponent {
     render() {
         const { classes } = this.props;
 
@@ -30,19 +33,19 @@ class PiDayCelebrationCards extends PureComponent {
                     <Card
                       raised
                       background
-                      style={{ backgroundImage: "url(" + celebrate_pi_day + ")" }}
+                      style={{ backgroundImage: "url(" + lawn + ")" }}
                     >
                       <CardBody background>
-                        <h6 className={classes.category}>Pi Day Celebration 2019</h6>
+                        <h6 className={classes.category}>Summer@SaMi 2020</h6>
                         <h3 className={classes.cardTitle}>
                           Program Poster
                         </h3>
                         <p className={classes.textCenter}>
                           Click button below to view our poster
                         </p>
-                        <a className="link" href="https://drive.google.com/open?id=1nf3HOtN93QQGtB-k8O4ttdwe-hzCldnb" target="_blank" rel="noopener noreferrer">
+                        <a className="link" href={poster} target="_blank" rel="noopener noreferrer">
                             <Button round color="rose">
-                                <FormatAlignLeft className={classes.icons} />View Poster
+                                <FormatAlignLeft className={classes.icons} />View PDF
                             </Button>
                         </a>
                       </CardBody>
@@ -52,24 +55,25 @@ class PiDayCelebrationCards extends PureComponent {
                     <Card
                       raised
                       background
-                      style={{ backgroundImage: "url(" + trinity + ")" }}
+                      style={{ backgroundImage: "url(" + piece + ")" }}
                     >
                       <CardBody background>
-                        <h6 className={classes.category}>Pi Day Celebration 2019</h6>
+                        <h6 className={classes.category}>Summer@SaMi 2020</h6>
                         <h3 className={classes.cardTitle}>
-                          Map
+                          FAQ
                         </h3>
                         <p className={classes.category}>
-                          To view the map of Trinity University
+                          Click button below to view FAQ
                         </p>
-                        <a className="link" href="https://drive.google.com/open?id=1BRIuFTOEtOGgMm8rqgecozn3Sh1f_fVM" target="_blank" rel="noopener noreferrer">
+                        <a className="link" href="https://docs.google.com/document/d/1yUFUXhub6TutIXbuAAc2pprZBiozVJRlC_xFYeKekck/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <Button round color="rose">
-                                <FormatAlignLeft className={classes.icons} />View Map
+                                <FormatAlignLeft className={classes.icons} />View FAQ
                             </Button>
                         </a>
                       </CardBody>
                     </Card>
                   </GridItem>
+                  
                 </GridContainer>
             </Fragment>
         );
@@ -78,7 +82,7 @@ class PiDayCelebrationCards extends PureComponent {
 
 
 
-export default withStyles(featuresStyle)(PiDayCelebrationCards);
+export default withStyles(featuresStyle)(SummerAtSaMiCards);
 
 // export default compose(
 //     withStyles(style),

@@ -20,7 +20,8 @@ import ContactSection from "../../contact/components/ContactSection";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 // import boyThink from "../../../static/home/summer_camp_img_139.jpg";
-import middleKids from "../../../static/home/midKids.jpg";
+// import middleKids from "../../../static/home/midKids.jpg";
+import mainHannah from "../../../static/home/home_hannah.jpg";
 import fourKids from "../../../static/home/summer_camp_img_151.jpg";
 import pi from "../../../static/home/PiDay_m14.jpg";
 import Icon from "@material-ui/core/Icon";
@@ -90,7 +91,7 @@ class HomeSection extends PureComponent  {
                     <CardHeader image plain >
                       <ScrollAnimation animateIn="fadeInUp">
                         <a href="/tutoring" style={{ marginTop: "20px" }}>
-                          <img src={middleKids} alt="students and tutors" style={{ width: 500}}/> {/* style={{ width: 500}} */}
+                          <img src={mainHannah} alt="students and tutors" style={{ width: 500}}/> {/* style={{ width: 500}} */}
                         </a>
                         <div
                           className={classes.coloredShadow}
@@ -118,15 +119,15 @@ class HomeSection extends PureComponent  {
                           >
                             <CardBody background>
                               <h6 className={classes.cardCategory}>Event</h6>
-                              <Link to='/summer-at-sami-2019' className="link">
+                              <Link to='/summer-at-sami-2020' className="link">
                                 <h3 className={classes.cardTitleWhite}>
-                                  Free Summer Camps 2019
+                                  Free Summer Camps 2020
                                 </h3>
                               </Link>
                               <p className={classes.cardDescription}>
                                 Our summer camps are FREE for all students in grades K-8. They are supervised by college professors and led by high school students and national/regional math contest winners...
                               </p>
-                              <Button component={ Link } to="/summer-at-sami-2019" round color="primary">
+                              <Button component={ Link } to="/summer-at-sami-2020" round color="primary">
                                 <Icon>content_copy</Icon> View More
                               </Button>
                             </CardBody>
@@ -142,15 +143,15 @@ class HomeSection extends PureComponent  {
                           >
                             <CardBody background>
                               <h6 className={classes.cardCategory}>Event</h6>
-                              <Link to='/pi-day-celebration-2019' className="link">
+                              <Link to='/pi-day-celebration-2020' className="link">
                                 <h3 className={classes.cardTitleWhite}>
-                                  Pi Day Celebration 2019
+                                  Pi Day Celebration 2020
                                 </h3>
                               </Link>
                               <p className={classes.cardDescription}>
                                 The Celebration of Inclusive Excellence on Pi Day is an annual ceremony to bring all students in math to the forefront. The three keynote speakers will talk about math pathways...
                               </p>
-                              <Button component={ Link } to="/pi-day-celebration-2019" round color="info">
+                              <Button component={ Link } to="/pi-day-celebration-2020" round color="info">
                                 <Icon>content_copy</Icon> View More 
                               </Button>
                             </CardBody>
@@ -251,6 +252,17 @@ class HomeSection extends PureComponent  {
                         </Card>
                       </GridItem>
                       <GridItem md={6} sm={3}>
+                        <Card>
+                            <CardHeader color="rose" className={classes.cardHeader}>Alumni</CardHeader>
+                            <CardBody>
+                              <p>
+                                The SaMi Alumni Association is composed of tutors who have graduated from high school. Their hard work and dedication will be remembered by us.
+                              </p>
+                              <Button component={ Link } to="/about#alumni" color="primary">View Alumni</Button>
+                            </CardBody>
+                        </Card>
+                      </GridItem>
+                      <GridItem md={12} sm={12}>
                         <Card>
                             <CardHeader color="rose" className={classes.cardHeader}>Tutors</CardHeader>
                             <CardBody>

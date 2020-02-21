@@ -6,16 +6,16 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Parallax from "components/Parallax/Parallax.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import SummerAtSaMi2019Section from "./components/SummerAtSaMi2019Section.js";
+import SummerAtSaMiSection from "./components/SummerAtSaMiSection.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 
-import bgImage from "../../../static/events/summer_at_sami/summer.png";
+import bgImage from "../../../../static/events/summer_at_sami/summer.png";
 import {
-    SummerAtSami2019Wrapper
+    SummerAtSamiWrapper
 } from "./style";
 
-class SummerAtSaMi2019 extends Component {
+class SummerAtSaMi extends Component {
     componentDidMount() {
         window.scrollTo(0, 0)
     }
@@ -24,7 +24,7 @@ class SummerAtSaMi2019 extends Component {
         const { classes } = this.props;
 
         return (
-            <SummerAtSami2019Wrapper>
+            <SummerAtSamiWrapper>
                 <Parallax image={bgImage} filter="dark" small>
                   <div className={classes.container}>
                     <GridContainer justify="center">
@@ -37,18 +37,18 @@ class SummerAtSaMi2019 extends Component {
                   </div>
                 </Parallax>
                 <div className={classNames(classes.main, classes.mainRaised)}>
-                  <SummerAtSaMi2019Section /> 
+                  <SummerAtSaMiSection /> 
                 </div>
-            </SummerAtSami2019Wrapper>
+            </SummerAtSamiWrapper>
         );
     }
 }
 
-SummerAtSaMi2019.propTypes = {
+SummerAtSaMi.propTypes = {
     classes: PropTypes.object
 };
 
 export default compose(
     withStyles(landingPageStyle),
     withStyles(blogPostsPageStyle),
-)(SummerAtSaMi2019)
+)(SummerAtSaMi)

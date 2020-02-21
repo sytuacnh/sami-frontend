@@ -12,17 +12,17 @@ import Card from "components/Card/Card.jsx";
 
 import carouselStyle from "assets/jss/material-kit-pro-react/views/componentsSections/carouselStyle.jsx";
 
-import image1 from "../../../../static/events/pi_day_celebration/gallery/IMG_5084.JPG";
-import image2 from "../../../../static/events/pi_day_celebration/gallery/IMG_5083.JPG";
-import image3 from "../../../../static/events/pi_day_celebration/gallery/IMG_5392.JPG";
-import image4 from "../../../../static/events/pi_day_celebration/gallery/IMG_5082.JPG";
-import image5 from "../../../../static/events/pi_day_celebration/gallery/IMG_5377.JPG";
-import image6 from "../../../../static/events/pi_day_celebration/gallery/IMG_5086.JPG";
+import image1 from "../../../../../static/events/summer_at_sami/gallery/summer_camp_img_36.jpg";
+import image2 from "../../../../../static/events/summer_at_sami/gallery/summer_camp_img_10.jpg";
+import image3 from "../../../../../static/events/summer_at_sami/gallery/summer_camp_img_17.jpg";
+import image4 from "../../../../../static/events/summer_at_sami/gallery/summer_camp_img_113.jpg";
+import image5 from "../../../../../static/events/summer_at_sami/gallery/summer_camp_img_116.jpg";
+import image6 from "../../../../../static/events/summer_at_sami/gallery/summer_camp_img_125.jpg";
 
 
 const useStyles = makeStyles(carouselStyle);
 
-export default function PiDayCelebrationCarousel() {
+export default function SummerAtSaMiCarousel() {
   const classes = useStyles();
   const settings = {
     dots: true,

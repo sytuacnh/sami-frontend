@@ -8,8 +8,8 @@ import GridItem from "components/Grid/GridItem.jsx";
 import withStyles from "@material-ui/core/styles/withStyles";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
 
-import SummerAtSaMi2019Cards from "./SummerAtSaMi2019Cards";
-import SummerAtSaMi2019Carousel from "./SummerAtSaMi2019Carousel";
+import SummerAtSaMiCards from "./SummerAtSaMiCards";
+import SummerAtSaMiCarousel from "./SummerAtSaMiCarousel";
 
 const style = {
     paddingCustom: {
@@ -27,7 +27,7 @@ const style = {
     }
 }
 
-class SummerAtSaMi2019Section extends PureComponent {
+class SummerAtSaMiSection extends PureComponent {
 
     render() {
         const {
@@ -51,7 +51,14 @@ class SummerAtSaMi2019Section extends PureComponent {
                       Our summer camps are <b>FREE</b> for all students in grades K-8. They are supervised by college professors and led by high school students and national/regional math contest winners. If your child is in grades K-8, please fill out this form.  
                       <br />
                       <br />
-                      Three <b>Weeks</b>: July 22-July 26, July 29-August 2, August 5-August 9. All three weeks are the same so you just need to sign up for one week.
+                      For low income families, the {" "} 
+                      <Link to='/casting-your-future-scholarship' target="_blank" className="link">
+                          <b>Casting Your Future Scholarship</b>
+                      </Link>
+                      {" "} are provided to cover transportation costs and lunch, for any options you sign up.
+                      <br />
+                      <br />
+                      <b>Three Weeks</b>: July 22-July 26, July 29-August 2, August 5-August 9. All three weeks are the same so you just need to sign up for one week.
                       Two Math Sessions: 9-12 AM OR 1-4 PM.
                       Two Daycare Sessions: 9-12 AM OR 1-4 PM. The Daycare Session is for parents who are unable to pick/drop their child in the middle of the day. The daycare session provides time for kids to relax.
                       <br />
@@ -62,13 +69,6 @@ class SummerAtSaMi2019Section extends PureComponent {
                       3.  9-12 AM Math Session AND 1-4 PM Daycare Session.
                       4.  9-12 AM Daycare Session AND 1-4 PM Math Session.
                       If you sign up option 3 or 4, your child needs to bring his/her own lunch. 
-                      <br />
-                      <br />
-                      For low income families, the {" "} 
-                      <Link to='/casting-your-future-scholarship' target="_blank" className="link">
-                          <b>Casting Your Future Scholarship</b>
-                      </Link>
-                      {" "} are provided to cover transportation costs and lunch, for any options you sign up.
                       <br />
                       <br />
                       For each 9-12 AM Math Session or 1-4 PM Math Session, there are four <b>classes</b>:
@@ -82,8 +82,8 @@ class SummerAtSaMi2019Section extends PureComponent {
                       <br /> 
                       <b>Address</b>: Basis San Antonio Shavano, 4114 Lockhill Selma Rd, San Antonio, TX 78230.  
                     </p>
-                    <SummerAtSaMi2019Carousel />
-                    <SummerAtSaMi2019Cards />
+                    <SummerAtSaMiCarousel />
+                    <SummerAtSaMiCards />
                   </GridItem>
                 </GridContainer>
               </div>
@@ -94,10 +94,10 @@ class SummerAtSaMi2019Section extends PureComponent {
 
 
 
-// export default withStyles(null)(SummerAtSaMi2019Section);
+// export default withStyles(null)(SummerAtSaMiSection);
 
 export default compose(
     withStyles(style),
     withStyles(featuresStyle),
     // withStyles(sectionPillsStyle),
-)(SummerAtSaMi2019Section);
+)(SummerAtSaMiSection);

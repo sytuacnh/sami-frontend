@@ -206,6 +206,14 @@ const HeaderLinks = ({ ...props }) => {
               dropPlacement="right-start"
               dropdownList={[
                   <Link 
+                    id="summer-at-sami-2020"
+                    onClick={handleChangeCurrentNav}
+                    to="/summer-at-sami-2020" 
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer@Sami 2020
+                  </Link>,
+                  <Link 
                     id="summer-at-sami-2019"
                     onClick={handleChangeCurrentNav}
                     to="/summer-at-sami-2019" 
@@ -229,6 +237,14 @@ const HeaderLinks = ({ ...props }) => {
               }}
               dropPlacement="right-start"
               dropdownList={[
+                  <Link 
+                    id="pi-day-celebration-2020"
+                    to="/pi-day-celebration-2020" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration 2020
+                  </Link>,
                   <Link 
                     id="pi-day-celebration-2019"
                     to="/pi-day-celebration-2019" 
@@ -259,7 +275,39 @@ const HeaderLinks = ({ ...props }) => {
                     onClick={handleChangeCurrentNav}
                     className={classes.dropdownLink}
                   >
-                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe612;</IconSpan> Casting Your Future Scholarship
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe633;</IconSpan> Casting Your Future Scholarship
+                  </Link> 
+              ]}
+            />
+            ,
+            { divider: true },
+            <CustomDropdown
+              data-ref="multi"
+              innerDropDown
+              noLiPadding
+              hoverColor={dropdownHoverColor}
+              buttonText="Annual Awards"
+              buttonProps={{
+                simple: true,
+                block: true,
+              }}
+              dropPlacement="right-start"
+              dropdownList={[
+                  <Link 
+                    id="AnnualAwards2020"
+                    to="/pi-day-celebration-2020#awards" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe612;</IconSpan> 2020
+                  </Link>,
+                  <Link 
+                    id="AnnualAwards2019"
+                    to="/pi-day-celebration-2019#awards" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe612;</IconSpan> 2019
                   </Link> 
               ]}
             />
@@ -321,13 +369,13 @@ const HeaderLinks = ({ ...props }) => {
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe722;</IconSpan> OFFICERS
             </Link>,
 
-<Link
+            <Link
               id="aboutNav#chapters"
               onClick={handleChangeCurrentNav}
               to="/about#chapters"
               className={classes.dropdownLink}
             >
-              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe722;</IconSpan> CHAPTERS
+              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe613;</IconSpan> CHAPTERS
             </Link>,
             <Link
               id="aboutNav#tutors"
@@ -336,6 +384,14 @@ const HeaderLinks = ({ ...props }) => {
               className={classes.dropdownLink}
             >
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe66f;</IconSpan> TUTORS
+            </Link>,
+            <Link
+              id="aboutNav#alumni"
+              onClick={handleChangeCurrentNav}
+              to="/about#alumni"
+              className={classes.dropdownLink}
+            >
+              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe650;</IconSpan> ALUMNI
             </Link>
           ]}
         />
