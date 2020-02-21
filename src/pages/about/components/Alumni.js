@@ -93,7 +93,7 @@ class Alumni extends PureComponent {
                                   >
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
-                                            Torda is part of the Class of 2020 at Basis San Antonio Shavano. He has participated in various academic competitions, including MATHCOUNTS, AMC, UIL, and Science Bowl. Having been taught math at home, Torda gained an appreciation for it at a young age and understands how important mastering the subject is. Furthermore, he believes that SaMi is the perfect opportunity for students of all ages to not only learn but to also enjoy mathematics. Torda will be Duke University class 2020.
+                                            Torda will be the Class of 2020 at Duke University. He has participated in various academic competitions, including MATHCOUNTS, AMC, UIL, and Science Bowl. Having been taught math at home, Torda gained an appreciation for it at a young age and understands how important mastering the subject is. Furthermore, he believes that SaMi is the perfect opportunity for students of all ages to not only learn but to also enjoy mathematics.
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -132,7 +132,7 @@ class Alumni extends PureComponent {
                                   >
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
-                                            Annastina is excited to help you on your math journey!  She has taken math classes through AP Calculus BC, and is currently taking AP Statistics.  Her favorite science classes are physics and computer science.   Annastina has competed in Science Bowl, participates in CyberPartriots and has presented her science fair projects at various levels, including the Intel International Science & Engineering Fair.  In her extra time, she plays the piano and follows sports and their related statistics like a crazy fan girl!  Annastina enjoys helping others with any subject… math, language, or the sciences, and has two younger brothers who, willingly or not, are recipients of her tutoring! Annastina will be MIT class 2020.
+                                            Annastina will be the Class of 2020 at MIT. She is excited to help you on your math journey!  She has taken math classes through AP Calculus BC, and is currently taking AP Statistics.  Her favorite science classes are physics and computer science.   Annastina has competed in Science Bowl, participates in CyberPartriots and has presented her science fair projects at various levels, including the Intel International Science & Engineering Fair.  In her extra time, she plays the piano and follows sports and their related statistics like a crazy fan girl!  Annastina enjoys helping others with any subject… math, language, or the sciences, and has two younger brothers who, willingly or not, are recipients of her tutoring! Annastina will be MIT class 2020.
                                         </p>
                                     </Typography>
                                   </Popover>
