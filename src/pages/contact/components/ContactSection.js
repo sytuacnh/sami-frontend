@@ -13,12 +13,14 @@ import BusinessCenter from "@material-ui/icons/BusinessCenter";
 import Phone from "@material-ui/icons/Phone";
 import withStyles from "@material-ui/core/styles/withStyles";
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
-// import SendMessageForm from "./SendMessage/SendMessageForm";
+import SendMessageForm from "./SendMessage/SendMessageForm";
 import showResults from './SendMessage/showResults';
 import { createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
 // import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 // const theme = createMuiTheme();
+import { actionCreators } from "../store";
+
 
 const style = {
     contactFont: {
@@ -32,22 +34,19 @@ class ContactSection extends PureComponent {
     render() {
         const {
             classes,
+            handleMessageSubmit
         }  = this.props;
 
         return (
             <div className={classNames(classes.contactContent)}>
               <div className={classes.container}>
                 <p className={classNames(classes.label, classes.contactFont)}>
-                  You can email us at <b>sanantoniomathinclude@gmail.com</b>. Or fill out the <a className="link" href="https://docs.google.com/forms/d/e/1FAIpQLSfN_OVoMrYKPtB-qAH9W8ejx1UryPa8FqjzGhrm0zhKTa7yVA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Contact Us form</a>. Either way, we will contact you ASAP. 
+                  Message Sender
                   <br />
                   <br />
                 </p>
                 <MuiThemeProvider>
-                  <div>
-                    <p>
-                    Send Message Functionality will be provided soon.
-                    </p>
-                  </div>
+                  <SendMessageForm onSubmit={handleMessageSubmit} />
                 </MuiThemeProvider> 
               </div>
             </div>
@@ -55,10 +54,25 @@ class ContactSection extends PureComponent {
     }
 }
 
+const mapStateToProps = (state) => {
+    return {
 
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        handleMessageSubmit(e) {
+            const action = actionCreators.submitMessage();
+            alert("submit")
+            dispatch(action);
+        }
+    }
+}
 
 // export default withStyles(contactUsStyle)(ContactSection)
 export default compose(
     withStyles(style),
     withStyles(contactUsStyle),
+    connect(mapStateToProps, mapDispatchToProps),
 )(ContactSection)

@@ -14,6 +14,7 @@ const reducer = combineReducers({
     registerProgram: registerProgramReducer,
     donate: donateReducer,
     gallery: galleryReducer,
+    // contact: ContactReducer,
     form: formReducer
 })
 

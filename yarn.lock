@@ -9284,6 +9284,11 @@ redent@^1.0.0:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
 
+redux-form-saga@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/redux-form-saga/-/redux-form-saga-0.2.0.tgz#a9d3df4f5183fab3327ec82ebbc4af8a8d7f207f"
+  integrity sha512-Ap1zsmLS4DHQk4nFC2QsPSP18+udfi375TKmylmC22/Dx7bWTa/YYzVVLyT9e4oVpKIG2lxnd3YtFqEdaDPftQ==
+
 redux-form@^8.2.6:
   version "8.2.6"
   resolved "https://registry.yarnpkg.com/redux-form/-/redux-form-8.2.6.tgz#6840bbe9ed5b2aaef9dd82e6db3e5efcfddd69b1"

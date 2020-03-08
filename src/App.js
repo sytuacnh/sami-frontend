@@ -1,4 +1,5 @@
 import React from 'react';
+// import 'babel-polyfill'; // for redux-form-saga
 // import compose from 'recompose/compose'
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';

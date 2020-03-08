@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { connect } from 'react-redux';
 import compose from 'recompose/compose'
 import PropTypes from "prop-types";
 import classNames from "classnames";
@@ -47,7 +48,20 @@ Contact.propTypes = {
     classes: PropTypes.object
 };
 
+// const mapStateToProps = (state) => {
+//     return {
+
+//     }
+// }
+
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+
+//     }
+// }
+
 export default compose(
     withStyles(landingPageStyle),
     withStyles(contactUsStyle), // padding between sections
+    // connect(mapStateToProps, mapDispatchToProps),
 )(Contact)

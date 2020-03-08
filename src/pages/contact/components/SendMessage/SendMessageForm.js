@@ -2,7 +2,11 @@ import React from "react";
 import { Field, reduxForm } from 'redux-form/immutable'
 import TextField from "@material-ui/core/TextField";
 import asyncValidate from "./asyncValidate";
-import validate from "./validate";
+// import submit from "./validate";
+import validator from "./validate";
+// import { connect } from 'react-redux';
+// import compose from 'recompose/compose';
+import { contact } from "../../store/actionCreators";
 
 const renderTextField = ({
   input,
@@ -19,10 +23,15 @@ const renderTextField = ({
   />
 );
 
+
+// submit is validator but won't use handleMessageSubmit, which is in parent
+// <form onSubmit={handleSubmit(submit)}>
+// so put validator in handleMessageSubmit
 const SendMessageForm = props => {
   const { handleSubmit, pristine, reset, submitting } = props;
+  const submit = handleSubmit(contact);
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={submit}>
       <div>
         <Field 
           name="senderName"
@@ -35,7 +44,7 @@ const SendMessageForm = props => {
       </div>                                                                                                                                                                                                                  
       <div>
         <Field
-          name="message"
+          name="messageContent"
           component={renderTextField}
           label="Message"
           multiLine={true}
@@ -54,8 +63,32 @@ const SendMessageForm = props => {
   );
 };
 
+// const mapStateToProps = (state) => {
+//     return {
+
+//     }
+// }
+
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         handleMessageSubmit(e) {
+//             const action = actionCreators.submitMessage();
+//             alert("submit")
+//             dispatch(action);
+//         }
+//     }
+// }
+
 export default reduxForm({
   form: "SendMessageForm", // a unique identifier for this form
-  validate,
-  asyncValidate
+  validator   // not working
 })(SendMessageForm);
+
+// export default compose(
+//     reduxForm({
+//       form: "SendMessageForm", // a unique identifier for this form
+//       validate
+//     }),
+//     // withStyles(style),
+//     // connect(mapStateToProps, mapDispatchToProps),
+// )(SendMessageForm)

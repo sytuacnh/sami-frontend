@@ -1,9 +1,15 @@
-// import { GET_CURRENT_PROGRAM, INIT_CURRENT_PROGRAM, CHANGE_CURRENT_NAV } from './actionTypes';
+import { SUBMIT_MESSAGE, MESSAGE_SENT } from './actionTypes';
+import { createFormAction } from 'redux-form-saga';
 
-// export const initCurrentProgram = (program) => ({
-//     type: INIT_CURRENT_PROGRAM,
-//     program
-// })
+export const submitMessage = (message) => ({
+    type: SUBMIT_MESSAGE
+})
+
+export const messageSent = (message) => ({
+    type: MESSAGE_SENT
+})
+
+export const contact = createFormAction('CONTACT');
 
 // export const getCurrentProgram = () => ({
 //     type: GET_CURRENT_PROGRAM
