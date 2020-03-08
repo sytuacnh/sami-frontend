@@ -72,7 +72,7 @@ const HeaderLinks = ({ ...props }) => {
     // console.log('did mount!!!!')
     // const api_url = process.env.REACT_APP_API_URL+'programs/1';
     // console.log("API_URL: " + api_url);
-    props.changeCurrentProgramData();
+    props.changeCurrentProgramData(); // test out backend api
   });
 
   const easeInOutQuad = (t, b, c, d) => {

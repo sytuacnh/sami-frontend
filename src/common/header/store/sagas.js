@@ -7,7 +7,7 @@ function* getCurrentProgramFunc() {
     // console.log('enter headerSagas!!!')
     try {
         const res = yield axios.get("/api/programs/1");
-        // console.log(res.data) => an object of program
+        console.log(res.data) // => an object of program
         const action = initCurrentProgram(res.data);
         yield put(action);
     } catch(e) {
