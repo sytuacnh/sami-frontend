@@ -33,6 +33,50 @@ class SummerAtSaMiCards extends PureComponent {
                     <Card
                       raised
                       background
+                      style={{ backgroundImage: "url(" + mathTwoGirls + ")" }}
+                    >
+                      <CardBody background>
+                        <h6 className={classes.category}>Summer@SaMi 2020</h6>
+                        <h3 className={classes.cardTitle}>
+                          Student Register
+                        </h3>
+                        <p className={classes.textCenter}>
+                          Click button below to join as a student
+                        </p>
+                        <a className="link" href="https://drive.google.com/open?id=19hXr227vYOVU1K1jUrOUKbR8Lg_iGygpsl4xPlqgAEk" target="_blank" rel="noopener noreferrer">
+                            <Button round color="rose">
+                                <FormatAlignLeft className={classes.icons} />Sign Up
+                            </Button>
+                        </a>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={6} md={6}>
+                    <Card
+                      raised
+                      background
+                      style={{ backgroundImage: "url(" + tutorHelp + ")" }}
+                    >
+                      <CardBody background>
+                        <h6 className={classes.category}>Summer@SaMi 2020</h6>
+                        <h3 className={classes.cardTitle}>
+                          Tutor Register
+                        </h3>
+                        <p className={classes.category}>
+                          Click button below to join as a tutor
+                        </p>
+                        <a className="link" href="https://drive.google.com/open?id=1aGWHACgryqhiL31SG3oLb61OU89f4CR6Z4Bzk-CH9dI" target="_blank" rel="noopener noreferrer">
+                            <Button round color="rose">
+                                <FormatAlignLeft className={classes.icons} />Sign Up
+                            </Button>
+                        </a>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={6} md={6}>
+                    <Card
+                      raised
+                      background
                       style={{ backgroundImage: "url(" + lawn + ")" }}
                     >
                       <CardBody background>

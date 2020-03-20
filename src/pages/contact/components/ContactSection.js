@@ -37,20 +37,22 @@ class ContactSection extends PureComponent {
             handleMessageSubmit
         }  = this.props;
 
-        return (
-            <div className={classNames(classes.contactContent)}>
-              <div className={classes.container}>
-                <p className={classNames(classes.label, classes.contactFont)}>
-                  Message Sender
-                  <br />
-                  <br />
-                </p>
-                <MuiThemeProvider>
-                  <SendMessageForm onSubmit={handleMessageSubmit} />
-                </MuiThemeProvider> 
-              </div>
-            </div>
-        );
+        return <div>New Features Coming Soon!</div>
+
+        // return (
+        //     <div className={classNames(classes.contactContent)}>
+        //       <div className={classes.container}>
+        //         <p className={classNames(classes.label, classes.contactFont)}>
+        //           Message Sender
+        //           <br />
+        //           <br />
+        //         </p>
+        //         <MuiThemeProvider>
+        //           <SendMessageForm onSubmit={handleMessageSubmit} />
+        //         </MuiThemeProvider> 
+        //       </div>
+        //     </div>
+        // );
     }
 }
 

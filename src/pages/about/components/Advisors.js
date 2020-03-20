@@ -12,7 +12,7 @@ import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Muted from "components/Typography/Muted.jsx";
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
-import tan from "../../../static/about/advisors/ShengTan.png";
+import tan from "../../../static/about/advisors/ShengTan.jpg";
 import TeacherMissing from "../../../static/about/advisors/Teacher_missing.png";
 import ErikaHsie from "../../../static/about/advisors/ErikaHsie.jpg";
 import QilongLu from "../../../static/about/advisors/QilongLu.jpg";

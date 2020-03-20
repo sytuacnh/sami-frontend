@@ -40,8 +40,8 @@ import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPosts
 import { TabContentWrapper } from "../style";
 import ProgramForm from "./ProgramForm";
 import { actionCreators } from '../store';
-import SummerAtSaMi2019Cards from "../../events/summer_at_sami/summer_at_sami_2019/components/SummerAtSaMiCards";
-import PiDayCelebrationCards from "../../events/pi_day_celebration/pi_day_celebration_2019/components/PiDayCelebrationCards";
+import SummerAtSaMi2020Cards from "../../events/summer_at_sami/summer_at_sami_2020/components/SummerAtSaMiCards";
+import PiDayCelebrationCards from "../../events/pi_day_celebration/pi_day_celebration_2020/components/PiDayCelebrationCards";
 import FreeTutoring20192020Cards from "../../events/free_tutoring/free_tutoring_2019_2020/components/FreeTutoring20192020Cards";
 
 const style = {
@@ -105,18 +105,18 @@ function SectionProgramPills({ ...props }) {
                   )
                 },
                 {
-                  tabButton: "Summer@SaMi 2019",
+                  tabButton: "Summer@SaMi 2020",
                   tabContent: (
                     <TabContentWrapper >
                       <div className={classes.paddingCustom}>
                         <Table
                           tableHead={[<b>Program Name</b>, <b>Information</b>,<b>Status</b>]}
                           tableData={[
-                            ["Summer@SaMi 2019", 
-                              <Link to='/summer-at-sami-2019' target="_blank" className="link">
+                            ["Summer@SaMi 2020", 
+                              <Link to='/summer-at-sami-2020' target="_blank" className="link">
                                 Description Page
                               </Link>, 
-                            "Ended"],
+                            "Future"],
                           ]}
                           customCellClasses={[
                             classes.cellText,
@@ -132,20 +132,20 @@ function SectionProgramPills({ ...props }) {
                           customHeadClassesForCells={[0, 1, 2]}
                         />
                       </div>
-                      <SummerAtSaMi2019Cards />
+                      <SummerAtSaMi2020Cards />
                     </TabContentWrapper>
                   )
                 },
                 {
-                  tabButton: "Pi Day Celebration 2019",
+                  tabButton: "Pi Day Celebration 2020",
                   tabContent: (
                     <TabContentWrapper >
                       <div className={classes.paddingCustom}>
                         <Table
                           tableHead={[<b>Program Name</b>, <b>Information</b>,<b>Status</b>]}
                           tableData={[
-                            ["Pi Day Celebration 2019", 
-                              <Link to='/pi-day-celebration-2019' target="_blank" className="link">
+                            ["Pi Day Celebration 2020", 
+                              <Link to='/pi-day-celebration-2020' target="_blank" className="link">
                                 Description Page
                               </Link>, 
                             "Ended"],
