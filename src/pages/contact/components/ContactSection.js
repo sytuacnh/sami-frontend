@@ -28,7 +28,14 @@ class ContactSection extends PureComponent {
             handleMessageSubmit
         } = this.props;
 
-        return <div>New Features Coming Soon!</div>
+        return (
+            <div className={classNames(classes.contactContent)}>
+              <div className={classes.container}>
+                <div>New Features Coming Soon! You can email us at <b>sanantoniomathinclude@gmail.com</b>. Or fill out the <a className="link" href="https://docs.google.com/forms/d/e/1FAIpQLSfN_OVoMrYKPtB-qAH9W8ejx1UryPa8FqjzGhrm0zhKTa7yVA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Contact Us form</a>. Either way, we will contact you ASAP.</div>
+              </div>
+            </div>
+        );
+
 
         // return (
         //     <div className={classNames(classes.contactContent)}>
