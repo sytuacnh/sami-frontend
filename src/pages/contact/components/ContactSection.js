@@ -15,41 +15,25 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
 import SendMessageForm from "./SendMessage/SendMessageForm";
 import showResults from './SendMessage/showResults';
-import { createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
+// import { createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
 // import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-
-// const theme = createMuiTheme();
 import { actionCreators } from "../store";
 
-
-const style = {
-    contactFont: {
-        fontSize: "16px",
-        textAlign: "left"
-    }
-}
-
+// <p className={classNames(classes.label, classes.contactFont}>
 class ContactSection extends PureComponent {
 
     render() {
         const {
             classes,
             handleMessageSubmit
-        }  = this.props;
+        } = this.props;
 
         return <div>New Features Coming Soon!</div>
 
         // return (
         //     <div className={classNames(classes.contactContent)}>
         //       <div className={classes.container}>
-        //         <p className={classNames(classes.label, classes.contactFont)}>
-        //           Message Sender
-        //           <br />
-        //           <br />
-        //         </p>
-        //         <MuiThemeProvider>
         //           <SendMessageForm onSubmit={handleMessageSubmit} />
-        //         </MuiThemeProvider> 
         //       </div>
         //     </div>
         // );
@@ -74,7 +58,7 @@ const mapDispatchToProps = (dispatch) => {
 
 // export default withStyles(contactUsStyle)(ContactSection)
 export default compose(
-    withStyles(style),
+    // withStyles(style),
     withStyles(contactUsStyle),
     connect(mapStateToProps, mapDispatchToProps),
 )(ContactSection)

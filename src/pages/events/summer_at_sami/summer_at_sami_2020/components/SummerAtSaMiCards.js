@@ -43,7 +43,7 @@ class SummerAtSaMiCards extends PureComponent {
                         <p className={classes.textCenter}>
                           Click button below to join as a student
                         </p>
-                        <a className="link" href="https://drive.google.com/open?id=19hXr227vYOVU1K1jUrOUKbR8Lg_iGygpsl4xPlqgAEk" target="_blank" rel="noopener noreferrer">
+                        <a className="link" href="https://forms.gle/3hLCoXBYmVRwp9P57" target="_blank" rel="noopener noreferrer">
                             <Button round color="rose">
                                 <FormatAlignLeft className={classes.icons} />Sign Up
                             </Button>
@@ -65,7 +65,7 @@ class SummerAtSaMiCards extends PureComponent {
                         <p className={classes.category}>
                           Click button below to join as a tutor
                         </p>
-                        <a className="link" href="https://drive.google.com/open?id=1aGWHACgryqhiL31SG3oLb61OU89f4CR6Z4Bzk-CH9dI" target="_blank" rel="noopener noreferrer">
+                        <a className="link" href="https://forms.gle/f3AojiJYwT79am4K9" target="_blank" rel="noopener noreferrer">
                             <Button round color="rose">
                                 <FormatAlignLeft className={classes.icons} />Sign Up
                             </Button>

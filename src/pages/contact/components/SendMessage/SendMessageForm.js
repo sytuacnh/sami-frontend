@@ -1,12 +1,40 @@
 import React from "react";
-import { Field, reduxForm } from 'redux-form/immutable'
-import TextField from "@material-ui/core/TextField";
+import { Field, reduxForm } from 'redux-form/immutable';
+import TextField from '@material-ui/core/TextField';
+import InputLabel from '@material-ui/core/InputLabel';
+// import Button from '@material-ui/core/Button';
+import Button from 'components/CustomButtons/Button.jsx';
+
 import asyncValidate from "./asyncValidate";
 // import submit from "./validate";
 import validator from "./validate";
 // import { connect } from 'react-redux';
-// import compose from 'recompose/compose';
+import compose from 'recompose/compose';
 import { contact } from "../../store/actionCreators";
+import withStyles from "@material-ui/core/styles/withStyles";
+import classNames from "classnames";
+
+const style = {
+    formStyle: {
+        fontSize: "28px",
+        textAlign: "left",
+    },
+    labelStyle: {
+        fontWeight: "500",
+        color: "#3c4858",
+        marginBottom: "5px"
+    },
+    normalTextField: {
+        marginBottom: "20px"
+    },
+    areaTextField: {
+        marginBottom: "20px"
+    },
+    buttonMargin: {
+        marginRight: "30px"
+    }
+}
+
 
 const renderTextField = ({
   input,
@@ -28,38 +56,55 @@ const renderTextField = ({
 // <form onSubmit={handleSubmit(submit)}>
 // so put validator in handleMessageSubmit
 const SendMessageForm = props => {
-  const { handleSubmit, pristine, reset, submitting } = props;
+  const { handleSubmit, pristine, reset, submitting, classes } = props;
   const submit = handleSubmit(contact);
   return (
-    <form onSubmit={submit}>
-      <div>
-        <Field 
-          name="senderName"
-          component={renderTextField}
-          label="Your Name"
-        />
-      </div>
-      <div>
-        <Field name="senderEmail" component={renderTextField} label="Email" />
-      </div>                                                                                                                                                                                                                  
-      <div>
-        <Field
-          name="messageContent"
-          component={renderTextField}
-          label="Message"
-          multiLine={true}
-          rows={3}
-        />
-      </div>
-      <div>
-        <button type="submit" disabled={pristine || submitting}>
-          Submit
-        </button>
-        <button type="button" disabled={pristine || submitting} onClick={reset}>
-          Clear Values
-        </button>
-      </div>
-    </form>
+    <div className={classNames(classes.formStyle)}>
+      <form onSubmit={submit}>
+        <InputLabel className={classNames(classes.labelStyle)}>Name</InputLabel>
+        <div className={classNames(classes.normalTextField)}>
+          <Field 
+            name="senderName"
+            component={renderTextField}
+            label="Name"
+            color="secondary"
+            variant="outlined"
+          />
+        </div>
+        <InputLabel className={classNames(classes.labelStyle)}>Email Address</InputLabel>
+        <div className={classNames(classes.normalTextField)}>
+          <Field name="senderEmail" 
+            component={renderTextField} 
+            label="Email Address"
+            variant="outlined"
+          />
+        </div>   
+        <InputLabel className={classNames(classes.labelStyle)}>Message Content</InputLabel>
+        <div className={classNames(classes.areaTextField)}>
+          <Field
+            name="messageContent"
+            component={renderTextField}
+            label="Message Content"
+            multiLine={true}
+            rows={3}
+            variant="outlined"
+          />
+        </div>
+        <div>
+          <Button 
+            type="submit" 
+            color="primary"
+            disabled={pristine || submitting}
+            className={classNames(classes.buttonMargin)}
+            >
+            Submit
+          </Button>
+          <Button type="button" disabled={pristine || submitting} onClick={reset}>
+            Clear
+          </Button>
+        </div>
+      </form>
+    </div>
   );
 };
 
@@ -79,16 +124,17 @@ const SendMessageForm = props => {
 //     }
 // }
 
-export default reduxForm({
-  form: "SendMessageForm", // a unique identifier for this form
-  validator   // not working
-})(SendMessageForm);
+// without compose
+// export default reduxForm({
+//   form: "SendMessageForm", // a unique identifier for this form
+//   validator   // not working
+// })(SendMessageForm);
 
-// export default compose(
-//     reduxForm({
-//       form: "SendMessageForm", // a unique identifier for this form
-//       validate
-//     }),
-//     // withStyles(style),
-//     // connect(mapStateToProps, mapDispatchToProps),
-// )(SendMessageForm)
+export default compose(
+    reduxForm({
+      form: "SendMessageForm", // a unique identifier for this form
+      validator
+    }),
+    withStyles(style),
+    // connect(mapStateToProps, mapDispatchToProps),
+)(SendMessageForm)

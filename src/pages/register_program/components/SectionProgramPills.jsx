@@ -68,43 +68,6 @@ function SectionProgramPills({ ...props }) {
               className={classes.tabFont}
               tabs={[
                 {
-                  tabButton: "Free Tutoring 2019-2020",
-                  tabContent: (
-                    <TabContentWrapper >
-                      <div className={classes.paddingCustom}>
-                        <Table
-                          tableHead={[<b>Program Name</b>, <b>Information</b>, <b>Previous Year</b>, <b>Status</b>]}
-                          tableData={[
-                            ["Free Tutoring 2019-2020", 
-                              <Link to='/free-tutoring-2019-2020' target="_blank" className="link">
-                                Description Page
-                              </Link>, 
-                              <Link to='/free-tutoring-2018-2019' target="_blank" className="link">
-                                2018-2019
-                              </Link>,
-                            "Ongoing"],
-                          ]}
-                          customCellClasses={[
-                            classes.cellText,
-                            classes.cellText,
-                            classes.cellText,
-                            classes.cellText
-                          ]}
-                          customClassesForCells={[0, 1, 2, 3]}
-                          customHeadCellClasses={[
-                            classes.textCenter,
-                            classes.textCenter,
-                            classes.textCenter,
-                            classes.textCenter
-                          ]}
-                          customHeadClassesForCells={[0, 1, 2, 3]}
-                        />
-                      </div>
-                      <FreeTutoring20192020Cards />
-                    </TabContentWrapper>
-                  )
-                },
-                {
                   tabButton: "Summer@SaMi 2020",
                   tabContent: (
                     <TabContentWrapper >
@@ -116,7 +79,7 @@ function SectionProgramPills({ ...props }) {
                               <Link to='/summer-at-sami-2020' target="_blank" className="link">
                                 Description Page
                               </Link>, 
-                            "Future"],
+                            "Ongoing"],
                           ]}
                           customCellClasses={[
                             classes.cellText,
@@ -165,6 +128,43 @@ function SectionProgramPills({ ...props }) {
                         />
                       </div>
                       <PiDayCelebrationCards />
+                    </TabContentWrapper>
+                  )
+                },
+                {
+                  tabButton: "Free Tutoring 2019-2020",
+                  tabContent: (
+                    <TabContentWrapper >
+                      <div className={classes.paddingCustom}>
+                        <Table
+                          tableHead={[<b>Program Name</b>, <b>Information</b>, <b>Previous Year</b>, <b>Status</b>]}
+                          tableData={[
+                            ["Free Tutoring 2019-2020", 
+                              <Link to='/free-tutoring-2019-2020' target="_blank" className="link">
+                                Description Page
+                              </Link>, 
+                              <Link to='/free-tutoring-2018-2019' target="_blank" className="link">
+                                2018-2019
+                              </Link>,
+                            "Ended"],
+                          ]}
+                          customCellClasses={[
+                            classes.cellText,
+                            classes.cellText,
+                            classes.cellText,
+                            classes.cellText
+                          ]}
+                          customClassesForCells={[0, 1, 2, 3]}
+                          customHeadCellClasses={[
+                            classes.textCenter,
+                            classes.textCenter,
+                            classes.textCenter,
+                            classes.textCenter
+                          ]}
+                          customHeadClassesForCells={[0, 1, 2, 3]}
+                        />
+                      </div>
+                      <FreeTutoring20192020Cards />
                     </TabContentWrapper>
                   )
                 }
