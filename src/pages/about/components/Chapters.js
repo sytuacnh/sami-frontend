@@ -17,7 +17,8 @@ import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections
 import ColinK from "../../../static/about/chapters/ColinK.jpg";
 import GinaK from "../../../static/about/chapters/GinaK.jpg";
 import IsabelleD from "../../../static/about/chapters/IsabelleD.jpg";
-import RylanA from "../../../static/about/chapters/RylanA.jpg";
+import RayB from "../../../static/about/chapters/RayB.jpg";
+import EmilyL from "../../../static/about/chapters/EmilyL.jpg";
 import KassieL from "../../../static/about/chapters/KassieL.jpg";
 import LauraE from "../../../static/about/chapters/LauraE.jpg";
 
@@ -80,7 +81,7 @@ class Chapters extends PureComponent {
                           <h6 className={classes.cardCategory}>Director of South California Chapter</h6>
                         </Muted>
                         <p className={classes.description}>
-                          9th Graade <br /> 
+                          9th Grade <br /> 
                           Carson Senior High School 
                         </p>
                       </CardBody>
@@ -101,7 +102,7 @@ class Chapters extends PureComponent {
                           <h6 className={classes.cardCategory}>Director of New York Chapter</h6>
                         </Muted>
                         <p className={classes.description}>
-                          10th Graade <br /> 
+                          10th Grade <br /> 
                           Horace Greeley High School 
                         </p>
                       </CardBody>
@@ -121,7 +122,7 @@ class Chapters extends PureComponent {
                           <h6 className={classes.cardCategory}>Director of Massachusetts Chapter</h6>
                         </Muted>
                         <p className={classes.description}>
-                          9th Graade <br /> 
+                          9th Grade <br /> 
                           Sharon High School 
                         </p>
                       </CardBody>
@@ -141,7 +142,7 @@ class Chapters extends PureComponent {
                           <h6 className={classes.cardCategory}>Director of Ohio Chapter</h6>
                         </Muted>
                         <p className={classes.description}>
-                          9th Graade <br /> 
+                          9th Grade <br /> 
                           Twinsburg High School 
                         </p>
                       </CardBody>
@@ -152,17 +153,37 @@ class Chapters extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          <img src={RylanA} alt="..." className={classes.img} />
+                          <img src={RayB} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>Rylan A.</h4>
+                        <h4 className={classes.cardTitle}>Ray B.</h4>
                         <Muted>
                           <h6 className={classes.cardCategory}>Director of Virginia Chapter</h6>
                         </Muted>
                         <p className={classes.description}>
-                          10th Graade <br /> 
-                          Riverheads High School 
+                          12th Grade <br /> 
+                          Thomas Jefferson High School of Science and Technology 
+                        </p>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+
+                  <GridItem xs={12} sm={4} md={4}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={EmilyL} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Emily L.</h4>
+                        <Muted>
+                          <h6 className={classes.cardCategory}>Director of Minnesota Chapter</h6>
+                        </Muted>
+                        <p className={classes.description}>
+                          10th Grade <br /> 
+                          Wayzata High School 
                         </p>
                       </CardBody>
                     </Card>

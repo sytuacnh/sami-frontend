@@ -31,7 +31,7 @@ class AboutSection extends PureComponent {
                   > 
                     <Advisors />
                   </GridItem>
-
+{/*
                   <GridItem
                     xs={12}
                     sm={8}
@@ -42,7 +42,7 @@ class AboutSection extends PureComponent {
                   > 
                     <Officers />
                   </GridItem>
-
+*/}
 	            <GridItem
                     xs={12}
                     sm={8}

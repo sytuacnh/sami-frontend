@@ -229,12 +229,12 @@ class HomeSection extends PureComponent  {
                       </GridItem>
                       <GridItem md={6} sm={3}>
                         <Card>
-                            <CardHeader color="rose" className={classes.cardHeader}>Tutors</CardHeader>
+                            <CardHeader color="rose" className={classes.cardHeader}>Officers</CardHeader>
                             <CardBody>
                               <p>
-                                Our finest tutors won regional, national, and international math contests and are all passionate about helping every student to achieve their success in math.
+                                Our offers have a track record of success and leadership skills. They oversee and direct the major aspects of SaMi's operations and events. 
                               </p>
-                              <Button component={ Link } to="/about#tutors" color="primary">View Tutors</Button>
+                              <Button component={ Link } to="/about#officers" color="primary">View Officers</Button>
                             </CardBody>
                         </Card>
                       </GridItem>
@@ -259,6 +259,17 @@ class HomeSection extends PureComponent  {
                                 The SaMi Alumni Association is composed of tutors who have graduated from high school. Their hard work and dedication will be remembered by us.
                               </p>
                               <Button component={ Link } to="/about#alumni" color="primary">View Alumni</Button>
+                            </CardBody>
+                        </Card>
+                      </GridItem>
+                      <GridItem md={12} sm={12}>
+                        <Card>
+                            <CardHeader color="rose" className={classes.cardHeader}>Tutors</CardHeader>
+                            <CardBody>
+                              <p>
+                                Our finest tutors won regional, national, and international math contests and are all passionate about helping every student to achieve their success in math.
+                              </p>
+                              <Button component={ Link } to="/about#tutors" color="primary">View Tutors</Button>
                             </CardBody>
                         </Card>
                       </GridItem>

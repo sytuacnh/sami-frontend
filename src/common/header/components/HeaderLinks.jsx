@@ -14,6 +14,19 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+
+
+/*
+
+            <Link
+              id="aboutNav#officers"
+              onClick={handleChangeCurrentNav}
+              to="/about#officers"
+              className={classes.dropdownLink}
+            >
+              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe722;</IconSpan> OFFICERS
+            </Link>,
+*/
 /* eslint-disable */
 // useEffect is a hook which can replace both componentDidMount and componentDidUpdate
 import React, { Fragment, useEffect } from "react";
@@ -362,15 +375,7 @@ const HeaderLinks = ({ ...props }) => {
             >
               <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe608;</IconSpan> ADVISORS
             </Link>,
-            <Link
-              id="aboutNav#officers"
-              onClick={handleChangeCurrentNav}
-              to="/about#officers"
-              className={classes.dropdownLink}
-            >
-              <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe722;</IconSpan> OFFICERS
-            </Link>,
-
+            
             <Link
               id="aboutNav#chapters"
               onClick={handleChangeCurrentNav}
