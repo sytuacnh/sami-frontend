@@ -170,7 +170,7 @@ const HeaderLinks = ({ ...props }) => {
           buttonText="EVENTS"
           buttonProps={{
             id: "eventsNav",
-            className: currentNav==="casting-your-future-scholarship" || currentNav==="free-tutoring-2019-2020" || currentNav==="free-tutoring-2018-2019" || currentNav==="summer-at-sami-2019" || currentNav==="pi-day-celebration-2019" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
+            className: currentNav==="casting-your-future-scholarship" || currentNav==="free-tutoring-2020-2021" ||currentNav==="free-tutoring-2019-2020" || currentNav==="free-tutoring-2018-2019" || currentNav==="summer-at-sami-2019" || currentNav==="pi-day-celebration-2019" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
             color: "transparent"
           }}
           dropdownList={[
@@ -186,7 +186,16 @@ const HeaderLinks = ({ ...props }) => {
               }}
               dropPlacement="right-start"
               dropdownList={[
-                  <Link
+				  <Link
+                    id="free-tutoring-2020-2021"
+                    to="/free-tutoring-2020-2021" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe61a;</IconSpan>
+                    Free Tutoring 2020-2021 
+                  </Link>,                  
+				  <Link
                     id="free-tutoring-2019-2020"
                     to="/free-tutoring-2019-2020" 
                     onClick={handleChangeCurrentNav}
@@ -204,6 +213,7 @@ const HeaderLinks = ({ ...props }) => {
                     <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe61a;</IconSpan>
                     Free Tutoring 2018-2019
                   </Link>
+
               ]}
             />
             ,

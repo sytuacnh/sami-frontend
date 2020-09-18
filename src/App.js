@@ -22,6 +22,7 @@ import PiDayCelebration2019 from './pages/events/pi_day_celebration/pi_day_celeb
 import PiDayCelebration2020 from './pages/events/pi_day_celebration/pi_day_celebration_2020';
 import FreeTutoring20182019 from './pages/events/free_tutoring/free_tutoring_2018_2019';
 import FreeTutoring20192020 from './pages/events/free_tutoring/free_tutoring_2019_2020';
+import FreeTutoring20202021 from './pages/events/free_tutoring/free_tutoring_2020_2021';
 import CastingYourFutureScholarship from './pages/events/scholarship/casting_your_future_scholarship';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
                 <Route path='/pi-day-celebration-2020' exact component={PiDayCelebration2020}></Route>
                 <Route path='/free-tutoring-2018-2019' exact component={FreeTutoring20182019}></Route>
                 <Route path='/free-tutoring-2019-2020' exact component={FreeTutoring20192020}></Route>
+                <Route path='/free-tutoring-2020-2021' exact component={FreeTutoring20202021}></Route>
                 <Route path='/casting-your-future-scholarship' exact component={CastingYourFutureScholarship}></Route>
                 
                 <Footer />

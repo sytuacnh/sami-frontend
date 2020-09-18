@@ -21,6 +21,7 @@ import RayB from "../../../static/about/chapters/RayB.jpg";
 import EmilyL from "../../../static/about/chapters/EmilyL.jpg";
 import KassieL from "../../../static/about/chapters/KassieL.jpg";
 import LauraE from "../../../static/about/chapters/LauraE.jpg";
+import EmilyS from "../../../static/about/chapters/EmilyS.png";
 
 
 class Chapters extends PureComponent {
@@ -189,6 +190,25 @@ class Chapters extends PureComponent {
                     </Card>
                   </GridItem>
 
+                  <GridItem xs={12} sm={4} md={4}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={EmilyS} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Emily L.</h4>
+                        <Muted>
+                          <h6 className={classes.cardCategory}>Director of Colorado Chapter</h6>
+                        </Muted>
+                        <p className={classes.description}>
+                          9th Grade <br /> 
+                          Loveland High School 
+                        </p>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
 
                 </GridContainer>
               </div>

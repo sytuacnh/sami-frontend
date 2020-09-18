@@ -60,7 +60,7 @@ import TejsaiY from "../../../static/about/tutors/TejsaiY.jpg";
 import JohnC from "../../../static/about/tutors/JohnC.jpg";
 import PoonachaC from "../../../static/about/tutors/PoonachaC.jpg";
 import EricZ from "../../../static/about/tutors/EricZ.jpg";
-
+import AanikaP from "../../../static/about/tutors/AanikaP.jpg";
 
 const styles = theme => ({
   typography: {
@@ -1152,6 +1152,45 @@ class Tutors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
+				<GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AanikaP} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Aanika P.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Aanika is part of the class of 2023 at Basis San Antonio Shavano. She is a member of various clubs such as UIL Math and Science, Science Bowl, Latin club, and HOSA, and participates in many academic competitions. She enjoys tutoring and believes that as students ourselves, we should teach and inspire young kids, especially girls, to develop a love for math. She aspires to become a doctor or a researcher in the medical field. In her free time, she enjoys reading, watching Netflix, drawing, and listening to music.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+				  
                   <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
@@ -1189,8 +1228,8 @@ class Tutors extends PureComponent {
                             </PopupState>
                       </CardBody>
                     </Card>
-                  </GridItem>
-                  <GridItem xs={12} sm={3} md={3}>
+                  </GridItem>                                 
+				 <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>

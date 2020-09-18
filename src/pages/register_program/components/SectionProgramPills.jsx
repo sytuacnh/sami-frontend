@@ -43,6 +43,7 @@ import { actionCreators } from '../store';
 import SummerAtSaMi2020Cards from "../../events/summer_at_sami/summer_at_sami_2020/components/SummerAtSaMiCards";
 import PiDayCelebrationCards from "../../events/pi_day_celebration/pi_day_celebration_2020/components/PiDayCelebrationCards";
 import FreeTutoring20192020Cards from "../../events/free_tutoring/free_tutoring_2019_2020/components/FreeTutoring20192020Cards";
+import FreeTutoring20202021Cards from "../../events/free_tutoring/free_tutoring_2020_2021/components/FreeTutoring20202021Cards";
 
 const style = {
      paddingCustom: {
@@ -68,6 +69,43 @@ function SectionProgramPills({ ...props }) {
               className={classes.tabFont}
               tabs={[
                 {
+                  tabButton: "Free Tutoring 2020-2021",
+                  tabContent: (
+                    <TabContentWrapper >
+                      <div className={classes.paddingCustom}>
+                        <Table
+                          tableHead={[<b>Program Name</b>, <b>Information</b>, <b>Previous Year</b>, <b>Status</b>]}
+                          tableData={[
+                            ["Free Tutoring 2020-2021", 
+                              <Link to='/free-tutoring-2020-2021' target="_blank" className="link">
+                                Description Page
+                              </Link>, 
+                              <Link to='/free-tutoring-2019-2020' target="_blank" className="link">
+                                2019-2020
+                              </Link>,
+                            "Ongoing"],
+                          ]}
+                          customCellClasses={[
+                            classes.cellText,
+                            classes.cellText,
+                            classes.cellText,
+                            classes.cellText
+                          ]}
+                          customClassesForCells={[0, 1, 2, 3]}
+                          customHeadCellClasses={[
+                            classes.textCenter,
+                            classes.textCenter,
+                            classes.textCenter,
+                            classes.textCenter
+                          ]}
+                          customHeadClassesForCells={[0, 1, 2, 3]}
+                        />
+                      </div>
+                      <FreeTutoring20202021Cards />
+                    </TabContentWrapper>
+                  )
+                },
+			  {
                   tabButton: "Summer@SaMi 2020",
                   tabContent: (
                     <TabContentWrapper >
@@ -79,7 +117,7 @@ function SectionProgramPills({ ...props }) {
                               <Link to='/summer-at-sami-2020' target="_blank" className="link">
                                 Description Page
                               </Link>, 
-                            "Ongoing"],
+                            "Ended"],
                           ]}
                           customCellClasses={[
                             classes.cellText,

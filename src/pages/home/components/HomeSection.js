@@ -23,7 +23,7 @@ import "animate.css/animate.min.css";
 // import middleKids from "../../../static/home/midKids.jpg";
 import mainHannah from "../../../static/home/home_hannah.jpg";
 import fourKids from "../../../static/home/summer_camp_img_151.jpg";
-import pi from "../../../static/home/PiDay_m14.jpg";
+import kidstand from "../../../static/home/kids_stand.jpg";
 import Icon from "@material-ui/core/Icon";
 import Build from "@material-ui/icons/Build";
 
@@ -115,6 +115,30 @@ class HomeSection extends PureComponent  {
                           <Card
                             raised
                             background
+                            style={{ backgroundImage: `url(${kidstand})` }}
+                          >
+                            <CardBody background>
+                              <h6 className={classes.cardCategory}>Event</h6>
+                              <Link to='/free-tutoring-2020-2021' className="link">
+                                <h3 className={classes.cardTitleWhite}>
+                                  Free Tutoring 2020-2021
+                                </h3>
+                              </Link>
+                              <p className={classes.cardDescription}>
+                                The year around free tutoring program lasts for 15 weeks across the fall and spring semesters. We offers both math and computer science classes. The average class size is 10. 
+                              </p>
+                              <Button component={ Link } to="/free-tutoring-2020-2021" round color="info">
+                                <Icon>content_copy</Icon> View More 
+                              </Button>
+                            </CardBody>
+                          </Card>
+                        </ScrollAnimation>
+                      </GridItem>
+                      <GridItem xs={12} sm={6} md={6}>
+                        <ScrollAnimation animateIn="fadeInRight">
+                          <Card
+                            raised
+                            background
                             style={{ backgroundImage: `url(${fourKids})` }}
                           >
                             <CardBody background>
@@ -129,30 +153,6 @@ class HomeSection extends PureComponent  {
                               </p>
                               <Button component={ Link } to="/summer-at-sami-2020" round color="primary">
                                 <Icon>content_copy</Icon> View More
-                              </Button>
-                            </CardBody>
-                          </Card>
-                        </ScrollAnimation>
-                      </GridItem>
-                      <GridItem xs={12} sm={6} md={6}>
-                        <ScrollAnimation animateIn="fadeInRight">
-                          <Card
-                            raised
-                            background
-                            style={{ backgroundImage: `url(${pi})` }}
-                          >
-                            <CardBody background>
-                              <h6 className={classes.cardCategory}>Event</h6>
-                              <Link to='/pi-day-celebration-2020' className="link">
-                                <h3 className={classes.cardTitleWhite}>
-                                  Pi Day Celebration 2020
-                                </h3>
-                              </Link>
-                              <p className={classes.cardDescription}>
-                                The Celebration of Inclusive Excellence on Pi Day is an annual ceremony to bring all students in math to the forefront. The three keynote speakers will talk about math pathways...
-                              </p>
-                              <Button component={ Link } to="/pi-day-celebration-2020" round color="info">
-                                <Icon>content_copy</Icon> View More 
                               </Button>
                             </CardBody>
                           </Card>
