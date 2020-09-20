@@ -25,6 +25,7 @@ import TordaB from "../../../static/about/alumni/TordaB.jpg";
 import AnnastinaT from "../../../static/about/alumni/AnnastinaT.jpg";
 import RayB from "../../../static/about/alumni/RayB.jpg";
 import BrandonR from "../../../static/about/alumni/BrandonR.jpg";
+import JennaT from "../../../static/about/alumni/JennaT.jpg";
 
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
@@ -116,7 +117,7 @@ class Alumni extends PureComponent {
                       </CardAvatar>
                       <CardBody>
                         <h4 className={classes.cardTitle}>Ray B.</h4>
-                        <p className={classes.description}>University of virginia Class 2024</p>
+                        <p className={classes.description}>University of Virginia Class 2024</p>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -224,7 +225,47 @@ class Alumni extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
-                </GridContainer>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={JennaT} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Jenna T.</h4>
+                        <p className={classes.description}>Swarthmore College Class 2024</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Jenna is part of the Class of 2024 at Swarthmore College. She graduated as Valedictorian from Basis San Antonio Shavano. Having tutored during student hours and independently outside of school, she has experience in a variety of subjects, including math, biology, chemistry, and Latin. When she’s not studying, you can find her making music, reading, or cuddling with her cat. In the fall, Jenna will be attending Swarthmore College as a QuestBridge Scholar and member of the Class of 2024, and plans to double-major in Psychology and Musical Theatre.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+
+				  </GridContainer>
               </div>
             </div>
         );
