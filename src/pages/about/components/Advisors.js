@@ -74,7 +74,7 @@ class Advisors extends PureComponent {
                       <CardBody>
                         <h4 className={classes.cardTitle}>Dr. Sheng Tan</h4>
                         <Muted>
-                          <h6 className={classes.cardCategory}>Advisory Board</h6>
+                          <h6 className={classes.cardCategory}>Chair, Advisory Board</h6>
                         </Muted>
                         <p className={classes.description}>
                           Assistant Professor, <br /> Department of Computer Science, <br /> Trinity University
