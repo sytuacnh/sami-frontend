@@ -92,6 +92,7 @@ class HomeSection extends PureComponent  {
                       <ScrollAnimation animateIn="fadeInUp">
                         <a href="/tutoring" style={{ marginTop: "20px" }}>
                           <img src={mainHannah} alt="students and tutors" style={{ width: 500}}/> {/* style={{ width: 500}} */}
+						  <h4 className={classes.title}>Hannah Guan, Founder and CEO</h4>
                         </a>
                         <div
                           className={classes.coloredShadow}
