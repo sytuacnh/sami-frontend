@@ -89,6 +89,48 @@ import WyattA from "../../../static/about/tutors/WyattA.jpg";
 import YsabellaB from "../../../static/about/tutors/YsabellaB.jpg";
 import ZeinaH from "../../../static/about/tutors/ZeinaH.jpg";
 import HarineeS from "../../../static/about/tutors/HarineeS.jpg";
+import AdityaP from "../../../static/about/tutors/AdityaP.jpg";
+import AlenaZ from "../../../static/about/tutors/AlenaZ.jpg";
+import AndrewZ from "../../../static/about/tutors/AndrewZ.jpg";
+import AndyZ from "../../../static/about/tutors/AndyZ.jpg";
+import AnishK from "../../../static/about/tutors/AnishK.jpg";
+import AnshJ from "../../../static/about/tutors/AnshJ.jpg";
+import AnviK from "../../../static/about/tutors/AnviK.jpeg";
+import ArielleR from "../../../static/about/tutors/ArielleR.jpeg";  
+import AshleyH from "../../../static/about/tutors/AshleyH.jpg";  
+import CalvinZ from "../../../static/about/tutors/CalvinZ.PNG";
+import ChristinaF from "../../../static/about/tutors/ChristinaF.jpg";
+import ChristineT from "../../../static/about/tutors/ChristineT.jfif";
+import CodyZ from "../../../static/about/tutors/CodyZ.jpg";
+import DanielW from "../../../static/about/tutors/DanielW.jpeg";
+import DanielZ from "../../../static/about/tutors/DanielZ.JPG";
+import DevahutiN from "../../../static/about/tutors/DevahutiN.PNG";
+import EdwardB from "../../../static/about/tutors/EdwardB.jpeg";
+import EmilyM from "../../../static/about/tutors/EmilyM.jpg";  
+import ErinC from "../../../static/about/tutors/ErinC.jpg";  
+import EthanD from "../../../static/about/tutors/EthanD.png";
+import EvanN from "../../../static/about/tutors/EvanN.jpg";
+import GabrielH from "../../../static/about/tutors/GabrielH.jpg";
+import GiannaK from "../../../static/about/tutors/GiannaK.jpg";
+import HannahW from "../../../static/about/tutors/HannahW.jpg";
+import JinheeW from "../../../static/about/tutors/JinheeW.JPG";
+import KaiwenZ from "../../../static/about/tutors/KaiwenZ.jpg";
+import KarissaP from "../../../static/about/tutors/KarissaP.jpeg";
+import LindaT from "../../../static/about/tutors/LindaT.jpg";  
+import MirandaW from "../../../static/about/tutors/MirandaW.png";  
+import NathanX from "../../../static/about/tutors/NathanX.png";
+import NayeonK from "../../../static/about/tutors/NayeonK.jpg";
+import OrryH from "../../../static/about/tutors/OrryH.jpg";
+import RachelY from "../../../static/about/tutors/RachelY.jpg";
+import RahulS from "../../../static/about/tutors/RahulS.jpg";
+import RayZ from "../../../static/about/tutors/RayZ.jpg";
+import SamikaK from "../../../static/about/tutors/SamikaK.png";
+import SanjanaC from "../../../static/about/tutors/SanjanaC.jpg";
+import SiriB from "../../../static/about/tutors/SiriB.jpeg";  
+import WilliamX from "../../../static/about/tutors/WilliamX.jpeg";  
+import ZacharyH from "../../../static/about/tutors/ZacharyH.JPG";  
+
+
 
 
 const styles = theme => ({
@@ -203,7 +245,6 @@ class Tutors extends PureComponent {
                                 </div>
                               )}
                             </PopupState>
-
                       </CardBody>
                     </Card>
                   </GridItem>
@@ -1803,7 +1844,45 @@ class Tutors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
-				  
+				<GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AdityaP} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Aditya P.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Aditya is part of Class 2024. Aditya enjoys Chess and Soccer. Aditya is a presidential award winner for 2019 for volunteering and enjoys dedicating his time and service to others. Aditya's family consists of his parents, his brother (Nandan) and his pet (Goldendoodle - Cooper). Aditya looks forward learning with you through this process. Let's enjoy the time together. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+				  				  
                   <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
