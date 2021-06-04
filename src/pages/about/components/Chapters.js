@@ -56,6 +56,8 @@ import WilliamX from "../../../static/about/tutors/WilliamX.jpeg";
 import NathanX from "../../../static/about/tutors/NathanX.png";
 import JinheeW from "../../../static/about/tutors/JinheeW.JPG";
 import RachelY from "../../../static/about/tutors/RachelY.jpg";
+import AngieC from "../../../static/about/tutors/AngieC.jpeg";  
+
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
 
@@ -206,6 +208,45 @@ class Chapters extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Ethan is part of the Class of 2025 at Newport High School. He was from Bellevue, Washington. He lives with his parents and has an elder sister in college.  He is interested in mathematics and has been participating in math contests since elementary schools, such as Math Kangaroo, MathCounts, and AMCs.  He qualified for AIME at eighth grade. Besides, he also enjoys programming and is currently at the silver division of the USACO programming contest.  His other interests include playing badminton and violin, and definitely video games.  He also reserves time for 1-on-1 tutoring to underrepresented students and playing online board games with special needs students at different non- profit organizations.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AngieC} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Angie C.</h4>
+                        <p className={classes.description}>Director of Lincolnshire, Illinois Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Angie is part of the Class of 2023 at Stevenson High School. Her favorite subjects include computer science and chemistry. She is actively involved in tutoring and enjoys helping others learn. During her free time, she appreciates activities such as music and art as well. 
                                         </p>
                                     </Typography>
                                   </Popover>
