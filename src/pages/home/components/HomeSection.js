@@ -120,15 +120,15 @@ class HomeSection extends PureComponent  {
                           >
                             <CardBody background>
                               <h6 className={classes.cardCategory}>Event</h6>
-                              <Link to='/free-tutoring-2020-2021' className="link">
+                              <Link to='/free-tutoring-2021-2022' className="link">
                                 <h3 className={classes.cardTitleWhite}>
-                                  Free Tutoring 2020-2021
+                                  Free Tutoring 2021-2022
                                 </h3>
                               </Link>
                               <p className={classes.cardDescription}>
-                                The year around free tutoring program lasts for 15 weeks across the fall and spring semesters. We offers both math and computer science classes. The average class size is 10. 
+                                The year around free tutoring program lasts for 15 weeks across the fall and spring semesters. We offers both math and computer science classes. The average class size is 20. 
                               </p>
-                              <Button component={ Link } to="/free-tutoring-2020-2021" round color="info">
+                              <Button component={ Link } to="/free-tutoring-2021-2022" round color="info">
                                 <Icon>content_copy</Icon> View More 
                               </Button>
                             </CardBody>
@@ -144,15 +144,15 @@ class HomeSection extends PureComponent  {
                           >
                             <CardBody background>
                               <h6 className={classes.cardCategory}>Event</h6>
-                              <Link to='/summer-at-sami-2020' className="link">
+                              <Link to='/summer-at-sami-2021' className="link">
                                 <h3 className={classes.cardTitleWhite}>
-                                  Free Summer Camps 2020
+                                  Free Summer Camps 2021
                                 </h3>
                               </Link>
                               <p className={classes.cardDescription}>
-                                Our summer camps are FREE for all students in grades K-8. They are supervised by college professors and led by high school students and national/regional math contest winners...
+                                Our summer camps are FREE for all students in grades K-12. They are supervised by college professors and led by high school students and national/regional math contest winners.
                               </p>
-                              <Button component={ Link } to="/summer-at-sami-2020" round color="primary">
+                              <Button component={ Link } to="/summer-at-sami-2021" round color="primary">
                                 <Icon>content_copy</Icon> View More
                               </Button>
                             </CardBody>

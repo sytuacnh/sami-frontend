@@ -170,7 +170,7 @@ const HeaderLinks = ({ ...props }) => {
           buttonText="EVENTS"
           buttonProps={{
             id: "eventsNav",
-            className: currentNav==="casting-your-future-scholarship" || currentNav==="free-tutoring-2020-2021" ||currentNav==="free-tutoring-2019-2020" || currentNav==="free-tutoring-2018-2019" || currentNav==="summer-at-sami-2019" || currentNav==="pi-day-celebration-2019" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
+            className: currentNav==="casting-your-future-scholarship" || currentNav==="free-tutoring-2021-2021" ||currentNav==="free-tutoring-2020-2021" ||currentNav==="free-tutoring-2019-2020" || currentNav==="free-tutoring-2018-2019" || currentNav==="summer-at-sami-2019" || currentNav==="pi-day-celebration-2019" ? classes.navLink + " " + classes.navLinkActive : classes.navLink,
             color: "transparent"
           }}
           dropdownList={[
@@ -186,6 +186,15 @@ const HeaderLinks = ({ ...props }) => {
               }}
               dropPlacement="right-start"
               dropdownList={[
+				 <Link
+                    id="free-tutoring-2021-2022"
+                    to="/free-tutoring-2021-2022" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe660;</IconSpan>
+                    Free Tutoring 2021-2022 
+                  </Link>,
 				  <Link
                     id="free-tutoring-2020-2021"
                     to="/free-tutoring-2020-2021" 
@@ -214,6 +223,7 @@ const HeaderLinks = ({ ...props }) => {
                     Free Tutoring 2018-2019
                   </Link>
 
+
               ]}
             />
             ,
@@ -231,9 +241,17 @@ const HeaderLinks = ({ ...props }) => {
               dropPlacement="right-start"
               dropdownList={[
                   <Link 
-                    id="summer-at-sami-2020"
+                    id="summer-at-sami-2021"
                     onClick={handleChangeCurrentNav}
-                    to="/summer-at-sami-2020" 
+                    to="/summer-at-sami-2021" 
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer@Sami 2021
+                  </Link>,
+                  <Link 
+                    id="summer-at-sami-2021"
+                    onClick={handleChangeCurrentNav}
+                    to="/summer-at-sami-2021" 
                     className={classes.dropdownLink}
                   >
                     <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer@Sami 2020
@@ -263,8 +281,16 @@ const HeaderLinks = ({ ...props }) => {
               dropPlacement="right-start"
               dropdownList={[
                   <Link 
-                    id="pi-day-celebration-2020"
-                    to="/pi-day-celebration-2020" 
+                    id="pi-day-celebration-2021"
+                    to="/pi-day-celebration-2021" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration 2021
+                  </Link>,
+                  <Link 
+                    id="pi-day-celebration-2021"
+                    to="/pi-day-celebration-2021" 
                     onClick={handleChangeCurrentNav}
                     className={classes.dropdownLink}
                   >
@@ -318,6 +344,14 @@ const HeaderLinks = ({ ...props }) => {
               }}
               dropPlacement="right-start"
               dropdownList={[
+                  <Link 
+                    id="AnnualAwards2021"
+                    to="/pi-day-celebration-2021#awards" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe612;</IconSpan> 2021
+                  </Link>,
                   <Link 
                     id="AnnualAwards2020"
                     to="/pi-day-celebration-2020#awards" 
