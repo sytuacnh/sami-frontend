@@ -121,6 +121,8 @@ import SiriB from "../../../static/about/tutors/SiriB.jpeg";
 import WilliamX from "../../../static/about/tutors/WilliamX.jpeg";  
 import ZacharyH from "../../../static/about/tutors/ZacharyH.JPG";  
 import AngieC from "../../../static/about/tutors/AngieC.jpeg";  
+import AvaL from "../../../static/about/tutors/AvaL.jpg";  
+import VictoriaK from "../../../static/about/tutors/VictoriaK.jpg";  
  
 
 
@@ -1667,6 +1669,84 @@ class Tutors extends PureComponent {
                                 </div>
                               )}
                             </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={VictoriaK} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Victoria K.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Victoria is a part of the Class of 2022 at Rumsey Hall School in Washington, CT, a junior boarding school from 5-9 grade. Her home is San Antonio, TX, however since 7th grade, she has been living in the dorms during the school year. Her favorite subjects are Math and History. While she has not been able to participate in many math competitions on two of her math finals her score was 99. While at St. Mary’s Hall, she received both an award for Excellence in Math and a Science Achievement Award. In her free time, she enjoys drawing and watching Netflix. She hopes to be helpful to others with math and is also looking forward to working with kids.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AvaL} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Ava L.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Ava is part of the Class of 2023 at Choate Rosemary Hall. Her favorite subjects are math and computer science. She has qualified for AIME, USAJMO, and USAMO in the past few years, and was selected for the Math Prize for Girls in 2020. At school, she is a member of the math club and the science research program. Her other interests include reading and running. She is excited to take part in SaMi and inspire young students to explore more into STEM.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
                       </CardBody>
                     </Card>
                   </GridItem>
