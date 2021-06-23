@@ -31,7 +31,7 @@ class Home extends PureComponent {
                             <h4>
                                 <b>San Antonio Math Include</b>, SaMi, is an international
                                 <a className="link" href="https://www.501c3.org/what-is-a-501c3/" target="_blank" rel="noopener noreferrer"> 501(c)(3) </a>
-                                nonprofit organization founded by a group of students passionate about math. Our mission is to provide greater access to STEM education to all students from different backgrounds, experiences, and cultural perspectives. We offer FREE classes and summer camps for all students in grades K-12. Our students are from 38 states in the U.S. and four other continents.
+                                nonprofit organization founded by a group of students passionate about math. Our mission is to provide greater access to STEM education to all students from different backgrounds, experiences, and cultural perspectives. We offer FREE classes and summer camps for all students in grades K-12. Our students are from 42 states in the U.S. and four other continents.
                             </h4>
                             <br />
                           </GridItem>
