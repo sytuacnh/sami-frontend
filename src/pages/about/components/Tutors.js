@@ -136,6 +136,7 @@ import NeerajaS from "../../../static/about/tutors/NeerajaS.jpg";
 import PrestonB from "../../../static/about/tutors/PrestonB.jpeg";   
 import VicC from "../../../static/about/tutors/VicC.jpg";   
 import ZulfiyyaK from "../../../static/about/tutors/ZulfiyyaK.jpg";   
+import GeojuA from "../../../static/about/tutors/GeojuA.jpg";   
 
 const styles = theme => ({
   typography: {
@@ -243,6 +244,44 @@ class Tutors extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Brad is part of the Class of 2025 at Eastlake High School. He has an 8-year-old little brother. He is interested in science and mathematics, and he has been participating in math contests since 4th grade, namely AMCs, Math Is Cool, and MATHCOUNTS. He enjoys coaching others and seeing them learning and growing. He makes people relaxed and can relate to people quickly. He also enjoys playing various sports with his friends and coaching his brother football and baseball.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={GeojuA} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Geoju A.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Geoju is part of the Class of 2025 at Basis San Antonio Shavano. He enjoys math and science, but his favorite class is math. He has participated in many competitions like UIL and Science Bowl even getting to the National competition in Science Bowl. He also enjoys meeting new people and making new friends. Some of his hobbies include basketball, video games and playing percussion. He also volunteers in the church Sunday school helping the younger students by teaching them songs.
                                         </p>
                                     </Typography>
                                   </Popover>

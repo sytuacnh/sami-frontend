@@ -55,7 +55,7 @@ class FreeTutoring20212022Section extends PureComponent {
                         The <b>2021-2022 Free Tutoring Program</b> is going online! There are multiple benefits of studying online. Studying online gives students more flexibility and lowers the cost of study. They can choose their own learning environment that works best for their needs and don’t have to commute to class. This saves the cost of housing for us and transportation for them. Students will learn to be more disciplined and take more responsibilities. We are also able to offer more choices for course topics. 
                         <br />
                         <br />
-                        This year, our online program offers five <b>Math Courses</b> and five <b>Computer Science Courses</b>. For every course, each week's topic is the same. We offer multiple sections every day to give students a great number of choices. Each week's topic is independent and not a prerequisite to each other. If a student misses a week, this won't affect his/her class next week. 
+                        This year, our online program offers six <b>Math Courses</b> and three <b>Computer Science Courses</b>. For every course, the topic is the same within a week so you just need to attend one day. We offer multiple sections on Saturday and Sunday to give students a great number of choices. Each week's topic is independent and not a prerequisite to each other. If a student misses a week, this won't affect his/her class next week. 
                         <br />
                         <br />
                       </p>
@@ -66,6 +66,7 @@ class FreeTutoring20212022Section extends PureComponent {
                           <li>Whirlpool (2-3)</li>
                           <li>Andromeda (4-5)</li>
                           <li>Triangulum (6-8)</li>
+						  <li>MAA Pre-AMC (6-8)</li>						  
 						  <li>Calculus (9-12)</li>					
                         </ul>
                       </div>
@@ -73,14 +74,12 @@ class FreeTutoring20212022Section extends PureComponent {
                         <h3><b>Computer Science Classes:</b></h3>
                         <ul>
                           <li>Python for Kids (3-5)</li>
-                          <li>Java for Beginners (6-12)</li>
-                          <li>Java Coding Camp (6-12)</li>
-                          <li>C++ for Beginners (6-12)</li>
-						  <li>C++ Coding Camp (6-12)</li>					
+                          <li>Java (6-12)</li>                          
+                          <li>C++ (6-12)</li>						  
                         </ul>
                       </div>
                       <p className={classes.eventFont}>
-                        <b>The 2021-2022 Program is from September 25 to November 19 in 2021, and January 8 to March 11, in 2022.</b>
+                        <b>The 2021-2022 Program is from September 25 to November 14 in 2021, and January 8 to February 20, in 2022.</b>
                         <br />
                         <br />
                         If you have any questions, please contact us at <b>sanantoniomathinclude@gmail.com</b>.  
