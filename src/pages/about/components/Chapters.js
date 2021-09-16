@@ -100,9 +100,9 @@ class Chapters extends PureComponent {
                       classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
                     }
                   >
-                    <h2 className={classes.title}>National Chapters</h2>
+                    <h2 className={classes.title}>Global Chapters</h2>
                     <h5 className={classes.description}>
-                        SaMi Chapters are directed by high school students across the nation. They recruit and coordinate students in their chapters to attend our free tutoring programs.
+                        SaMi Chapters are directed by high school students across the nation and overseas. They recruit and coordinate students in their chapters to attend our free tutoring programs.
                     </h5>
                   </GridItem>
                 </GridContainer>

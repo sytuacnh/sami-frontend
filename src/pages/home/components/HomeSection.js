@@ -246,7 +246,7 @@ class HomeSection extends PureComponent  {
                             <CardHeader color="rose" className={classes.cardHeader}>Chapters</CardHeader>
                             <CardBody>
                               <p>
-                                Our chapters are directed by high school students across the nation. They recruit and coordinate students in their chapters to attend our free tutoring programs.  
+                                Our chapters are directed by high school students across the nation and overseas. They recruit and coordinate students in their chapters to attend our free tutoring programs.  
                               </p>
                               <Button component={ Link } to="/about#chapters" color="primary">View Chapters</Button>
                             </CardBody>
