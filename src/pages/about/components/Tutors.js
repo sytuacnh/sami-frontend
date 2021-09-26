@@ -137,6 +137,10 @@ import PrestonB from "../../../static/about/tutors/PrestonB.jpeg";
 import VicC from "../../../static/about/tutors/VicC.jpg";   
 import ZulfiyyaK from "../../../static/about/tutors/ZulfiyyaK.jpg";   
 import GeojuA from "../../../static/about/tutors/GeojuA.jpg";   
+import AthenaW from "../../../static/about/tutors/AthenaW.JPG";   
+import IshyaA from "../../../static/about/tutors/IshyaA.jpg";   
+
+
 
 const styles = theme => ({
   typography: {
@@ -326,6 +330,45 @@ class Tutors extends PureComponent {
                                 </div>
                               )}
                             </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={IshyaA} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Ishya A.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Ishya is part of the Class of 2024 at Health Careers High School. She was born in LA and lived in India for eight years. Her favorite subjects are Math and Chemistry. She received  the Presidential Volunteer Service Gold Award and won a few spelling awards. She is an active member of HOSA and aspires to become a doctor. She plays varsity tennis for Health Careers. In her free time, she likes to listen to music, play tennis, and spend time with her close people. She is excited and looking forward to teaching other students to learn math and develop new skills.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
                       </CardBody>
                     </Card>
                   </GridItem>
@@ -3323,7 +3366,7 @@ class Tutors extends PureComponent {
                                   >
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
-                                            Neeraja is a part of the Class of 2023 at Tomball Memorial High School. She lives in Tomball, Texas with her parents and her younger sister. She has participated in several math competitions, including UIL and TMSCA (Texas Math and Science Coach's Association). She is also part of her school's math club (Mu Alpha Theta) and is president of her school's science club. Neeraja loves to go on long runs and play the piano and is exited for the opportunity to help children across the country learn more about STEM! 
+                                            Neeraja is a part of the Class of 2023 at Tomball Memorial High School. She lives in Tomball, Texas with her parents and her younger sister. She has participated in several math competitions, including UIL and TMSCA (Texas Math and Science Coach's Association). She is also part of her school's math club (Mu Alpha Theta) and is president of her school's science club. Neeraja loves to go on long runs and play the piano and is excited for the opportunity to help children across the country learn more about STEM! 
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -3741,6 +3784,44 @@ class Tutors extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Sunny is part of the Class of 2023 at Basis San Antonio Shavano and is the current NJHS Vice President. Though Sunny is fond of math and the sciences, she enjoys writing with an ardent passion. As a result, she has won numerous poetry and essay contests. She enjoys writing privately outside of contests as well. Sunny loves soccer and plays for her school’s varsity team and her club’s A team as well as indoor league and women’s league. Sunny adores working with children and thinks herself to be someone that is easy to talk to, thus, being a tutor for SaMi quickly appealed to her. Sunny loves teaching and helping others learn new things, and she’s ecstatic about lending a hand to hold for the younger generation!
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                   <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AthenaW} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Athena W.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Athena is part of the Class of 2024 at Iowa City West High School in Iowa City, Iowa. She's passionate about competition math, and sharing it with others. She's gotten a perfect score on the AMC8 and qualified for AIME. Outside of academics, she will be either drawing or reading some terribly controversial article. 
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -4358,7 +4439,7 @@ class Tutors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
-                   <GridItem xs={12} sm={3} md={3}>
+				  <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>

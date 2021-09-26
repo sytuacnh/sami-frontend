@@ -65,6 +65,7 @@ import NeerajaS from "../../../static/about/tutors/NeerajaS.jpg";
 import PrestonB from "../../../static/about/tutors/PrestonB.jpeg";  
 import VicC from "../../../static/about/tutors/VicC.jpg";  
 import ZulfiyyaK from "../../../static/about/tutors/ZulfiyyaK.jpg";  
+import AthenaW from "../../../static/about/tutors/AthenaW.JPG";  
 
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
@@ -1228,6 +1229,45 @@ class Chapters extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Amelia is part of the Class of 2023 at Guymon High School.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AthenaW} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Athena W.</h4>
+                        <p className={classes.description}>Director of Iowa City, Iowa Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Athena is part of the Class of 2024 at Iowa City West High School in Iowa City, Iowa. She's passionate about competition math, and sharing it with others. She's gotten a perfect score on the AMC8 and qualified for AIME. Outside of academics, she will be either drawing or reading some terribly controversial article. 
                                         </p>
                                     </Typography>
                                   </Popover>
