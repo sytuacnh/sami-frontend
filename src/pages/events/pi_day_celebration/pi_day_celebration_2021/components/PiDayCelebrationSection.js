@@ -51,7 +51,7 @@ class PiDayCelebrationSection extends PureComponent {
                     </p>
                     <div className={classes.paddingTop} id="awards">
                       <h2 className={classes.title}>Mathronauts Awards for Distinguished Students</h2>
-					  We award students who contribute to their class envirinment and have made significant progress during their course of learning. 
+					  We award students who contribute to their class environment and have made significant progress during their course of learning. 
                       <div className={classes.eventFont}>
                         <h3><b>Distinguished Achievement Awards</b></h3>
                         <ul>
