@@ -71,11 +71,11 @@ class PiDayCelebrationSection extends PureComponent {
 						  <li>Ginnie Tang (Tutor Elijah Whong)</li>
 						  <li>Celeste-nadine Ramirez (Tutor Tesjsai Yelamanchili)</li>
 						  <li>Ian Zhu (Tutor Tesjsai Yelamanchili)</li>
-						  <li>Angelica Trevino (Tutor Tesjsai Yelamanchili)</li>
-						  <li>Joaquin Torres Caleb (Tutor Tesjsai Yelamanchili)</li>
-						  <li>Amaris Gonzales (Tutor Tesjsai Yelamanchili)</li>
-						  <li>Arianna Abraham (Tutor Tesjsai Yelamanchili)</li>
-						  <li>Mark Vasquez (Tutor Tesjsai )</li>
+						  <li>Angelica Trevino (Tutor Elena Garza)</li>
+						  <li>Joaquin Torres Caleb (Tutor Elena Garza)</li>
+						  <li>Amaris Gonzales (Tutor Elena Garza)</li>
+						  <li>Arianna Abraham (Tutor Elena Garza)</li>
+						  <li>Mark Vasquez (Tutor Elena Garza)</li>
 						  <li>Yelitza Escobedo (Tutor Maggie Jones)</li>				  
                         </ul>
                         <h3><b>Distinguished Leadership Award</b></h3>
