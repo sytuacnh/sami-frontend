@@ -249,9 +249,9 @@ const HeaderLinks = ({ ...props }) => {
                     <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer@Sami 2021
                   </Link>,
                   <Link 
-                    id="summer-at-sami-2021"
+                    id="summer-at-sami-2020"
                     onClick={handleChangeCurrentNav}
-                    to="/summer-at-sami-2021" 
+                    to="/summer-at-sami-2020" 
                     className={classes.dropdownLink}
                   >
                     <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer@Sami 2020
@@ -289,8 +289,8 @@ const HeaderLinks = ({ ...props }) => {
                     <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> Pi Day Celebration 2021
                   </Link>,
                   <Link 
-                    id="pi-day-celebration-2021"
-                    to="/pi-day-celebration-2021" 
+                    id="pi-day-celebration-2020"
+                    to="/pi-day-celebration-2020" 
                     onClick={handleChangeCurrentNav}
                     className={classes.dropdownLink}
                   >

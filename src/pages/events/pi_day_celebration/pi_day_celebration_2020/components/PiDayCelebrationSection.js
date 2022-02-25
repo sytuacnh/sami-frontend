@@ -45,25 +45,30 @@ class PiDayCelebrationSection extends PureComponent {
                   > 
                     <h2 className={classes.title}>Event Description</h2>
                     <p className={classes.eventFont}>
-                      The Celebration of Inclusive Excellence on Pi Day is an <b>annual</b> ceremony to bring all students in math to the forefront. 
-                      The three keynote speakers will talk about math pathways in three different phases: <b>high school</b>, <b>college</b>, and <b>career</b>. 
-                      <br />
-                      <br />
-                      Mathletes in Action is a count-down round game where a pair of students will play with each other by <b>solving a math problem</b> in <b>45</b> seconds. 
-                      This game is suitable for all students and we welcome all students to play the game.   
-                    </p>
+					  The Celebration of Inclusive Excellence on Pi Day is an <b>annual</b> ceremony to bring students of all races to celebrate their math achievements across the nation. 
+                      The keynote speaker will talk about their <b>successful pathway</b> to math. Mathletes in Action is a count-down round game where a pair of students will compete with each other by <b>solving a math problem</b> in <b>45</b> seconds. 
+                      This game is suitable for all students and we welcome all students to play it.                       </p>
                     <div className={classes.paddingTop} id="awards">
-                      <h2 className={classes.title}>Mathronauts Award for High Achieving Students</h2>
+                      <h2 className={classes.title}>Mathronauts Award for Distinguished Students</h2>
+					  We award students who contribute to their class envirinment and have made significant progress during their course of learning.
                       <div className={classes.eventFont}>
                         <h3><b>Distinguished Achievement Awards</b></h3>
                         <ul>
-                          <li>James Clay (Tutor Eric Zou)</li>
-                          <li>Myung Clay (Tutor Allen Liang)</li>
-                          <li>Advay Jain (Tutor Hannah Abraham)</li>
-                          <li>Athena Kim (Tutor Hannah Abraham)</li>
-                          <li>Ian Oviedo (Tutor Allen Liang)</li>
-                          <li>Alexander Soto (Tutor Allen Liang)</li>
-                          <li>Bohan Zhang (Tutor Annastina Taboada)</li>
+                          <li>Jasmin Vazquez (Tutor Francesca Finol)</li>
+                          <li>Sybil Perez (Tutor Laura Maldonado)</li>
+                          <li>Paisley Mendez (Tutor Nancy Abraham)</li>
+                          <li>Maali Whitehead (Tutor Josh Cevey)</li>
+                          <li>Sybil Perez (Tutor Sahana Babu)</li>
+                          <li>Brielle Hinojos (Tutor Sahana Babu)</li>
+                          <li>Sybil Perez (Tutor Parth Sangani)</li>
+						  <li>Alexander Soto (Tutor Allen Liang)</li>
+						  <li>Scarlett Goldsmith (Tutor Tanya Lertpradist)</li>
+						  <li>Vivían González (Tutor Elijah Whong)</li>
+						  <li>Jehann Perez (Tutor Tesjsai Yelamanchili)</li>
+						  <li>Diya Sangani (Tutor Tesjsai Yelamanchili)</li>
+						  <li>Joaquin Torres Caleb (Tutor Tesjsai Yelamanchili)</li>
+					 
+						  						 						 
                         </ul>
                         <h3><b>Distinguished Leadership Award</b></h3>
                         <ul>

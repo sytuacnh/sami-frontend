@@ -40,7 +40,7 @@ class PiDayCelebrationCards extends PureComponent {
                         <p className={classes.textCenter}>
                           Click button below to view our poster
                         </p>
-                        <a className="link" href="https://drive.google.com/open?id=1z48oTqWegs9p0RbggXEqUv5YJH6yQyfW" target="_blank" rel="noopener noreferrer">
+                        <a className="link" href="https://drive.google.com/file/d/1z48oTqWegs9p0RbggXEqUv5YJH6yQyfW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <Button round color="rose">
                                 <FormatAlignLeft className={classes.icons} />View Poster
                             </Button>
@@ -60,9 +60,9 @@ class PiDayCelebrationCards extends PureComponent {
                           Map
                         </h3>
                         <p className={classes.category}>
-                          To view the map of Trinity University
+                          We are online this year
                         </p>
-                        <a className="link" href="https://drive.google.com/open?id=1uxT8-qqmn60TrTpxtP-x-ausjvNLF_L0" target="_blank" rel="noopener noreferrer">
+                        <a className="link" href="https://drive.google.com/file/d/14cPe3u2f0b4JTAQ2HH8Ck1jRxdNUKXDX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <Button round color="rose">
                                 <FormatAlignLeft className={classes.icons} />View Map
                             </Button>
