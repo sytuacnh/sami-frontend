@@ -150,7 +150,7 @@ class HomeSection extends PureComponent  {
                                 </h3>
                               </Link>
                               <p className={classes.cardDescription}>
-                                Our summer camps are FREE for all students in grades K-12. They are supervised by college professors and led by high school students and national/regional math contest winners.
+                                Our summer camps are FREE for all students in grades K-12. The three-week full day summer camps are scheduled right before the new academic year to prevent the "summer slide". They are supervised by college professors and led by high school students and national/regional math contest winners.
                               </p>
                               <Button component={ Link } to="/summer-at-sami-2022" round color="primary">
                                 <Icon>content_copy</Icon> View More
