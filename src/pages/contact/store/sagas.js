@@ -1,11 +1,13 @@
-import { takeEvery, put } from 'redux-saga/effects';
-import { SUBMIT_MESSAGE } from './actionTypes';
+import { takeEvery } from 'redux-saga/effects';
+// import { takeEvery, put } from 'redux-saga/effects';
+// import { SUBMIT_MESSAGE } from './actionTypes';
 import axios from 'axios'
-import { messageSent, contact } from './actionCreators'
-import { SubmissionError } from 'redux-form';
+import { contact } from './actionCreators'
+// import { messageSent, contact } from './actionCreators'
+// import { SubmissionError } from 'redux-form';
 
 function* sendMessageToBackend(action) {
-    console.log('inside sagas!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!v')
+    // console.log('inside sagas!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!v')
     try {
         // get values from form
         const senderName = action.payload.get('senderName')
@@ -17,6 +19,7 @@ function* sendMessageToBackend(action) {
             "content": messageContent,
             "email": senderEmail
         };
+        console.log(contactMessage)
         const res = yield axios.post("/api/contactmessages/", contactMessage);
         // console.log(res.data) // => an object of program
         

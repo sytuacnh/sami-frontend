@@ -15,7 +15,6 @@
 
 */
 import {
-  primaryColor,
   dangerColor,
   successColor,
   whiteColor,

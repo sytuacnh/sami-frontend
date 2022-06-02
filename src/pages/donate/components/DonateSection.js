@@ -8,9 +8,9 @@ import compose from 'recompose/compose'
 import withStyles from "@material-ui/core/styles/withStyles";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
-import MenuItem from "@material-ui/core/MenuItem";
+// import FormControl from "@material-ui/core/FormControl";
+// import Select from "@material-ui/core/Select";
+// import MenuItem from "@material-ui/core/MenuItem";
 import sectionsStyle from "assets/jss/material-kit-pro-react/views/presentationSections/sectionsStyle.jsx";
 import { cardTitle } from "assets/jss/material-kit-pro-react.jsx";
 import Button from "components/CustomButtons/Button.jsx";
@@ -26,7 +26,6 @@ import { actionCreators } from "../store";
 import { IconSpan } from "../style";
 import {
     grayColor,
-    roseColor,
     blackColor,
     whiteColor,
     hexToRgb
@@ -96,9 +95,9 @@ class DonateSection extends PureComponent {
             handleMoneyButtonClicked,
             handleDonationAmountChanged,
             currentDonationAmount,
-            clickedButtonId,
+            // clickedButtonId,
             donationAmountInputFocus,
-            TurnOnDonationAmountInputFocus,
+            // TurnOnDonationAmountInputFocus,
             TurnOffDonationAmountInputFocus
         } = this.props;
 
@@ -207,7 +206,7 @@ DonateSection.propTypes = {
 
 const mapStateToProps = (state) => {
     return {
-        clickedButtonId: state.getIn(['donate', 'clickedButtonId']),
+        // clickedButtonId: state.getIn(['donate', 'clickedButtonId']),
         currentDonationAmount: state.getIn(['donate', 'currentDonationAmount']),
         donationAmountInputFocus: state.getIn(['donate', 'donationAmountInputFocus']),
     }
