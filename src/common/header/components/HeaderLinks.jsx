@@ -187,6 +187,15 @@ const HeaderLinks = ({ ...props }) => {
               dropPlacement="right-start"
               dropdownList={[
 				 <Link
+                    id="free-tutoring-2022-2023"
+                    to="/free-tutoring-2022-2023" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe660;</IconSpan>
+                    Free Tutoring 2022-2023 
+                  </Link>,
+				  <Link
                     id="free-tutoring-2021-2022"
                     to="/free-tutoring-2021-2022" 
                     onClick={handleChangeCurrentNav}
@@ -240,6 +249,14 @@ const HeaderLinks = ({ ...props }) => {
               }}
               dropPlacement="right-start"
               dropdownList={[
+                  <Link 
+                    id="summer-at-sami-2022"
+                    onClick={handleChangeCurrentNav}
+                    to="/summer-at-sami-2022" 
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe74a;</IconSpan> Summer@Sami 2022
+                  </Link>,
                   <Link 
                     id="summer-at-sami-2021"
                     onClick={handleChangeCurrentNav}
