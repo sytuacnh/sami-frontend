@@ -23,7 +23,7 @@ function* sendMessageToBackend(action) {
         };
 
         // yield axios.post("/api/contactmessages/", contactMessage);
-        yield axios.post("/api/contactmessages/", contactMessage);
+        yield axios.post("https://admin.mathinclude.org/api/contactmessages/", contactMessage);
         // const res = yield axios.post("/api/contactmessages/", contactMessage);
         // do not need to use res.data here
         // console.log('Message sent successfully   !!!!!!!!!!!!!!!!')
