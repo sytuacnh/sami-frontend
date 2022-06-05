@@ -2,7 +2,7 @@
   "name": "sami-frontend",
   "version": "0.1.0",
   "license": "UNLICENSED",
-  "proxy": "https://admin.mathinclude.org",
+  "proxy": "0.0.0.0:8000",
   "dependencies": {
     "@material-ui/core": "4.2.0",
     "@material-ui/icons": "4.2.0",
