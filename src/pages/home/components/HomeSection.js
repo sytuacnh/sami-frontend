@@ -43,6 +43,9 @@ const style = {
      marginBottomSmShrink: {
          marginBottom: "-20px"
      },
+     marginBottomClear: {
+         marginBottom: "0px !important"
+     },
      marginTopLgExpand: {
         marginTop: "50px"
      },
@@ -270,12 +273,12 @@ class HomeSection extends PureComponent  {
                 <GridItem
                   xs={12}
                   className={
-                    classNames(classes.marginTopSmShrink, classes.marginBottomLgExpand, classes.mlAuto, classes.mrAuto, classes.textCenter)
+                    classNames(classes.marginTopSmShrink, classes.mlAuto, classes.mrAuto, classes.textCenter)
                   }
                 >
                   <div className={classNames(classes.contactContent)}>
                     <div className={classes.container}>
-                      <h2 className={classes.title}>Contact Us</h2>
+                      <h2 className={classNames(classes.title, classes.marginBottomClear)}>Contact Us</h2>
                       <ContactSection  />
                     </div>
                   </div>

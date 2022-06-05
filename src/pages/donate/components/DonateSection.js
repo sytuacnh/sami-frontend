@@ -70,11 +70,10 @@ class DonateSection extends PureComponent {
     constructor(props) {
         super(props);
         // create a ref to store the CustomInput(TextInput) DOM element
-        // not using redux
         this.donationAmountInput = React.createRef();
         this.focusDonationAmountInput = this.focusDonationAmountInput.bind(this);
         this.handleOtherButtonClicked = this.handleOtherButtonClicked.bind(this);
-      }
+    }
 
     focusDonationAmountInput() {
       // Explicitly focus the text input using the raw DOM API
@@ -167,7 +166,7 @@ class DonateSection extends PureComponent {
                                     </div>
                                     : 
                                     <div></div>                              
-                            }
+                              }
                               
                             </GridItem>
                           </GridContainer>
