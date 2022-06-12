@@ -78,9 +78,12 @@ const style = {
     buttonMargin: {
         marginRight: "30px"
     },
+    messageSentTextArea: {
+      marginTop: "10px",
+    },
     messageSentText: {
-      marginTop: "10px"
-    }
+      fontSize: "20px"
+    },
 }
 
 
@@ -167,7 +170,7 @@ const SendMessageForm = props => {
           </Button>
         </div>
 
-        <div className={classes.messageSentText}>
+        <div className={classes.messageSentTextArea}>
         {
           messageSubmitButtonClicked 
           ?
@@ -175,9 +178,9 @@ const SendMessageForm = props => {
             {
               sentMessageSucceed
               ?
-              <p>Great. Your message has been sent. We will contact you soon.</p>
+              <p className={classes.messageSentText}><b>Great</b>. Your message has been sent. We will contact you soon.</p>
               :
-              <p>Sorry. Unable to send message now. Please use other ways to contact us.</p>
+              <p className={classes.messageSentText}><b>Sorry</b>. Unable to send message now. Please use other ways to contact us.</p>
             }
           </>
           :
