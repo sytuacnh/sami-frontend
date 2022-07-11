@@ -1,11 +1,10 @@
 import React, { PureComponent } from 'react';
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Advisors from "./Advisors";
-import Officers from "./Officers";
+// import Officers from "./Officers";
 import Chapters from "./Chapters";
 import Tutors from "./Tutors";
 import Alumni from "./Alumni";

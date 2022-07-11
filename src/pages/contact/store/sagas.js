@@ -1,11 +1,15 @@
+// import { takeEvery } from 'redux-saga/effects';
 import { takeEvery, put } from 'redux-saga/effects';
-import { SUBMIT_MESSAGE } from './actionTypes';
+// import { SUBMIT_MESSAGE } from './actionTypes';
 import axios from 'axios'
-import { messageSent, contact } from './actionCreators'
-import { SubmissionError } from 'redux-form';
+import { 
+    // sendMessageSucceeded, 
+    // sendMessageFailed, 
+    contact 
+} from './actionCreators'
+// import { SubmissionError } from 'redux-form';
 
 function* sendMessageToBackend(action) {
-    console.log('inside sagas!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!v')
     try {
         // get values from form
         const senderName = action.payload.get('senderName')
@@ -14,19 +18,20 @@ function* sendMessageToBackend(action) {
 
         const contactMessage = {
             "name": senderName,
-            "content": messageContent,
-            "email": senderEmail
+            "email": senderEmail,
+            "content": messageContent
         };
-        const res = yield axios.post("/api/contactmessages/", contactMessage);
-        // console.log(res.data) // => an object of program
-        
+
+        // yield axios.post("/api/contactmessages/", contactMessage);
+        yield axios.post("https://admin.mathinclude.org/api/contactmessages/", contactMessage);
+        // const res = yield axios.post("/api/contactmessages/", contactMessage);
+        // do not need to use res.data here
+        // console.log('Message sent successfully   !!!!!!!!!!!!!!!!')
         // patch action when succeed to send message
-        // const action = messageSent(res.data);
-        // yield put(action);
-        console.log('Message sent successfully   !!!!!!!!!!!!!!!!')
+        yield put(contact.success());
     } catch(e) {
         // patch action when fail to send message
-        console.log('Message failed to send.')
+        // console.log('Message failed to send.')
 
         // const formError = new SubmissionError({
         //   contact: 'User with this login is not found', // specific field error
@@ -34,10 +39,12 @@ function* sendMessageToBackend(action) {
         // });
 
         // yield put(login.failure(formError));
+
+        // patch action when fail to send message
+        yield put(contact.failure(e));
     }
 }
 export default function* contactSagas() {
     // call backend api
     yield takeEvery(contact.REQUEST, sendMessageToBackend);
-    // yield takeEvery(SUBMIT_MESSAGE, sendMessageToBackend);
 }

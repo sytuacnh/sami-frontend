@@ -17,36 +17,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
-import classNames from "classnames";
+// import classNames from "classnames";
 import compose from 'recompose/compose'
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
+// import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
-import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
+// import Card from "components/Card/Card.jsx";
+// import CardHeader from "components/Card/CardHeader.jsx";
+// import CardBody from "components/Card/CardBody.jsx";
+// import CardFooter from "components/Card/CardFooter.jsx";
 // import CustomInput from "components/CustomInput/CustomInput.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+// import Button from "components/CustomButtons/Button.jsx";
 import Table from "components/Table/Table.jsx";
 import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
 import { TabContentWrapper } from "../style";
-import ProgramForm from "./ProgramForm";
+// import ProgramForm from "./ProgramForm";
 import { actionCreators } from '../store';
-import SummerAtSaMi2020Cards from "../../events/summer_at_sami/summer_at_sami_2020/components/SummerAtSaMiCards";
-import SummerAtSaMi2021Cards from "../../events/summer_at_sami/summer_at_sami_2021/components/SummerAtSaMiCards";
 import SummerAtSaMi2022Cards from "../../events/summer_at_sami/summer_at_sami_2022/components/SummerAtSaMiCards";
 import PiDayCelebrationCards from "../../events/pi_day_celebration/pi_day_celebration_2021/components/PiDayCelebrationCards";
-import FreeTutoring20192020Cards from "../../events/free_tutoring/free_tutoring_2019_2020/components/FreeTutoring20192020Cards";
-import FreeTutoring20202021Cards from "../../events/free_tutoring/free_tutoring_2020_2021/components/FreeTutoring20202021Cards";
-import FreeTutoring20212022Cards from "../../events/free_tutoring/free_tutoring_2021_2022/components/FreeTutoring20212022Cards";
 import FreeTutoring20222023Cards from "../../events/free_tutoring/free_tutoring_2022_2023/components/FreeTutoring20222023Cards";
 
 const style = {

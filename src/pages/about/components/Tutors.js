@@ -1,10 +1,8 @@
 import React, { PureComponent } from 'react';
-import PropTypes from "prop-types";
 import compose from 'recompose/compose'
 import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 // pop over
-import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Button from "components/CustomButtons/Button.jsx";
 // import Button from '@material-ui/core/Button';
@@ -16,10 +14,7 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import CardAvatar from "components/Card/CardAvatar.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-import Muted from "components/Typography/Muted.jsx";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
 import HannahG from "../../../static/about/tutors/HannahG.jpg";
@@ -84,7 +79,7 @@ import AdityaP from "../../../static/about/tutors/AdityaP.jpg";
 import AlenaZ from "../../../static/about/tutors/AlenaZ.jpg";
 import AndrewZ from "../../../static/about/tutors/AndrewZ.jpg";
 import AndyZ from "../../../static/about/tutors/AndyZ.jpg";
-import AnishK from "../../../static/about/tutors/AnishK.jpg";
+// import AnishK from "../../../static/about/tutors/AnishK.jpg";
 import AnshJ from "../../../static/about/tutors/AnshJ.jpg";
 import AnviK from "../../../static/about/tutors/AnviK.jpeg";
 import ArielleR from "../../../static/about/tutors/ArielleR.jpeg";  

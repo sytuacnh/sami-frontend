@@ -1,6 +1,4 @@
 import React, { PureComponent } from 'react';
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import compose from 'recompose/compose'
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -34,7 +32,7 @@ class FreeTutoring20212022Section extends PureComponent {
         }  = this.props;
 
         return (
-            <div className={classes.contactContent, classes.paddingCustom}>
+            <div className={classNames(classes.contactContent, classes.paddingCustom)}>
               <div className={classes.container}>
                 <GridContainer justify="center">
                   <GridItem

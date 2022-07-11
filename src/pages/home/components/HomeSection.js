@@ -13,8 +13,8 @@ import CardBody from "components/Card/CardBody.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 // import InfoArea from "components/InfoArea/InfoArea.jsx";
 // import Gesture from "@material-ui/icons/Gesture";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
-import InfoArea from "components/InfoArea/InfoArea.jsx";
+// import CustomInput from "components/CustomInput/CustomInput.jsx";
+// import InfoArea from "components/InfoArea/InfoArea.jsx";
 import ContactSection from "../../contact/components/ContactSection";
 // library used for cool animations
 import ScrollAnimation from "react-animate-on-scroll";
@@ -25,15 +25,15 @@ import mainHannah from "../../../static/home/home_hannah.jpg";
 import fourKids from "../../../static/home/summer_camp_img_151.jpg";
 import kidstand from "../../../static/home/kids_stand.jpg";
 import Icon from "@material-ui/core/Icon";
-import Build from "@material-ui/icons/Build";
+// import Build from "@material-ui/icons/Build";
 
 import withStyles from "@material-ui/core/styles/withStyles";
 import sectionsStyle from "assets/jss/material-kit-pro-react/views/presentationSections/sectionsStyle.jsx";
 // import projectsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/projectsStyle.jsx";
-import blogsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/blogsStyle.jsx";
+// import blogsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/blogsStyle.jsx";
 import contentStyle from "assets/jss/material-kit-pro-react/views/presentationSections/contentStyle.jsx";
 import workStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/workStyle.jsx";
-import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
+// import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
 
 const style = {
@@ -42,6 +42,9 @@ const style = {
      },
      marginBottomSmShrink: {
          marginBottom: "-20px"
+     },
+     marginBottomClear: {
+         marginBottom: "0px !important"
      },
      marginTopLgExpand: {
         marginTop: "50px"
@@ -270,12 +273,12 @@ class HomeSection extends PureComponent  {
                 <GridItem
                   xs={12}
                   className={
-                    classNames(classes.marginTopSmShrink, classes.marginBottomLgExpand, classes.mlAuto, classes.mrAuto, classes.textCenter)
+                    classNames(classes.marginTopSmShrink, classes.mlAuto, classes.mrAuto, classes.textCenter)
                   }
                 >
                   <div className={classNames(classes.contactContent)}>
                     <div className={classes.container}>
-                      <h2 className={classes.title}>Contact Us</h2>
+                      <h2 className={classNames(classes.title, classes.marginBottomClear)}>Contact Us</h2>
                       <ContactSection  />
                     </div>
                   </div>

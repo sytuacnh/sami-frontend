@@ -1,8 +1,7 @@
 {
   "name": "sami-frontend",
   "version": "0.1.0",
-  "license": "",
-  "proxy": "http://localhost:8000",
+  "license": "UNLICENSED",
   "dependencies": {
     "@material-ui/core": "4.2.0",
     "@material-ui/icons": "4.2.0",
@@ -27,6 +26,7 @@
     "react-image-gallery": "0.8.17",
     "react-paypal-button-v2": "^2.3.2",
     "react-redux": "^7.1.0",
+    "react-responsive": "^9.0.0-beta.10",
     "react-router-dom": "5.0.1",
     "react-router-hash-link": "^1.2.2",
     "react-scripts": "3.0.1",

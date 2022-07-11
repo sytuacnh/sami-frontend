@@ -1,15 +1,13 @@
 import React, { PureComponent } from 'react';
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import compose from 'recompose/compose'
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import withStyles from "@material-ui/core/styles/withStyles";
-import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
 import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
 
 import PiDayCelebrationCards from "./PiDayCelebrationCards";
-import PiDayCelebrationCarousel from "./PiDayCelebrationCarousel";
+// import PiDayCelebrationCarousel from "./PiDayCelebrationCarousel";
 
 const style = {
     paddingCustom: {
@@ -32,7 +30,7 @@ class PiDayCelebrationSection extends PureComponent {
         }  = this.props;
 
         return (
-            <div className={classes.contactContent, classes.paddingCustom}>
+            <div className={(classes.contactContent, classes.paddingCustom)}>
               <div className={classes.container}>
                 <GridContainer justify="center">
                   <GridItem

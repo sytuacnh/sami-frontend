@@ -1,10 +1,8 @@
 import React, { PureComponent } from 'react';
-import PropTypes from "prop-types";
 import compose from 'recompose/compose'
 import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 // pop over
-import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Button from "components/CustomButtons/Button.jsx";
 // import Button from '@material-ui/core/Button';
@@ -16,10 +14,9 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import CardAvatar from "components/Card/CardAvatar.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
+// import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-import Muted from "components/Typography/Muted.jsx";
+// import CardFooter from "components/Card/CardFooter.jsx";
 
 
 import KahlilB from "../../../static/about/chapters/KahlilB.jpg";
@@ -51,7 +48,7 @@ import ZacharyH from "../../../static/about/tutors/ZacharyH.JPG";
 import GabrielH from "../../../static/about/tutors/GabrielH.jpg";
 import KaiwenZ from "../../../static/about/tutors/KaiwenZ.jpg";
 import HannahW from "../../../static/about/tutors/HannahW.jpg";
-import EmilyM from "../../../static/about/tutors/EmilyM.jpg";  
+// import makeStyles from "../../../static/about/tutors/EmilyM.jpg";  
 import WilliamX from "../../../static/about/tutors/WilliamX.jpeg";  
 import NathanX from "../../../static/about/tutors/NathanX.png";
 import JinheeW from "../../../static/about/tutors/JinheeW.JPG";

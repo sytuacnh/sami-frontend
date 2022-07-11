@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import compose from 'recompose/compose'
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -112,7 +111,7 @@ class PhotoGallerySection extends PureComponent {
                         >
                           <img
                             src={require(`../../../static/gallery/${clickedImgName}.jpg`)}
-                            alt="Sami Photo"
+                            alt="Sami"
                             key="Sami Photo"
                             style={{width: 750}}
                           />

@@ -1,6 +1,4 @@
 import React, { PureComponent, Fragment } from 'react';
-import { Link } from "react-router-dom";
-import { connect } from 'react-redux';
 // nodejs library to set properties for components
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -10,9 +8,7 @@ import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
 import mathTwoGirls from "../../../../../static/events/math_two_girls.jpg";

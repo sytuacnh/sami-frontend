@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import compose from 'recompose/compose'
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -8,13 +7,11 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
 // import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
 import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import mathTwoGirls from "../../../../../static/events/math_two_girls.jpg";
 import tutorHelp from "../../../../../static/events/tutor_help_2.jpg";
-import lawn from "../../../../../static/events/lawn.jpg";
+// import lawn from "../../../../../static/events/.jpg";
 import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 import FreeTutoring20182019Carousel from "./FreeTutoring20182019Carousel";
 
@@ -40,7 +37,7 @@ class FreeTutoring20182019Section extends PureComponent {
         }  = this.props;
 
         return (
-            <div className={classes.contactContent, classes.paddingCustom}>
+            <div className={classNames(classes.contactContent, classes.paddingCustoa)}>
               <div className={classes.container}>
                 <GridContainer justify="center">
                   <GridItem

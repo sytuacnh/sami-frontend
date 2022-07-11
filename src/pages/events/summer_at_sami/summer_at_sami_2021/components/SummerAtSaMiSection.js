@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import compose from 'recompose/compose'
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -9,7 +8,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx";
 
 import SummerAtSaMiCards from "./SummerAtSaMiCards";
-import SummerAtSaMiCarousel from "./SummerAtSaMiCarousel";
+// import SummerAtSaMiCarousel from "./SummerAtSaMiCarousel";
 
 const style = {
     paddingCustom: {
@@ -35,7 +34,7 @@ class SummerAtSaMiSection extends PureComponent {
         }  = this.props;
 
         return (
-            <div className={classes.contactContent, classes.paddingCustom}>
+            <div className={classNames(classes.contactContent, classes.paddingCustom)}>
               <div className={classes.container}>
                 <GridContainer justify="center">
                   <GridItem

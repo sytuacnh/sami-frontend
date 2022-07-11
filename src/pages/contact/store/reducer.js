@@ -1,13 +1,20 @@
-// // import { reducer } from 'redux-form';
+import * as actionTypes from './actionTypes';
+import { fromJS } from 'immutable';
 
-// // import reducer from 'redux-form';
+const defaultState = fromJS({
+    messageSubmitButtonClicked: false,
+    sentMessageSucceed: true
+})
 
-// import { reducer as reduxFormReducer } from 'redux-form';
-
-// // const reducer = combineReducers({
-// //   form: reduxFormReducer, // mounted under "form"
-// // });
-// const reducer = reduxFormReducer;
-
-// export default reducer;
-// // export {default as Comp1} from './Comp1.jsx';
+export default (state=defaultState, action) => {
+    switch(action.type) {
+        case actionTypes.CONTACT_REQUEST:
+            return state.set("messageSubmitButtonClicked", true);
+        case actionTypes.CONTACT_SUCCESS:
+            return state.set("sentMessageSucceed", true);
+        case actionTypes.CONTACT_FAILURE:
+            return state.set("sentMessageSucceed", false);
+        default:
+            return state;
+    }
+}

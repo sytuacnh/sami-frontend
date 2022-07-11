@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import PropTypes from "prop-types";
 import compose from 'recompose/compose'
 import classNames from "classnames";
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -16,7 +15,6 @@ import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSecti
 import ImportContacts from "@material-ui/icons/ImportContacts";
 import SentimentSatisfied from "@material-ui/icons/SentimentSatisfied";
 import AccessibilityNew from "@material-ui/icons/AccessibilityNew";
-import PeopleTwoTone from "@material-ui/icons/PeopleTwoTone";
 import HighQuality from "@material-ui/icons/HighQuality";
 
 const style = {
@@ -33,7 +31,7 @@ class TutoringSection extends PureComponent {
         }  = this.props;
 
         return (
-            <div className={classes.contactContent, classes.paddingCustom}>
+            <div className={(classes.contactContent, classes.paddingCustom)}>
               <div className={classes.container}>
                 <GridContainer justify="center">
                   <GridItem
