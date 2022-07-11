@@ -89,6 +89,18 @@ import RiddhiG from "../../../static/about/tutors/RiddhiG.jpg";
 import SophiaT from "../../../static/about/tutors/SophiaT.jpg";
 import StefanG from "../../../static/about/tutors/StefanG.jpg";
 import NittinM from "../../../static/about/tutors/NittinM.jpg";
+import JennyW2 from "../../../static/about/tutors/JennyW.jpg";
+import GraceH from "../../../static/about/tutors/GraceH.jpg";
+import AmelieB from "../../../static/about/tutors/AmelieB.jpg";
+import NityaP from "../../../static/about/tutors/NityaP.png";
+import MirandaZ from "../../../static/about/tutors/MirandaZ.jpg";
+import AryanR from "../../../static/about/tutors/AryanR.jpg";
+import GraceS from "../../../static/about/tutors/GraceS.jpg";
+
+
+
+ 
+
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
 
@@ -169,6 +181,84 @@ class Chapters extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>                  
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={NityaP} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Nitya P.</h4>
+                        <p className={classes.description}>Director of Peoria, Arizona Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Nitya is part of the Class of 2026 at Basis Peoria. Her favorite subjects include biology, chemistry, and history. She is currently a member of NJHS and has been a part of several volunteer projects and volunteer organizations, such as LAI, Brambley Hedge Rabbit Rescue, and AZ Humane Society. Aside from school, she loves reading and hanging out with her two rabbits. She has a great passion for helping in any way possible. She is an extremely understanding and considerate person so do not hesistate to talk about anything with her including course questions!
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AmelieB} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Amelie B.</h4>
+                        <p className={classes.description}>Director of New York City, New York Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Amelie is part of the Class of 2025 at Hunter College High School. She was born in Queens, New York City and had attended school in Manhattan for nearly a decade. Her favorite subjects include Mathematics, Global Studies, and Art. She enjoys learning about the cultures and customs of ancient civilizations as well the intricacies of politics throughout history. Amelie also adores solving math problems of all shapes and sizes; where there is a will, there is a way! She spends her free time sketching a variety of images, from diagrams of a chloroplast to cat doodles. Her favorite nonfiction book is Prisoners of Geography by Tim Marshall and her favorite fiction book is The Picture of Dorian Grey by Oscar Wilde.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
                   <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
@@ -706,6 +796,45 @@ class Chapters extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Gabriel is part of the class of 2023 at Tower Hill. He loves learning and is excited to share it with others during the SaMi summer program.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={GraceH} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Grace H.</h4>
+                        <p className={classes.description}>Director of Wilmington, Delaware Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Grace is part of the Class of 2026 at Tower Hill School. Her favorite subjects include Math, Digital Citizenship, and English. She is a part of the stock market club, the math league team, and the lego robotics team. Her hobbies include practicing piano and painting. When she is bored, she loves to annoy her cat, Pang Pang. For some reason, she named her cat fatty in Chinese. She looks forward to tutoring other students!
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -1615,6 +1744,45 @@ class Chapters extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AryanR} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Aryan R.</h4>
+                        <p className={classes.description}>Director of Peoria, Arizona Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Aryan is a part of the 2025 class at Basis Peoria. One of his favorite hobbies is reading books and he has read over 200 books. He is also interested in soccer and has played for 10 years. Aryan has joined the Science Bowl team and the Speech and Debate team due to his love of learning new things. He is always on the lookout for new experiences and loves learning new things. He is very excited to be able to help out and give back to the community through SaMi.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
                           <img src={GarimaR} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
@@ -1757,6 +1925,45 @@ class Chapters extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Harinee is part of the Class of 2023 at Prosper High School. She was part of NJHS during middle school and HOPE squad member during freshman year. She is in advanced math level and has taken AP computer science principles as elective. She is an Indian classical dancer and has been learning for the last nine years. She enjoys doing activities like playing her piano and dancing. She volunteers at ManeGait Therapeutic Horsemanship as a barn buddy and enjoys spending time with the horses. In her free time, Harinee enjoys playing her ukulele and spending time with her friends and family. She is excited to be part of 'SaMI' working with other students and helping them learn new things!
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={GraceS} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Grace S.</h4>
+                        <p className={classes.description}>Director of Grapevine, Texas Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Grace is a rising sophomore in the Class of 2025 at iUniversity Prep. She is particularly interested in computer science and mathematics. She is currently in the USACO silver division and has participated in math competitions since elementary school. Grace enjoys working with and helping others and has years of experience as a student leader in clubs such as NJHS and Student Council. In her free time, she enjoys running, writing, and listening to music. Through being a tutor at SaMi, she hopes to help students cultivate their interests in STEM.
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -2069,6 +2276,45 @@ class Chapters extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Ghalen is part of the Class of 2023 at Carroll High School.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={JennyW2} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Jenny W.</h4>
+                        <p className={classes.description}>Director of Frisco, Texas Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Jenny is part of the Class of 2025 at Liberty High School. Academically, she learned algebra I&II, geometry, pre-calculus, and honors chemistry during her middle school years.  She completed AP Calculus AB, AP Chemistry, and AP Physics 1 in her 9th grade. She is a passionate & experienced math and science tutor in the Frisco and Plano area.  During her free time, she enjoys playing the violin, fishing, table tennis, and badminton. She is excited to help others learn and grow. 
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -2576,6 +2822,45 @@ class Chapters extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Kaiwen is part of the Class of 2024 at Archbishop Mitty High School. He is an avid basketball player who has been playing for five years competitively and part of his school team. Since 6th grade, he has been apart of various math contests like MathCounts, MathLeague, and AMC. He scored in the honor roll in AMC8 on two occasions, and qualified for the state Math League Championship. In addition to math, for computer science he passed the bronze division and advanced into the silver USACO division during the winter of ninth grade. In his free time, he also enjoys listening to the music, volunteering for the community, and hanging out with friends.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={MirandaZ} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Miranda Z.</h4>
+                        <p className={classes.description}>Director of Toronta, Canada Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Miranda is part of the Class of 2023 at Marc Garneau Collegiate Institute in Toronto, Ontario. She was lucky enough to be sent to math classes at a young age, which is where her passion for math began to grow. She competed on team Canada for the European Girls Math Olympiad, winning silver, and has also attended numerous other math contests such as the AMC, AIME, Euclid, CMIMC, HMMT, and more. When she isn’t doing math, Miranda enjoys drinking bubble tea with her friends and singing in the Toronto Children’s Chorus. She is excited to be able to teach others about mathematics!
                                         </p>
                                     </Typography>
                                   </Popover>

@@ -176,6 +176,28 @@ import ZoyaH from "../../../static/about/tutors/ZoyaH.jpg";
 import GavinC from "../../../static/about/tutors/GavinC.jpg";
 import NittinM from "../../../static/about/tutors/NittinM.jpg";
 
+import AkhilY from "../../../static/about/tutors/AkhilY.jpg";
+import AmelieB from "../../../static/about/tutors/AmelieB.jpg";
+import ArnonG from "../../../static/about/tutors/ArnonG.jpg";
+import AryanR from "../../../static/about/tutors/AryanR.jpg";
+import DiY from "../../../static/about/tutors/DiY.jpg";
+import EthanF from "../../../static/about/tutors/EthanF.jpg";
+import GraceH from "../../../static/about/tutors/GraceH.jpg";
+import GraceS from "../../../static/about/tutors/GraceS.jpg";
+import JennyW from "../../../static/about/tutors/JennyW.jpg";
+import JerryF from "../../../static/about/tutors/JerryF.jpg";
+import JordanG from "../../../static/about/tutors/JordanG.jpg";
+import KrishP from "../../../static/about/tutors/KrishP.jpg";
+import MirandaZ from "../../../static/about/tutors/MirandaZ.jpg";
+import MitulS from "../../../static/about/tutors/MitulS.jpg";
+import NityaP from "../../../static/about/tutors/NityaP.png";
+import PaulN from "../../../static/about/tutors/PaulN.png";
+import RishitaE from "../../../static/about/tutors/RishitaE.jpg";
+import SantoshA from "../../../static/about/tutors/SantoshA.jpg";
+import SuhaaniS from "../../../static/about/tutors/SuhaaniS.jpg";
+import SydneyR from "../../../static/about/tutors/SydneyR.png";
+import TonyS from "../../../static/about/tutors/TonyS.jpg";
+
 
 const styles = theme => ({
   typography: {
@@ -527,6 +549,44 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={SantoshA} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Santosh A.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Santosh is in the class of 2026 at Health Careers High School. He is a quick learner and loves learning about new things.  He was inducted into the National Junior Honor Society in 2020 and likes taking part in community service activities. His favorite subjects are Math and Biology. He enjoys swimming and loves playing video games, soccer, and chess. He is excited and looks forward to tutoring other students to learn more about math. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
                           <img src={WyattA} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
@@ -601,6 +661,44 @@ class Tutors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AmelieB} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Amelie B.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Amelie is part of the Class of 2025 at Hunter College High School. She was born in Queens, New York City and had attended school in Manhattan for nearly a decade. Her favorite subjects include Mathematics, Global Studies, and Art. She enjoys learning about the cultures and customs of ancient civilizations as well the intricacies of politics throughout history. Amelie also adores solving math problems of all shapes and sizes; where there is a will, there is a way! She spends her free time sketching a variety of images, from diagrams of a chloroplast to cat doodles. Her favorite nonfiction book is Prisoners of Geography by Tim Marshall and her favorite fiction book is The Picture of Dorian Grey by Oscar Wilde.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>                  
                    <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
@@ -1063,7 +1161,7 @@ class Tutors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
-                  <GridItem xs={12} sm={3} md={3}>
+				  <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -1529,6 +1627,44 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={RishitaE} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Rishita E.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Rishita is a part of the class of 2026 at Great Hearts Forest Heights, where her favorite subject is math. Rishita plays soccer and basketball for the Great Hearts #39; team. She has been doing Bharatnatyam, classical dance for the past 4 years. She loves to engage in deep discussions about politics and philosophy. Outside of school and her extracurriculars, Rishita enjoys solving the rubix cube, listening to the latest music and reading fictional crime novels.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
                           <img src={BrettF} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
@@ -1602,7 +1738,45 @@ class Tutors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
-           <GridItem xs={12} sm={3} md={3}>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={JerryF} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Jerry F.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Jerry Feng is part of Class 2023 in Culver Academies. He is passionate about math and computer science. He had been in AIME two years in a row and self-study python and Java. Being the president of both math club and coding club at Culver Academies, he believes that explaining in the simplest way can help both tutor and students to grasp the key idea to draw inferences about other cases from one instance.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+				  <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -1723,6 +1897,44 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={EthanF} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Ethan F.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Ethan is part of the Class of 2025 at Flower Mound HS. He loves math, science, programming, and all things in STEM. He has done Mathcounts, AMC, USACO, and other such competitions. He is also on a world-advancing FIRST Tech Challenge team. Ethan also enjoys learning, helping others, listening to music, and playing basketball.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
                           <img src={FrancescaF} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
@@ -1755,6 +1967,82 @@ class Tutors extends PureComponent {
                               )}
                             </PopupState>
 
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={ArnonG} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Arnon G.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Arnon is a part of the Class of 2024 at Pleasant Grove High School. In middle school, Arnon originally got involved in computer science through game development. Arnon used to play games very often, so he saw game development as a great opportunity. After continuing to develop games for a while and participating in some coding classes, Arnon eventually discovered that he enjoyed the computer science field as a whole. From then on, Arnon has been studying coding in languages like Python and Java, and participating in coding competitions like USACO Bronze and TeamsCode. By teaching how to code, Arnon hopes to give students an introduction to the computer science field, just like how game development did for him. He believes that an early introduction is essential, and that it provides students time to hone their skills before college.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={JordanG} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Jordan G.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Jordan is part of the Class of 2024 at Pleasant Grove High School. During his free time, he mainly enjoys playing video games, but he also enjoys listening to music. Jordan has studied Biology and Chemistry during his time in high school, and he hopes to spread some of his knowledge to his students. Jordan has previously taught online courses in the Princeton Learning Experience International School, where he taught Public Speaking, Math, and English to students of various grade levels.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
                       </CardBody>
                     </Card>
                   </GridItem>
@@ -1940,6 +2228,44 @@ class Tutors extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Ashley is part of the Class of 2025 at Lynbrook High School. She has qualified for AIME, gotten first place with a perfect score at MIG, received AMC 8 Distinguished Honor Roll, placed first at the inteGIRLS Bay Area Math Competition, and qualified for USACO Silver. In her free time, she also loves to play with her cat, dance, play the violin, and attend coding competitions.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={GraceH} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Grace H.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Grace is part of the Class of 2026 at Tower Hill School. Her favorite subjects include Math, Digital Citizenship, and English. She is a part of the stock market club, the math league team, and the lego robotics team. Her hobbies include practicing piano and painting. When she is bored, she loves to annoy her cat, Pang Pang. For some reason, she named her cat fatty in Chinese. She looks forward to tutoring other students!
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -3840,7 +4166,45 @@ class Tutors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>				  
-				<GridItem xs={12} sm={3} md={3}>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={PaulN} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Paul N.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Paul is part of the Class of 2025 at Basis San Antonio Shavano. He has experience with nearly every field of STEM from pre-calculus level math to Java programming to robotics to several different sciences such as biology, chemistry, and physics. Having taken a course for AP Physics during his 2021-2022 school year, he understands that comprehending subjects in the STEM field requires knowledge of critical thinking skills which allow basic concepts to be applied to the real world. He aims to build critical thinking skills into students so that they may gain a fundamental understanding of each subject and its core concepts. Outside of school, he spends his free time hanging out with friends and working on projects of his own.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+				  <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -3946,6 +4310,82 @@ class Tutors extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Karissa is part of the class of 2022 at Ronald Reagan High school. Her favorite classes currently are AP Calculus AB and AP Psychology. In her free time she enjoys reading, spending time with her family and exercising outdoors. She hopes that by joining SaMi she is able to help educate young minds.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={KrishP} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Krish P.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Krish is going to be a part of the Class of 2025 at McNeil High School. His favorite subjects at school are math and science. He also helps classmates in these subjects when they need help. Some of his hobbies are video games, basketball, and building/engineering. In the past before Covid he used to go to community areas and help pack goods to be sent to food banks. One club he participated in that helped strengthen his math skills was the engineering club. This club would present design challenges to make a certain creation that meets the constraints and regulations of the challenge.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={NityaP} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Nitya P.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Nitya is part of the Class of 2026 at Basis Peoria. Her favorite subjects include biology, chemistry, and history. She is currently a member of NJHS and has been a part of several volunteer projects and volunteer organizations, such as LAI, Brambley Hedge Rabbit Rescue, and AZ Humane Society. Aside from school, she loves reading and hanging out with her two rabbits. She has a great passion for helping in any way possible. She is an extremely understanding and considerate person so do not hesistate to talk about anything with her including course questions!
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -4070,7 +4510,45 @@ class Tutors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
-				 <GridItem xs={12} sm={3} md={3}>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AryanR} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Aryan R.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Aryan is a part of the 2025 class at Basis Peoria. One of his favorite hobbies is reading books and he has read over 200 books. He is also interested in soccer and has played for 10 years. Aryan has joined the Science Bowl team and the Speech and Debate team due to his love of learning new things. He is always on the lookout for new experiences and loves learning new things. He is very excited to be able to help out and give back to the community through SaMi.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+				  <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -4227,6 +4705,44 @@ class Tutors extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={SydneyR} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Sydney R.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Sydney is part of the Class of 2025 at Basis San Antonio Shavano. Last year she took Pre-Calculus AB and this year she will be taking AP Calculus AB as an upcoming tenth grader. Math has always been her favorite subject in school and one of her many strengths. She enjoys helping others succeed and always tries to find a way to help others understand material from a different perspective. Outside of academics, Sydney loves to play sports and spend time with friends. Her favorite sport is tennis but she also loves to dance in her freetime. Overall, she is a strong problem solver and would make a great tutor!
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
                           <img src={TylerR} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
@@ -4252,6 +4768,44 @@ class Tutors extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Tyler is part of the class of 2022 at Basis San Antonio Shavano. He loves to play soccer both inside and outside of school and enjoys reading, gaming, and outdoor family activities. Math, Chemistry, Engineering, and Physics are his favorite subjects. He wishes to pursue a career that hopefully incorporates these fields. In the past, most math and science concepts have come easy to him, that was until he slack off in calculus. However, with the help of his awesome teacher, he achieved a 5 on the AP Calculus AB exam. With this knowledge, he would like to offer his help to those who might also be struggling because he knows firsthand that seeking help can pay off in the end. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={GraceS} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Grace S.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Grace is a rising sophomore in the Class of 2025 at iUniversity Prep. She is particularly interested in computer science and mathematics. She is currently in the USACO silver division and has participated in math competitions since elementary school. Grace enjoys working with and helping others and has years of experience as a student leader in clubs such as NJHS and Student Council. In her free time, she enjoys running, writing, and listening to music. Through being a tutor at SaMi, she hopes to help students cultivate their interests in STEM.
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -4291,6 +4845,44 @@ class Tutors extends PureComponent {
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Harinee is part of the Class of 2023 at Prosper High School. She was part of NJHS during middle school and HOPE squad member during freshman year. She is in advanced math level and has taken AP computer science principles as elective. She is an Indian classical dancer and has been learning for the last nine years.  She enjoys doing activities like playing her piano and dancing. She volunteers at ManeGait Therapeutic Horsemanship as a barn buddy and enjoys spending time with the horses. In her free time, Harinee enjoys playing her ukulele and spending time with her friends and family. She is excited to be part of 'SaMI' working with other students and helping them learn new things!
 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={MitulS} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Mitul S.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Mitul is part of the Class of 2026 at Basis San Antonio Shavano. He enjoys learning and practicing math and science. Mitul has been doing competitive math and science for 4 years. He has won numerous competitions and has qualified for national-level competitions. His hobbies include reading, learning, and origami. 
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -4497,7 +5089,7 @@ class Tutors extends PureComponent {
                         </a>
                       </CardAvatar>
                       <CardBody>
-                        <h4 className={classes.cardTitle}>shreya S.</h4>
+                        <h4 className={classes.cardTitle}>Shreya S.</h4>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                               {popupState => (
                                 <div>
@@ -4528,6 +5120,44 @@ class Tutors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>				  
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={SuhaaniS} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Suhaani S.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Suhaani is part of the Class of 2025 at BASIS Oro Valley and plans on pursuing a future in STEM. She’s on her school’s Model United Nations club and initiated a club at her school focusing on STEAM and opportunities related to it. Additionally, she loves spending her free time reading, dancing, or watching marvel films. Suhaani is so excited to be part of SaMi this year!
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
                   <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
@@ -4595,6 +5225,44 @@ class Tutors extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Toby is part of the Class 2023 at Health Careers High School. Toby has been at BASIS for four years starting in 5th grade. Toby is a part of NJHS at BASIS. Toby is also a member of the UIL club at BASIS. Toby likes to read books and play video games. Toby has four rabbits two of which are babies. Toby enjoys Biology. Toby has one other brother who is younger. Toby likes working and helping other people. Toby would like to become a doctor when he grows up. Toby’s favorite food is pizza. Toby is very excited to work with you and tutor you. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={TonyS} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Tony S.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Tony is part of the Class of 2025 at Culver Academy in Culver, Indiana. He is passionate about studying mathematics and science. Tony is taking AP Calculus BC and AP Biology inside the school. He is part of the school math club and participated in AMC competitions. He enjoys helping others and completing his work. Outside of school, he likes to play ice hockey and tennis.
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -4986,7 +5654,45 @@ class Tutors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
-                   <GridItem xs={12} sm={3} md={3}>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={JennyW} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Jenny W.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Jenny is part of the Class of 2025 at Liberty High School. Academically, she learned algebra I&II, geometry, pre-calculus, and honors chemistry during her middle school years.  She completed AP Calculus AB, AP Chemistry, and AP Physics 1 in her 9th grade. She is a passionate & experienced math and science tutor in the Frisco and Plano area.  During her free time, she enjoys playing the violin, fishing, table tennis, and badminton. She is excited to help others learn and grow. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+				  <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -5437,6 +6143,83 @@ class Tutors extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             William is part of the Class of 2022 at Westford Academy in Massachusetts. William's favorite subjects in school are math, computer science, and English. He participates in his school's business club, DECA, and has made it to the international competition twice. In his free time, William can be found hanging out with his friends, playing video games, and reading. He loves playing just about any sport, and his favorites include basketball, football, soccer, and tennis. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AkhilY} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Akhil Y.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Akhil is part of the Class of 2026 at  Health Careers High School. He has had a passion for math since he was young. He enjoys playing sports, especially tennis. He has been playing tennis since he was ten. Along with tennis he also enjoys playing chess. He learned to play chess from his dad. He lives with his mom, dad, younger brother, and a dog named Bumper. He has been attending BASIS since fourth grade and has enjoyed going here over the years because of the many friends that he has made. His friends made going to school so much better; this makes him look forward to his high school years. Another hobby of his is tutoring people. He tutors his brother in math who is currently going to fifth grade. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+
+                      </CardBody>
+                    </Card>
+                  </GridItem>				  
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={DiY} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Di Y.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Di is part of the class of 2023 from Johnson High School. She is skilled in math, passing AP Calculus BC and AP Statistics with A+ grades. Di is very responsible for her school work, and is very organized. She is a member of DECA (Distributive Education Clubs of America), FBLA (Future Business Leaders of America), and NAWBO (National Association of Women Business Owners) club. In her free time, Di likes to dance (kpop) and listen to music. She is fluent in English and Chinese. Di is looking forward to helping children improve their skills in math.
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -5941,7 +6724,45 @@ class Tutors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
-                   <GridItem xs={12} sm={3} md={3}>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={MirandaZ} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Miranda Z.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Miranda is part of the Class of 2023 at Marc Garneau Collegiate Institute in Toronto, Ontario. She was lucky enough to be sent to math classes at a young age, which is where her passion for math began to grow. She competed on team Canada for the European Girls Math Olympiad, winning silver, and has also attended numerous other math contests such as the AMC, AIME, Euclid, CMIMC, HMMT, and more. When she isn’t doing math, Miranda enjoys drinking bubble tea with her friends and singing in the Toronto Children’s Chorus. She is excited to be able to teach others about mathematics!
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+				  <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
