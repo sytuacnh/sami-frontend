@@ -50,10 +50,10 @@ class FreeTutoring20222023Section extends PureComponent {
                     <h2 className={classes.title}>Program Description</h2>
                     <div className={classes.eventFont}>
                       <p className={classes.eventFont}>
-                        The <b>2022-2023 Free Tutoring Program</b> is going online! There are multiple benefits of studying online. Studying online gives students more flexibility and lowers the cost of study. They can choose their own learning environment that works best for their needs and don’t have to commute to class. This saves the cost of housing for us and transportation for them. Students will learn to be more disciplined and take more responsibilities. We are also able to offer more choices for course topics. 
+                        SaMi <b>2022-2023 Free Tutoring Program</b> is an free online program for all students around the world! There are multiple benefits of studying online. Studying online gives students more flexibility and lowers the cost of study. They can choose their own learning environment that works best for their needs and don’t have to commute to class. This saves the cost of housing for us and transportation for them. Students will learn to be more disciplined and take more responsibilities. We are also able to offer more choices for course topics. 
                         <br />
                         <br />
-                        This year, our online program offers six <b>Math Courses</b> and three <b>Computer Science Courses</b>. For every course, the topic is the same within a week so you just need to attend one day. We offer multiple sections on Saturday and Sunday to give students a great number of choices. Each week's topic is independent and not a prerequisite to each other. If a student misses a week, this won't affect his/her class next week. 
+                        This year, our online program offers nine <b>Math Courses</b>, four <b>Computer Science Courses</b>, and threee <b>Science Courses</b>. For every course, the topic is the same within a week so you just need to attend one day. We offer multiple sections on Saturday and Sunday to give students a great number of choices. Each week's topic is independent and not a prerequisite to each other. If a student misses a week, this won't affect his/her class next week. 
                         <br />
                         <br />
                       </p>
@@ -64,8 +64,12 @@ class FreeTutoring20222023Section extends PureComponent {
                           <li>Whirlpool (Grades 2-3)</li>
                           <li>Andromeda (Grades 4-5)</li>
                           <li>Triangulum (Grades 6-8)</li>
-						  <li>MAA Pre-AMC (Grades 6-8)</li>						  
-						  <li>Calculus (Grades 9-12)</li>					
+						  <li>MAA Pre-AMC (Grades 5-8)</li>	
+						  <li>MAA AMC 8 (Grades 6-8)</li>	
+						  <li>MAA Pre-AMC (Grades 6-8)</li>							  
+						  <li>Calculus (Grades 8-12)</li>	
+						  <li>AB Calculus AB Practices (Grades 9-12)</li>	
+						  <li>SAT Math (Grades 8-12)</li>
                         </ul>
                       </div>
                       <div> 
@@ -73,7 +77,16 @@ class FreeTutoring20222023Section extends PureComponent {
                         <ul>
                           <li>Python for Kids (Grades 3-5)</li>
                           <li>Java (Grades 6-12)</li>                          
-                          <li>C++ (Grades 6-12)</li>						  
+                          <li>C++ (Grades 6-12)</li>	
+                          <li>AP Computer Science A Practice (Grades 9-12)</li>							  
+                        </ul>
+                      </div>
+                      <div> 
+                        <h3><b>Science Classes:</b></h3>
+                        <ul>
+                          <li>Biology (Grades 6-12)</li>
+                          <li>Chemistry (Grades 6-12)</li>                          
+                          <li>CBiology (Grades 6-12)</li>	
                         </ul>
                       </div>
                       <p className={classes.eventFont}>

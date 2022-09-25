@@ -13,11 +13,11 @@ class FreeTutoring20222023ScheduleTable extends PureComponent {
 
         return (
             <Table
-              tableHead={[<b>Year</b>,<b>Program</b>, <b>Syllabi</b>]}
+              tableHead={[<b>Year</b>,<b>Curriculum</b>, <b>Schedule</b>]}
               tableData={[
                 ["2022-2023", 
-                  <a className="link" href={Program} target="_blank" rel="noopener noreferrer">PDF</a>, 
-                  <a className="link" href={Syllabi} target="_blank" rel="noopener noreferrer">PDF</a>],
+                  <a className="link" href="https://drive.google.com/file/d/1E0iRXS9QyKZ0WFjlAGE8oaY-QFTQ471O/view" target="_blank" rel="noopener noreferrer">Link</a>, 
+                  <a className="link" href="https://docs.google.com/spreadsheets/d/1pnYnsHXhLHxYUKZwKRZjLNuN-0a1oooJ7EoKDA3keB0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Link</a>],
               ]}
               customCellClasses={[
                 classes.cellText,

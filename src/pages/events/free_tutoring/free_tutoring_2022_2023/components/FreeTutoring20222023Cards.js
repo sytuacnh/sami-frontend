@@ -86,12 +86,13 @@ class FreeTutoring20222023Cards extends PureComponent {
                         <CardBody background>
                           <h6 className={classes.category}>Free Tutoring 2022-2023</h6>
                           <h3 className={classes.cardTitle}>
-                            Program
+                            Curriculum
                           </h3>
                           <p className={classes.textCenter}>
                             Click button below to view our poster
                           </p>
-                          <a className="link" href={Program} target="_blank" rel="noopener noreferrer">
+                          //<a className="link" href={Program} target="_blank" rel="noopener noreferrer">
+						  <a className="link" href="https://drive.google.com/file/d/1E0iRXS9QyKZ0WFjlAGE8oaY-QFTQ471O/view" target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
                                   <FormatAlignLeft className={classes.icons} />View PDF
                               </Button>
@@ -110,12 +111,12 @@ class FreeTutoring20222023Cards extends PureComponent {
                         <CardBody background>
                           <h6 className={classes.category}>Free Tutoring 2022-2023</h6>
                           <h3 className={classes.cardTitle}>
-                            Syllabi
+                            Schedule
                           </h3>
                           <p className={classes.textCenter}>
                             Click button below to view
                           </p>
-                          <a className="link" href={Syllabi} target="_blank" rel="noopener noreferrer">
+                          <a className="link" href="https://docs.google.com/spreadsheets/d/1pnYnsHXhLHxYUKZwKRZjLNuN-0a1oooJ7EoKDA3keB0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
                                   <FormatAlignLeft className={classes.icons} />View
                               </Button>
