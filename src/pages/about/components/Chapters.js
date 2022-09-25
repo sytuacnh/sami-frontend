@@ -102,6 +102,7 @@ import KaraC from "../../../static/about/tutors/KaraC.jpg";
 import ChingShiuanF from "../../../static/about/tutors/ChingShiuanF.jpg";
 import XinxinF from "../../../static/about/tutors/XinxinF.jpg";
 import NethraaM from "../../../static/about/tutors/NethraaM.jpg";
+import AllenW from "../../../static/about/tutors/AllenW.jpg";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
 
@@ -2433,6 +2434,45 @@ class Chapters extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Amelia is part of the Class of 2023 at Guymon High School.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AllenW} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Allen W.</h4>
+                        <p className={classes.description}>Director of Libertyville, Illinois Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Allen is a part of the Class of 2025 at Libertyville High School in Libertyville, Illinois. He has an interest in Science, Math, and Computer Science. He has participated in many Math and Computer Science related competitions including MATHCOUNTS, AMC, and USACO. Some of his hobbies include tennis and video games.
                                         </p>
                                     </Typography>
                                   </Popover>

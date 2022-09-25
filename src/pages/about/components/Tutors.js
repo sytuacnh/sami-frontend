@@ -206,6 +206,7 @@ import OliviaM from "../../../static/about/tutors/OliviaM.jpg";
 import RohitK from "../../../static/about/tutors/RohitK.jpg";
 import SidharthR from "../../../static/about/tutors/SidharthR.jpg";
 import XinxinF from "../../../static/about/tutors/XinxinF.jpg";
+import AllenW from "../../../static/about/tutors/AllenW.jpg";
 
 const styles = theme => ({
   typography: {
@@ -6080,6 +6081,44 @@ class Tutors extends PureComponent {
                     </Card>
                   </GridItem>
                    <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={AllenW} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Allen W.</h4>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Allen is a part of the Class of 2025 at Libertyville High School in Libertyville, Illinois. He has an interest in Science, Math, and Computer Science. He has participated in many Math and Computer Science related competitions including MATHCOUNTS, AMC, and USACO. Some of his hobbies include tennis and video games.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+				  <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
