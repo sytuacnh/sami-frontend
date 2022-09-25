@@ -53,7 +53,7 @@ class FreeTutoring20222023Section extends PureComponent {
                         SaMi <b>2022-2023 Free Tutoring Program</b> is an free online program for all students around the world! There are multiple benefits of studying online. Studying online gives students more flexibility and lowers the cost of study. They can choose their own learning environment that works best for their needs and don’t have to commute to class. This saves the cost of housing for us and transportation for them. Students will learn to be more disciplined and take more responsibilities. We are also able to offer more choices for course topics. 
                         <br />
                         <br />
-                        This year, our online program offers nine <b>Math Courses</b>, four <b>Computer Science Courses</b>, and threee <b>Science Courses</b>. For every course, the topic is the same within a week so you just need to attend one day. We offer multiple sections on Saturday and Sunday to give students a great number of choices. Each week's topic is independent and not a prerequisite to each other. If a student misses a week, this won't affect his/her class next week. 
+                        This year//, our online program offers nine <b>Math Courses</b>, four <b>Computer Science Courses</b>, and threee <b>Science Courses</b>. For every course, the topic is the same within a week so you just need to attend one day. We offer multiple sections on Saturday and Sunday to give students a great number of choices. Each week's topic is independent and not a prerequisite to each other. If a student misses a week, this won't affect his/her class next week. 
                         <br />
                         <br />
                       </p>
