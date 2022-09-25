@@ -68,38 +68,6 @@ function SectionProgramPills({ ...props }) {
               className={classes.tabFont}
               tabs={[
 			  {
-                  tabButton: "Summer@SaMi 2022",
-                  tabContent: (
-                    <TabContentWrapper >
-                      <div className={classes.paddingCustom}>
-                        <Table
-                          tableHead={[<b>Program Name</b>, <b>Information</b>,<b>Status</b>]}
-                          tableData={[
-                            ["Summer@SaMi 2022", 
-                              <Link to='/summer-at-sami-2022' target="_blank" className="link">
-                                Description Page
-                              </Link>, 
-                            "Ongoing"],
-                          ]}
-                          customCellClasses={[
-                            classes.cellText,
-                            classes.cellText,
-                            classes.cellText
-                          ]}
-                          customClassesForCells={[0, 1, 2]}
-                          customHeadCellClasses={[
-                            classes.textCenter,
-                            classes.textCenter,
-                            classes.textCenter
-                          ]}
-                          customHeadClassesForCells={[0, 1, 2]}
-                        />
-                      </div>
-                      <SummerAtSaMi2022Cards />
-                    </TabContentWrapper>
-                  )
-                },
-			  {
                   tabButton: "Free Tutoring 2022-2023",
                   tabContent: (
                     <TabContentWrapper >
@@ -136,6 +104,39 @@ function SectionProgramPills({ ...props }) {
                     </TabContentWrapper>
                   )
                 },
+			  {
+                  tabButton: "Summer@SaMi 2022",
+                  tabContent: (
+                    <TabContentWrapper >
+                      <div className={classes.paddingCustom}>
+                        <Table
+                          tableHead={[<b>Program Name</b>, <b>Information</b>,<b>Status</b>]}
+                          tableData={[
+                            ["Summer@SaMi 2022", 
+                              <Link to='/summer-at-sami-2022' target="_blank" className="link">
+                                Description Page
+                              </Link>, 
+                            "Ongoing"],
+                          ]}
+                          customCellClasses={[
+                            classes.cellText,
+                            classes.cellText,
+                            classes.cellText
+                          ]}
+                          customClassesForCells={[0, 1, 2]}
+                          customHeadCellClasses={[
+                            classes.textCenter,
+                            classes.textCenter,
+                            classes.textCenter
+                          ]}
+                          customHeadClassesForCells={[0, 1, 2]}
+                        />
+                      </div>
+                      <SummerAtSaMi2022Cards />
+                    </TabContentWrapper>
+                  )
+                },
+
                 {
                   tabButton: "Pi Day Celebration 2021",
                   tabContent: (
