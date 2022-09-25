@@ -97,9 +97,11 @@ import GraceS from "../../../static/about/tutors/GraceS.jpg";
 
 import AshleyH from "../../../static/about/tutors/AshleyH.jpg";
 import SaiB from "../../../static/about/tutors/SaiB.jpg";
-
- 
-
+import GraceD from "../../../static/about/tutors/GraceD.jpeg";
+import KaraC from "../../../static/about/tutors/KaraC.jpg";
+import ChingShiuanF from "../../../static/about/tutors/ChingShiuanF.jpg";
+import XinxinF from "../../../static/about/tutors/XinxinF.jpg";
+import NethraaM from "../../../static/about/tutors/NethraaM.jpg";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
 
@@ -574,6 +576,45 @@ class Chapters extends PureComponent {
                     <Card profile plain>
                       <CardAvatar profile plain>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={KaraC} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Kara C.</h4>
+                        <p className={classes.description}>Director of Los Altos, California Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Kara is part of the Class of 2024 at Los Altos High School. She looks forward to sharing her love of solving challenging math problems with SaMi students. She’s competed in several math competitions including Mathcounts, AMC, and AIME. In her free time, she enjoys playing golf, watching dumb TV shows, and hanging out with her dog Buffy! 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
                           <img src={NamrathaC} alt="..." className={classes.img} />
                         </a>
                       </CardAvatar>
@@ -648,6 +689,45 @@ class Chapters extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>				  
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={GraceD} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Grace D.</h4>
+                        <p className={classes.description}>Director of Chicago, Illinois Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Grace is part of the Class of 2023 at Northside College Preparatory High School. She is passionate in constantly learning, particularly in mathematics and computer science! In high school, she has taken AP Calculus AB and AP Computer Science A, and is currently taking Multivariable Calculus and Digital Computing Systems. She is a part of STEM clubs at her school, like GEMS and GWC, as well as Math Honor Society and Computer Science Honor Society. Outside of school, she loves to spend time with her friends and explore outside. She is excited to be a part of your learning journey! 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
 				  <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
@@ -717,6 +797,84 @@ class Chapters extends PureComponent {
                                     <Typography className={classes.typography}>
                                         <p className={classNames(classes.description, classes.popOverFontSize)}>
                                             Laura is part of the Class 2023 at Carson Senior High School.
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={ChingShiuanF} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>ChingShiuan F.</h4>
+                        <p className={classes.description}>Director of Brooklyn, New York Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Ching Shiuan Fang is a current senior at Brooklyn College studying Urban Sustainability. She is also a Macaulay Honors Scholar and part of the Brooklyn College/SUNY Downstate School of Medicine B.A./M.D. program. She is passionate about sharing her love of mathematics with others through education and has worked as a private tutor before throughout high school and college. Her favorite math topic is game theory and she loves a good game of chess. Additionally, she enjoys reading historical fiction and gardening in her spare time. 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={XinxinF} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>XinxinF B.</h4>
+                        <p className={classes.description}>Director of Newtown Square, Pennsylvania Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Xinxin is part of the Class of 2024 at the Episcopal Academy. He has been participating in math contests since middle school, and also has a love for computer science. In his free time, he enjoys playing tennis and playing with his dog. 
                                         </p>
                                     </Typography>
                                   </Popover>
@@ -1661,6 +1819,45 @@ class Chapters extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>				  
+                  <GridItem xs={12} sm={3} md={3}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={NethraaM} alt="..." className={classes.img} />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Nethraa M.</h4>
+                        <p className={classes.description}>Director of Frisco, Texas Chapter</p>
+                        <PopupState variant="popover" popupId="demo-popup-popover">
+                              {popupState => (
+                                <div>
+                                  <Button color="rose" size="sm" variant="contained" {...bindTrigger(popupState)}>
+                                    About me
+                                  </Button>
+                                  <Popover
+                                    {...bindPopover(popupState)}
+                                    anchorOrigin={{
+                                      vertical: 'bottom',
+                                      horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                      vertical: 'top',
+                                      horizontal: 'center',
+                                    }}
+                                  >
+                                    <Typography className={classes.typography}>
+                                        <p className={classNames(classes.description, classes.popOverFontSize)}>
+                                            Nethraa is part of the Class of 2025. She was part of the Math Honors Society, Mu Alpha Theta, during freshman year onwards. She loves teaching younger kids to help them learn. She has been playing piano for 5 years and earned certificates from the ABRSM institute. Nethraa is also interested in photography and likes capturing pictures of nature. She is excited to be a part of the ‘SaMi’ community! 
+                                        </p>
+                                    </Typography>
+                                  </Popover>
+                                </div>
+                              )}
+                            </PopupState>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
                   <GridItem xs={12} sm={3} md={3}>
                     <Card profile plain>
                       <CardAvatar profile plain>
