@@ -47,7 +47,7 @@ class FreeTutoring20222023Cards extends PureComponent {
                           <p className={classes.textCenter}>
                             Click button below to join as a student
                           </p>
-                          <a className="link" href="https://forms.gle/PkoioSYcJY8f1j5v8" target="_blank" rel="noopener noreferrer">
+                          <a className="link" href="https://forms.gle/cXKYXxQWQeQTPR6S8" target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
                                   <FormatAlignLeft className={classes.icons} />Sign Up
                               </Button>
@@ -69,7 +69,7 @@ class FreeTutoring20222023Cards extends PureComponent {
                           <p className={classes.category}>
                             Click button below to join as a tutor
                           </p>
-                          <a className="link" href="https://forms.gle/EUxbnQmvRFp2BtGu5" target="_blank" rel="noopener noreferrer">
+                          <a className="link" href="https://forms.gle/AeRWfiYVbXvWwaAb6" target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
                                   <FormatAlignLeft className={classes.icons} />Sign Up
                               </Button>
