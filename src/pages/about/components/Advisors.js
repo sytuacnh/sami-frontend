@@ -12,6 +12,9 @@ import TeacherMissing from "../../../static/about/advisors/Teacher_missing.png";
 import ErikaHsie from "../../../static/about/advisors/ErikaHsie.jpg";
 import QilongLu from "../../../static/about/advisors/QilongLu.jpg";
 import HoaNguyen from "../../../static/about/advisors/HoaNguyen.jpg";
+import RaviSudharson from "../../../static/about/advisors/RaviSudharson.jpg";
+
+
 
 class Advisors extends PureComponent {
 
@@ -137,6 +140,25 @@ class Advisors extends PureComponent {
                       </CardBody>
                     </Card>
                   </GridItem>
+                  <GridItem xs={12} sm={4} md={4}>
+                    <Card profile plain>
+                      <CardAvatar profile plain>
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          <img src={RaviSudharson} alt="..." />
+                        </a>
+                      </CardAvatar>
+                      <CardBody>
+                        <h4 className={classes.cardTitle}>Mr. Ravi Sudharson</h4>
+                        <Muted>
+                          <h6 className={classes.cardCategory}>Advisory Board</h6>
+                        </Muted>
+                        <p className={classes.description}>
+                          Enterprise Agile Coach & Head of Quality Engineering, <br />
+                          HCL America
+                        </p>
+                      </CardBody>
+                    </Card>
+                  </GridItem>				  
                 </GridContainer>
               </div>
             </div>
