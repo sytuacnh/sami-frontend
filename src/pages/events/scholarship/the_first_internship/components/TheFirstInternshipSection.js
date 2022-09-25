@@ -65,4 +65,4 @@ class TheFirstInternshipSection extends PureComponent {
 export default compose(
     withStyles(style),
     withStyles(featuresStyle),
-)(CastingYourFutureScholarshipSection);
+)(TheFirstInternshipSection);
