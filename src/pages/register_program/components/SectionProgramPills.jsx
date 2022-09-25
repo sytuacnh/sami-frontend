@@ -82,7 +82,7 @@ function SectionProgramPills({ ...props }) {
                               <Link to='/free-tutoring-2021-2022' target="_blank" className="link">
                                 2021-2022
                               </Link>,
-                            "To be open in September 2022"],
+                            "Ongoing"],
                           ]}
                           customCellClasses={[
                             classes.cellText,

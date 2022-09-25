@@ -29,6 +29,7 @@ import FreeTutoring20202021 from './pages/events/free_tutoring/free_tutoring_202
 import FreeTutoring20212022 from './pages/events/free_tutoring/free_tutoring_2021_2022';
 import FreeTutoring20222023 from './pages/events/free_tutoring/free_tutoring_2022_2023';
 import CastingYourFutureScholarship from './pages/events/scholarship/casting_your_future_scholarship';
+import TheFirstInternship from './pages/events/scholarship/the_first_internship';
 
 function App() {
     return (
@@ -57,7 +58,7 @@ function App() {
 				<Route path='/free-tutoring-2021-2022' exact component={FreeTutoring20212022}></Route>
 				<Route path='/free-tutoring-2022-2023' exact component={FreeTutoring20222023}></Route>
                 <Route path='/casting-your-future-scholarship' exact component={CastingYourFutureScholarship}></Route>
-                
+                <Route path='/the-first-internship' exact component={TheFirstInternship}></Route>                
                 <Footer />
             </BrowserRouter>
         </Provider>

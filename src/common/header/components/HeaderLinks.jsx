@@ -344,7 +344,15 @@ const HeaderLinks = ({ ...props }) => {
                     className={classes.dropdownLink}
                   >
                     <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe633;</IconSpan> Casting Your Future Scholarship
-                  </Link> 
+                  </Link>,
+                  <Link 
+                    id="the-first-internship"
+                    to="/the-first-internship" 
+                    onClick={handleChangeCurrentNav}
+                    className={classes.dropdownLink}
+                  >
+                    <IconSpan className={classes.dropdownIcons + " dropDownIconFont"}>&#xe9ee;</IconSpan> The First Internship
+                  </Link>				  
               ]}
             />
             ,
