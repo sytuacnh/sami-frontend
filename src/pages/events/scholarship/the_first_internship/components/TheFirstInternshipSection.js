@@ -45,10 +45,10 @@ class TheFirstInternshipSection extends PureComponent {
                   > 
                     <h2 className={classes.title}>Internship Description</h2>
                     <p className={classes.eventFont}>
-                      The <b>The First Internship</b> provides the first, paid internships for youth aged 14 to 17 to build career opportunities and goals. At SaMi, we support youths to serve our community and provide greater access to STEM education worldwide. We value your contribution and recognize it in various ways including The First Internship program. 
+                      <b>The First Internship</b> provides the first, paid internships for youth aged 14 to 17 to build career opportunities and goals. At SaMi, we support youths to serve our community and provide greater access to STEM education worldwide. We value their contribution and recognize it in various ways including The First Internship program. 
                       <br />
                       <br />
-                      To apply for the internship, you need to sign up for a tutor in at least one of SaMi's tutoring program in present year. Please contact us at sanantoniomathinclude@gmail.com if you have any questions.
+                      To apply for the internship, you must be a tutor in at least one of SaMi's programs in present year. Please contact us at sanantoniomathinclude@gmail.com if you have any questions.
                       <br />
                       <br />
                     </p>
