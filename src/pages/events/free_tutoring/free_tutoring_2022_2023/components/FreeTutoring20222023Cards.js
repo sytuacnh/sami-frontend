@@ -47,7 +47,7 @@ class FreeTutoring20222023Cards extends PureComponent {
                           <p className={classes.textCenter}>
                             Click button below to join as a student
                           </p>
-                          <a className="link" href="https://forms.gle/cXKYXxQWQeQTPR6S8" target="_blank" rel="noopener noreferrer">
+                          <a className="link" href="https://forms.gle/PkoioSYcJY8f1j5v8" target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
                                   <FormatAlignLeft className={classes.icons} />Sign Up
                               </Button>
@@ -69,7 +69,7 @@ class FreeTutoring20222023Cards extends PureComponent {
                           <p className={classes.category}>
                             Click button below to join as a tutor
                           </p>
-                          <a className="link" href="https://forms.gle/AeRWfiYVbXvWwaAb6" target="_blank" rel="noopener noreferrer">
+                          <a className="link" href="https://forms.gle/EUxbnQmvRFp2BtGu5" target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
                                   <FormatAlignLeft className={classes.icons} />Sign Up
                               </Button>
@@ -86,13 +86,12 @@ class FreeTutoring20222023Cards extends PureComponent {
                         <CardBody background>
                           <h6 className={classes.category}>Free Tutoring 2022-2023</h6>
                           <h3 className={classes.cardTitle}>
-                            Curriculum
+                            Program
                           </h3>
                           <p className={classes.textCenter}>
                             Click button below to view our poster
                           </p>
                           <a className="link" href={Program} target="_blank" rel="noopener noreferrer">
-						  //<a className="link" href="https://drive.google.com/file/d/1E0iRXS9QyKZ0WFjlAGE8oaY-QFTQ471O/view" target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
                                   <FormatAlignLeft className={classes.icons} />View PDF
                               </Button>
@@ -111,13 +110,12 @@ class FreeTutoring20222023Cards extends PureComponent {
                         <CardBody background>
                           <h6 className={classes.category}>Free Tutoring 2022-2023</h6>
                           <h3 className={classes.cardTitle}>
-                            Schedule
+                            Syllabi
                           </h3>
                           <p className={classes.textCenter}>
                             Click button below to view
                           </p>
                           <a className="link" href={Syllabi} target="_blank" rel="noopener noreferrer">
-						  //<a className="link" href="https://docs.google.com/spreadsheets/d/1pnYnsHXhLHxYUKZwKRZjLNuN-0a1oooJ7EoKDA3keB0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
                                   <FormatAlignLeft className={classes.icons} />View
                               </Button>
