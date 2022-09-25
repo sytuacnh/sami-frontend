@@ -91,7 +91,7 @@ class FreeTutoring20222023Cards extends PureComponent {
                           <p className={classes.textCenter}>
                             Click button below to view
                           </p>
-                          <a className="link" href="https://forms.gle/EUxbnQmvRFp2BtGu5" target="_blank" rel="noopener noreferrer">
+                          <a className="link" href="https://bit.ly/3UCzCgc" target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
                                   <FormatAlignLeft className={classes.icons} />View
                               </Button>
@@ -115,7 +115,7 @@ class FreeTutoring20222023Cards extends PureComponent {
                           <p className={classes.textCenter}>
                             Click button below to view
                           </p>
-                          <a className="link" href={Syllabi} target="_blank" rel="noopener noreferrer">
+                          <a className="link" href="https://bit.ly/3LOyyBR" target="_blank" rel="noopener noreferrer">
                               <Button round color="rose">
                                   <FormatAlignLeft className={classes.icons} />View
                               </Button>
